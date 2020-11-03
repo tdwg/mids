@@ -8,7 +8,7 @@ This README last updated: 03 November 2020.
 
 The [MIDS Task Group](https://www.tdwg.org/community/cd/mids/) is a task group to develop a standard for Minimum Information about a Digital Specimen (MIDS). The TG is chartered by its parent [Collection Descriptions Interest Group](https://www.tdwg.org/community/cd/). For full details of the TG and its scope, [read the charter](https://www.tdwg.org/community/cd/mids/).
 
-The day-to-day operations of the Task Group is documented in this repository. You can also track and participate in the work of the group by watching this repository and monitoring the group's [issues tracker](https://github.com/tdwg/cd/mids/issues).
+The day-to-day operations of the Task Group is documented in this repository. You can also track and participate in the work of the group by watching this repository and monitoring the group's [issues tracker](https://github.com/tdwg/mids/issues).
 
 The new MIDS standard will be complementary to the Collection Descriptions standard that is also under the responsibility of the [Collection Descriptions Interest Group](https://www.tdwg.org/community/cd/).
 
@@ -48,7 +48,7 @@ Become involved and contribute by:
 | Mareike Petersen | Museum für Naturkunde Berlin (MfN) | mareike.petersen AT mfn.berlin |
 | Richard Rabeler | University of Michigan Herbarium | rabeler AT umich.edu |
 | Eirik Rindal | University of Oslo Natural History Museum | eirik.rindal AT nhm.uio.no |
-| Hannu Saarenmaa | Bioshare Digitization | @ |
+| Hannu Saarenmaa | Bioshare Digitization | hannu AT bioshare.com |
 | Lutz Suhrbier | Botanic Garden and Botanical Museum Berlin | l.suhrbier AT bgbm.org |
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 
