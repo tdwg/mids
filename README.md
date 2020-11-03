@@ -2,7 +2,7 @@
 
 This is the repository for the MIDS Task Group, dealing with Minimum Information about a Digital Specimen.
 
-This README last updated: 23 July 2020.
+This README last updated: 03 November 2020.
 
 ## About the group
 
@@ -38,26 +38,40 @@ Become involved and contribute by:
 | --- | --- | --- |  
 | Wouter Addink | Naturalis Biodiversity Center | @wouteraddink |  
 | Mathias Dillen | Meise Botanic Garden | @matdillen |  
-| Falko Glöckler | Museum für Naturkunde Berlin (MfN) | Falko.Gloeckler AT mfn.berlin |
+| Falko Glöckler | Museum für Naturkunde Berlin (MfN) | falko.gloeckler AT mfn.berlin |
 | Quentin Groom | Meise Botanic Garden | @qgroom |
-| Anton Güntsch | Botanic Garden and Botanical Museum Berlin | A.Guentsch AT bgbm.org |
+| Anton Güntsch | Botanic Garden and Botanical Museum Berlin | a.guentsch AT bgbm.org |
+| Josh Humphries | Natural History Museum, London | j.humphries AT nhm.ac.uk |
+| Chris Hunter | GigaDB, BGI Group | chris AT gigasciencejournal.com> |
+| Gunnhild Marthinsen | University of Oslo Natural History Museum | g.m.marthinsen AT nhm.uio.no |
 | Deborah Paul | Florida State University / iDigBio | @debpaul |
-| Mareike Petersen | Museum für Naturkunde Berlin (MfN) | Mareike.Petersen AT mfn.berlin |
+| Mareike Petersen | Museum für Naturkunde Berlin (MfN) | mareike.petersen AT mfn.berlin |
+| Richard Rabeler | University of Michigan Herbarium | rabeler AT umich.edu |
+| Eirik Rindal | University of Oslo Natural History Museum | eirik.rindal AT nhm.uio.no |
 | Hannu Saarenmaa | Bioshare Digitization | @ |
+| Lutz Suhrbier | Botanic Garden and Botanical Museum Berlin | l.suhrbier AT bgbm.org |
+| Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 
 ## Repo structure
 
-To be completed.
+The [master branch](https://github.com/tdwg/mids) contains this README.md file and the [released public version](MIDS-definition.md) of the MIDS specification. As of 03 November 2020, work is still in progress and there is not yet a released Version 1.0 of the specification.
+
+The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the current working draft in the [current-draft](https://github.com/tdwg/mids/tree/working-draft/current-draft) folder. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
+
+*To be completed.*
 
 ## TG Way of working
 
-To be completed.
+*To be completed.*
 
 ## Resources
 
 ### Current draft of the specification
 
-[Hardisty, A., Addink, W., Dillen, M., Groom, Q., Haston, E., et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.11, July 2020](MIDS-definition-v0.11-21July2020.md). Also googledoc [http://bit.ly/MIDSv011](http://bit.ly/MIDSv011). 
+[MIDS-definition-v0.12-03Nov2020.md](https://github.com/tdwg/mids/blob/working-draft/current-draft/MIDS-definition-v0.12-03Nov2020.md)
+
+Cite as:
+*Hardisty, A., Addink, W., Dillen, M., Groom, Q., Haston, E., et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.12, 03 November 2020*.
 
 ### Other resources
 
