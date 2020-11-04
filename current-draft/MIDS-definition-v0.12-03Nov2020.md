@@ -261,17 +261,17 @@ In some instances, a photographic image can also be made or be already available
 
 When needed at such moments, a bare catalogue record may be created to associate a specimen with a catalogue entry or database record. This should normally be via the specimen’s identifier, associating a bare minimum of digital data (a catalogue number and, ideally a persistent identifier – see 3.4 below) with a physical specimen.
 
-        Note 1:	MIDS supports early stage digital bare catalogue record creation by providing a pre-level of minimum information about a digital specimen, level zero (0) that is precursive to later steps.
+Note 1:	MIDS supports early stage digital bare catalogue record creation by providing a pre-level of minimum information about a digital specimen, level zero (0) that is precursive to later steps.
 
 ## 3.4 Assigning persistent identifiers to digitized specimen data
 
 As part of the minimum information required to make digital specimen data publicly available, a persistent identifier (PID) should be assigned to a specimen and its digital data as early as possible in the digitization process; even prior to digitization commencing (see 3.3 above).
 
-        Note 2:	Persistent and global unique identification is an important step towards making digitized specimen data publicly available online so that they can be referred to unambiguously, for example in a journal article, or so that its data can be easily found, used and updated whenever necessary. With the advent of innovative services making greater use of PIDs in the future, persistently identified specimen data is expected to become more valuable over time. 
+Note 2:	Persistent and global unique identification is an important step towards making digitized specimen data publicly available online so that they can be referred to unambiguously, for example in a journal article, or so that its data can be easily found, used and updated whenever necessary. With the advent of innovative services making greater use of PIDs in the future, persistently identified specimen data is expected to become more valuable over time. 
 
-        Note 3:	By combining a generated suffix with a prefix from the Handle system i.e., &lt;prefix>/&lt;suffix> an unambiguous, persistent (long-lasting) resolvable reference to the digital specimen’s information can be created.
+Note 3:	By combining a generated suffix with a prefix from the Handle system i.e., &lt;prefix>/&lt;suffix> an unambiguous, persistent (long-lasting) resolvable reference to the digital specimen’s information can be created.
 
-        Note 4:	Beyond the recommendation above, the topic of persistent identification of specimen data is outside the scope of the present document.
+Note 4:	Beyond the recommendation above, the topic of persistent identification of specimen data is outside the scope of the present document.
 
 ## 3.5 MIDS levels of minimum information
 
@@ -322,7 +322,7 @@ As outlined in Table 1, MIDS specifies three levels of ‘minimum information’
   </tr>
   <tfoot>
    <tr>
-    <th style="font-weight:400" colspan="3" >
+    <th style="font-weight:400;text-align:left" colspan="3" >
      Note:	Level 0 is equivalent to creating a simple catalogue record containing a physical specimen identifier, such as a barcode number. Level 0 often precedes fuller digitization steps that yield more detailed information. Hence, level 0 is termed a pre-level. Nevertheless, level 0 data is useful minimum information for advertising or knowing about the existence of specimens.
     </th>
    </tr>
