@@ -41,7 +41,7 @@ Become involved and contribute by:
 | Falko Glöckler | Museum für Naturkunde Berlin (MfN) | falko.gloeckler AT mfn.berlin |
 | Quentin Groom | Meise Botanic Garden | @qgroom |
 | Anton Güntsch | Botanic Garden and Botanical Museum Berlin | a.guentsch AT bgbm.org |
-| Josh Humphries | Natural History Museum, London | j.humphries AT nhm.ac.uk |
+| Josh Humphries | Natural History Museum, London | @jrdh |
 | Chris Hunter | GigaDB, BGI Group | chris AT gigasciencejournal.com> |
 | Gunnhild Marthinsen | University of Oslo Natural History Museum | g.m.marthinsen AT nhm.uio.no |
 | Deborah Paul | Florida State University / iDigBio | @debpaul |
