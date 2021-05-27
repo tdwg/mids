@@ -5,7 +5,7 @@ Title: Minimum Information about a Digital Specimen (MIDS)
 </p>
 </div>
 
-**Status, 03-Nov-2020**
+**Status, 24-May-2021**
 
 The MIDS specification is presently under development.
 

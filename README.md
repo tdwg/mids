@@ -2,13 +2,13 @@
 
 This is the repository for the MIDS Task Group, dealing with Minimum Information about a Digital Specimen.
 
-This README last updated: 03 November 2020.
+This README last updated: 24 May 2021.
 
 ## About the group
 
 The [MIDS Task Group](https://www.tdwg.org/community/cd/mids/) is a task group to develop a standard for Minimum Information about a Digital Specimen (MIDS). The TG is chartered by its parent [Collection Descriptions Interest Group](https://www.tdwg.org/community/cd/). For full details of the TG and its scope, [read the charter](https://www.tdwg.org/community/cd/mids/).
 
-The day-to-day operations of the Task Group is documented in this repository. You can also track and participate in the work of the group by watching this repository and monitoring the group's [issues tracker](https://github.com/tdwg/mids/issues).
+The day-to-day operations of the Task Group is documented in this repository. You can also track and participate in the work of the group by watching this repository and monitoring the group's [issues tracker](https://github.com/tdwg/mids/issues). The TG meets monthly by Zoom.
 
 The new MIDS standard will be complementary to the Collection Descriptions standard that is also under the responsibility of the [Collection Descriptions Interest Group](https://www.tdwg.org/community/cd/).
 
@@ -18,6 +18,8 @@ This Task Group welcomes anyone who has a practical interest in minimum informat
 Become involved and contribute by:
 
 - Contacting the Conveners and/or signing up to the [task group mailing list](http://lists.tdwg.org/mailman/listinfo/tdwg-mids).
+  
+- Participating in the monthly meetings (first Thursday of the month, UTC 13:30 - 15:00).
 
 - Watching this github repository. Submitting or commenting on an issue.
 
@@ -36,21 +38,30 @@ Become involved and contribute by:
 
 | Name | Affiliation | github name / Email |  
 | --- | --- | --- |  
-| Wouter Addink | Naturalis Biodiversity Center | @wouteraddink |  
-| Mathias Dillen | Meise Botanic Garden | @matdillen |  
+| Wouter Addink | Naturalis Biodiversity Center | @wouteraddink |
+| Christian Bölling | Museum für Naturkunde Berlin (MfN) | @cboelling |  
+| Mathias Dillen | Meise Botanic Garden | @matdillen |
+| Gabriele Dröge | Botanic Garden and Botanical Museum Berlin | @gdadade |
+| Dag Endresen | University of Oslo, Natural History Museum | @dagendresen |  
 | Falko Glöckler | Museum für Naturkunde Berlin (MfN) | falko.gloeckler AT mfn.berlin |
 | Quentin Groom | Meise Botanic Garden | @qgroom |
 | Anton Güntsch | Botanic Garden and Botanical Museum Berlin | a.guentsch AT bgbm.org |
 | Josh Humphries | Natural History Museum, London | @jrdh |
-| Chris Hunter | GigaDB, BGI Group | chris AT gigasciencejournal.com> |
+| Pieter Huybrechts | Meise Botanic Garden | @PietrH |
+| Chris Hunter | GigaDB, BGI Group | @only1chunts |
 | Gunnhild Marthinsen | University of Oslo Natural History Museum | g.m.marthinsen AT nhm.uio.no |
-| Deborah Paul | Florida State University / iDigBio | @debpaul |
+| Deborah Paul | University of Illinois Urbana-Champaign / Species File Group | @debpaul |
+| Richard Pyle | Bernice Pauahi Bishop Museum | deepreef AT bishopmuseum.org |
 | Mareike Petersen | Museum für Naturkunde Berlin (MfN) | mareike.petersen AT mfn.berlin |
 | Richard Rabeler | University of Michigan Herbarium | rabeler AT umich.edu |
 | Eirik Rindal | University of Oslo Natural History Museum | eirik.rindal AT nhm.uio.no |
 | Hannu Saarenmaa | Bioshare Digitization | hannu AT bioshare.com |
 | Lutz Suhrbier | Botanic Garden and Botanical Museum Berlin | l.suhrbier AT bgbm.org |
+| Maarten Trekels | Meise Botanic Garden | @mtrekels |
+| Dagmar Triebel | The Bavarian Natural History Collections (SNSB) | triebel AT snsb.de  |
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
+| Claus Weiland  | Senckenberg Society for Nature Research  | @cp-weiland |
+| Karin Wiltschke | Natural History Museum Vienna | @Karin-Wiltschke |
 
 ## Repo structure
 
@@ -103,6 +114,8 @@ A MIDS Element definition can have one of five statuses, as listed in the follow
 | status: agreed | The definition of the element at the level it appears at has been agreed by the task group. |
 | status: accepted in specification | The agreed element definition has been written into the draft specification.  |
 | status: has issues | The element definition has issues associated with it. |
+| status: deprecated | The element definition should no longer be used and will eventually be removed from MIDS. |
+| status: removed | The element definition has been removed from MIDS. |
 
 ### Allowed state transitions
 The normal flow of state transitions for MIDS Element issues is the following:
@@ -112,15 +125,15 @@ The normal flow of state transitions for MIDS Element issues is the following:
 From either of the *agreed* or *accepted into specification* states, the status of the MIDS Element definition can change to the *has issues* state and from there it can re-enter the *under discussion* state when the matter is picked up again for discussion within the TG.
 
 ## TG relation to CETAF Digitization WG
-The [CETAF Digitisation Working Group](https://cetafdigitization.biowikifarm.net/cdig/) collaborates on digitization issues and collectively works together to share experiences to increase capacity and capability to digitize natural science collections. In this sense, it works with the MIDS materials produced by the present task group to discuss, implement, evaluate and provide input/feedback on the development of MIDS specifications to the present task group.
+The [CETAF Digitisation Working Group (DWG)](https://cetafdigitization.biowikifarm.net/cdig/) collaborates on digitization issues and collectively works together to share practical experiences to increase capacity and capability to digitize natural science collections. In this sense, DWG works with the MIDS materials produced by the present task group to discuss, implement, evaluate and provide input/feedback on the development of MIDS specifications to the present task group.
 
 ## Resources
 
 ### Current draft of the specification
-[MIDS-definition-v0.12-03Nov2020.md](https://github.com/tdwg/mids/blob/working-draft/current-draft/MIDS-definition-v0.12-03Nov2020.md)
+[MIDS-definition-v0.14-29Mar2021.md](https://github.com/tdwg/mids/blob/working-draft/current-draft/MIDS-definition-v0.14-29Mar2021.md)
 
 Cite as:
-*Hardisty, A., Addink, W., Dillen, M., Groom, Q., Haston, E., et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.12, 03 November 2020*.
+*Hardisty, A., Addink, W., Dillen, M., Groom, Q., Haston, E., et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.14, 29 Mar 2021*.
 
 ### Other resources
 Borsch, T., Stevens, A.-D., Häffner, E., Güntsch, A., Berendsohn, W.G., et al. (2020): A complete digitization of German herbaria is possible, sensible and should be started now. Research Ideas and Outcomes 6: e50675. https://doi.org/10.3897/rio.6.e50675.
