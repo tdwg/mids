@@ -23,7 +23,7 @@ This version: _V0.1_
 
 Abstract: Minimum Information about a Digital Specimen (MIDS) is a specification defining the information elements expected to be present when publishing digitised specimen information at various levels of digitisation. Digital Specimens are online digital representations of their physical counterparts in natural science collections. The definition of digitisation used here is the process of making physical objects digitally available. Levels of digitisation represent a simple categorisation of the type and depth of digitisation achieved by different approaches.
 
-Contributors: Elspeth Haston, Alex R Hardisty, Caitlin Chapman, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Anton Güntsch, Deborah Paul, Mareike Petersen, Heimo Rainer, Hannu Saarenmaa
+Contributors: Elspeth Haston, Alex R Hardisty, Caitlin Chapman, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Anton Güntsch, Deborah Paul, Mareike Petersen, Heimo Rainer, Hannu Saarenmaa [to be completed and confirmed]
 
 Creator: _&lt;to be completed>_
 
@@ -89,14 +89,14 @@ Table of contents
 <!--  Main text begins. -->
 # 1 Introduction
 
-Minimum Information about a Digital Specimen (MIDS) specifies the information elements expected to be present when providing access to specimens within a digital framework. Digital Specimens are online digital representations of their physical counterparts in natural science collections. The definition of digitisation used here is the process of making physical objects digitally available in terms of data and/or images. Several 'levels of digitisation' (0-3) represent a simple categorisation of the type and depth of digitisation achieved by different approaches. This document defines and describes MIDS Level 1.
+Minimum Information about a Digital Specimen (MIDS) specifies the information elements expected to be present when providing access to specimens within a digital framework. Digital Specimens are online digital representations of their physical counterparts in natural science collections. The definition of digitisation used here is the process of making physical objects digitally available in terms of data and/or images. Several 'levels of digitisation' (0-3) represent a simple categorisation of the type and depth of digitisation achieved by different approaches. This document currently defines and describes MIDS Levels 0 and 1. MIDS Levels 2 and 3 will be included as they are finalised and agreed.
 
 MIDS has multiple aims:
 
-1. To improve the quality of published data by offering clarity to stewards of collections about the minimum quantity and quality of information they should be publishing to make digital specimen information useful for multiple purposes of teaching and learning, research, etc.;
-2. To assist the global effort to digitise natural science collections, estimated to be 3 billion specimens worldwide by providing a structured framework that clarifies the outcomes of digitisation and the level of digitisation achieved, and assists prioritisation of the remaining work;
+1. To assist the global effort to digitise natural science collections, estimated to be between 1.2 and 2.1 billion specimens worldwide by providing a structured framework that clarifies the outcomes of digitisation and the level of digitisation achieved, and assists prioritisation of the remaining work;
+2. To improve the quality of published data by offering clarity to collection managers about the minimum quantity and quality of information they should be publishing to make digital specimen information useful for multiple purposes of research, teaching and learning, etc.;
 3. To support and contribute towards assessments of fitness for purpose of data (suitability) for specific types of data processing pipelines; and,
-4. To assist researchers to know what information to include in their journal articles about specimens they have used in their research.
+4. To assist researchers to know what information to include in their publications about specimens they have used in their research.
 
 MIDS defines what information about a specimen should be available but it does not attach specific value to that information because attaching value depends both upon the information itself and the purpose to which that is put.
 
