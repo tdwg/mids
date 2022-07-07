@@ -199,9 +199,17 @@ Specific practices of digitisation and data publication vary widely among instit
 
 ## 3.1 Authoritative data and variations in digitisation
 
-MIDS must focus on the primary, curated scientific information denoted as being authoritative in relation to the specimen. This generally includes the ‘what, when, where, and who’ of the specimen i.e., What is it? When was it collected? Where was it collected? And who by? Apart from management information such as accession numbers, barcodes and catalogue numbers, ‘what, when, where, who’ is the minimum information usually curated in natural science collections. It is also normally a principal product of digitisation processes, alongside capturing photographic images of specimens. Thus, establishing this quartet of ‘what, when, where, and who’ as the standard to be achieved as the regular level of information to be expected, is completely rational. Nevertheless, digitisation processes vary from one specimen category to another and between institutions. Different levels of information – some less comprehensive, some more so – become available at different points in digitisation processes. Thus, MIDS offers several levels of minimum information to be expected or achieved as the output of various stages of what is quite a variable process in the way it is conducted from one institution or collection to another. The focus of MIDS-1 is primarily on information relating to 'What is the specimen?' and 'Where is it?'.  
+MIDS must focus on the primary, curated scientific information denoted as being authoritative in relation to the specimen. This generally includes the ‘what, when, where, and who’ of the specimen i.e., What is it? When was it collected? Where was it collected? And who by? Apart from management information such as accession numbers, barcodes and catalogue numbers, ‘what, when, where, who’ is the minimum information usually curated in natural science collections. It is also normally a principal product of digitisation processes, alongside capturing photographic images of specimens. Thus, establishing this quartet of ‘what, when, where, and who’ as the standard to be achieved as the regular level of information to be expected, is completely rational. Nevertheless, digitisation processes vary from one specimen category to another and between institutions. Different levels of information – some less comprehensive, some more so – become available at different points in digitisation processes. Thus, MIDS offers several levels of minimum information to be expected or achieved as the output of various stages of what is quite a variable process in the way it is conducted from one institution or collection to another.  
 
-## 3.2 Prior to digitisation
+## 3.2 Other data present or known about a specimen
+
+In contrast to the authoritative data about a specimen, a wide variety of secondary or supplementary data may also be associated with a specimen. This can include references in literature, the results of various kinds of analysis such as (bio)chemical analysis, DNA sequencing or radiocarbon dating, links to audio and video recordings, habitat information, etc. Such data can be held with the specimen or its catalogue record, or they can be held in other institutes and databases beyond the institution holding the physical specimen. They are data that can become associated with a specimen.
+
+Supplementary data can either be directly related to the physical specimen, as in the case of a database record of a DNA sequence taken from a tissue sample cut from the specimen; or such data can be related only indirectly. An audio recording of the birdsong of a species that the specimen represents is an example of the latter i.e., the recording is not of that specific individual but of another in the same taxon. Indirect relations are characterised as conceptual relations rather than direct or actual relations.
+
+MIDS optionally allows for the minimum information about a specimen to be extended by making provision to capture and publish related data.
+
+## 3.3 Prior to digitisation
 
 In different cases, and to support processes in collection-holding institutions including accession processes and ‘digital by default’ processes, the need to create a digital record of a specimen can arise at a very early stage in the life cycle of an acquired specimen, even before digitisation processes have been initiated.
 
@@ -211,7 +219,7 @@ When needed at such moments, a bare catalogue record may be created to associate
 
 > Note 2:	MIDS supports early stage digital bare catalogue record creation by providing a pre-level of minimum information about a digital specimen, level zero (0) that is precursive to later steps.
 
-## 3.3 Assigning persistent identifiers to digitised specimen data
+## 3.4 Assigning persistent identifiers to digitised specimen data
 
 As part of the minimum information required to make digital specimen data publicly available, a persistent identifier (PID) should be assigned to a specimen and its digital data as early as possible in the digitisation process; even prior to digitisation commencing (see 3.3 above). If a PID is available for the digital specimen, this should be published alongside the MIDS information.
 
@@ -221,7 +229,7 @@ As part of the minimum information required to make digital specimen data public
 
 > Note 5:	Beyond the recommendation above, the topic of persistent identification of specimen data is outside the scope of the present document.
 
-## 3.4 MIDS-1 Level of minimum information
+## 3.5 MIDS-1 Level of minimum information
 
 As outlined in Table 1, MIDS specifies three levels of ‘minimum information’, together with a pre-level, level zero (0). Excepting level 0, each MIDS level of minimum information is a superset of the preceding level. This specification covers MIDS Level 1, and includes the pre-level 0.
 
@@ -277,11 +285,11 @@ As outlined in Table 1, MIDS specifies three levels of ‘minimum information’
   <tfoot>
 </table>
 
-**<span style="text-decoration:underline;">MIDS level 1</span>** is a basic level of information about a specimen. The creation of a basic digital record with a globally unique identifier enables all other information (including images and/or other media types) to be associated unambiguously with a single physical specimen. The elements of name and geographical region are often included to create a virtual representation of the physical collections, enabling similar search and browsing capabilities online as researchers and curators would have at the cabinets of physical specimens.
+**<span style="text-decoration:underline;">MIDS level 1</span>** is a basic level of information about a specimen. The creation of a basic digital record with an identifier enables all other information (including images and/or other media types) to be associated with a single physical specimen. Two elements to define the scope of a physical specimen and to provide some information about the kind of object, as well as the institution in which the specimen is held included to create a virtual representation of the physical collections, enabling similar search and browsing capabilities online as researchers and curators would have at the cabinets of physical specimens. Two metadata elements are included to provide information about when the record was last updated as well as how the user is permitted to use the information.
 
 **<span style="text-decoration:underline;">MIDS level 0</span>** (usually being established prior to any formal digitization and hence considered a pre-level) is a bare level of information that exists to make an association between a physical specimen with its identifier (barcode, for example) and an entry in a catalogue or database. One early action in a digitization process is the creation of a database record that acknowledges or coincides with the existence or accession of a physical specimen into a collection, but not necessarily with any other information digitized at that stage. Note, however that image(s) can be generated and referenced at this early stage.
 
-## 3.5 Information elements expected and expansion beyond the minimum
+## 3.6 Information elements expected and expansion beyond the minimum
 
 At each level, MIDS defines the information elements that must be present. This is specified in section 4 below
 
@@ -289,7 +297,7 @@ In addition to the information elements expected to be present as a minimum, MID
 
 > Note 6:	It is not precluded and is encouraged that institutions publish information beyond the minimum. However, information does not qualify as meeting a specific MIDS level unless all the information elements expected at that level are available with actual values.
 
-# 4 Information content and element mappings for MIDS Level 1 (normative)
+# 4 Information content and element mappings for each MIDS Level (normative)
 
 Sections 4.1 & 4.2 summarise in tables the information elements expected to be present at MIDS levels 1 and 0 respectively. Full definitions of each information element, their mappings to other standards, constraints and examples are specified in tables in section 4.5.
 
@@ -307,7 +315,7 @@ The information elements expected to be present in digital specimen data publish
    </th>
    <th>Definition
    </th>
-   <th>Requirement
+   <th>Recommendation
    </th>
   </tr>
 
@@ -321,52 +329,42 @@ The information elements expected to be present in digital specimen data publish
   </tr>
 
   <tr><td>2</td>
-   <td>MIDSLevel
+   <td>PhysicalSpecimenId<br>
    </td>
-   <td>A categorisation of the type and depth of digitization achieved: Basic
+   <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
    </td>
-   <td>Integer, value = 1.
+   <td>To use a globally unique persistent identifier, preferably resolvable, eg Stable Identifiers or DOI.
    </td>
   </tr>
 
   <tr><td>3</td>
-   <td>PhysicalSpecimenId<br>
+   <td>Organisation<br>
+  </td>
+   <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
    </td>
-   <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item, for example: specimen identifier, barcode, catalogue number, etc.
-   </td>
-   <td>Cardinality 1..n.
+   <td>To include a human readable term and a globally unique persistent identifier from GrSciColl, GRID, ROR, etc.
    </td>
   </tr>
 
   <tr><td>4</td>
-   <td>Institution<br>[Code, Referent]
-  </td>
-   <td>Identifier(s) of the institution. Has two parts: i) Code: The name (or acronym) in use by the institution having custody of the object(s) or information referred to; and ii) Referent: An identifier of the organisation signified by Code.
+   <td>SpecimenType
    </td>
-   <td>Code from <a href="https://www.gbif.org/grscicoll">GBIF Registry</a>.<br>Referent from 
-<a href="https://ror.org/">ROR</a> or <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page"> Wikidata</a>; else ‘unknown’.
+   <td>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
+   </td>
+   <td>
    </td>
   </tr>
-
+  
   <tr><td>5</td>
-   <td>MaterialSample
+   <td>ObjectType
    </td>
-   <td>High-level term for the classification of curated objects.
+   <td>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
    </td>
    <td>
    </td>
   </tr>
 
-  <tr><td>7</td>
-   <td>PreparationType
-   </td>
-   <td>General terms for the classification of curated objects according to the way they have been prepared. In combination with MaterialSample - hierarchical; a more specific classification than described by MaterialSample.
-   </td>
-   <td>Preparation Type should be set in conjunction with MaterialSample, as each MaterialSample has specific Preparation Types.
-   </td>
-  </tr>
-
-  <tr><td>8</td>
+  <tr><td>6</td>
    <td>Name<br>
    </td>
    <td>A name given to the object. Equivalent to the Dublin Core term dc:title. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, it’s scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
@@ -380,13 +378,12 @@ The information elements expected to be present in digital specimen data publish
    </td>
    <td>The licence under which the information is published. 
    </td>
-   <td>Examples:<br><em>CC-0</em> 
+   <td> Use Creative Commons license framework.
    </td>
   </tr>
 
 </table>
 
-An image and/or other multimedia may be present (see 5 below).
 
 ## 4.2 Information elements expected at MIDS level 0
 
