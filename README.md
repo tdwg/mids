@@ -31,8 +31,8 @@ Become involved and contribute by:
 
 | Name | Affiliation | github name / Email |
 | --- | --- | --- |
-| Alex Hardisty | Cardiff University | @hardistyar / hardistyar AT cardiff.ac.uk|  
-| Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk |  
+| Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk|  
+| Cat Chapman | Florida Museum of Natural History |  / cchapman AT floridamuseum |  
 
 ### Core Members
 
