@@ -19,7 +19,7 @@ Date version issued: _2022-05-28_
 
 Date created: 2021-07-29
 
-This version: _V0.1_
+This version: _V0.16_
 
 Abstract: Minimum Information about a Digital Specimen (MIDS) is a specification defining the information elements expected to be present when publishing digitised specimen information at various levels of digitisation. Digital Specimens are online digital representations of their physical counterparts in natural science collections. The definition of digitisation used here is the process of making physical objects digitally available. Levels of digitisation represent a simple categorisation of the type and depth of digitisation achieved by different approaches.
 
