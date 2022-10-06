@@ -5,7 +5,7 @@ Version history
 
 | Version | Date | Author(s) | Changes |
 | --- | --- | --- | --- |
-| v0.1 | 28-May-2022 | E Haston, A Hardisty, C Chapman | MIDS-1 component of xxx 29-Jul-2021 |
+| v0.16 | 28-May-2022 | E Haston, A Hardisty, C Chapman | MIDS-1 component of v0.15 (29-Jul-2021) with updates |
 |  |  |  |  |
 
 <!--  Title page. -->
