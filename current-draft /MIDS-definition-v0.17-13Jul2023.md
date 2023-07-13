@@ -5,7 +5,7 @@ Version history
 
 | Version | Date | Author(s) | Changes |
 | --- | --- | --- | --- |
-| v0.17 | 13-Jul-2023 | Elspeth Haston, Cat Chapman, Alex R Hardisty, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Deborah Paul, Mareike Petersen, Hannu Saarenmaa, Anton Güntsch, Ben Norton, Anke Penzlin, Claus Weiland, Eirik Rindal, Dagmar Triebel | updated from v0.16 (22-Jun-2022) |
+| v0.17 | 13-Jul-2023 | Elspeth Haston, Cat Chapman, Alex R Hardisty, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Deborah Paul, Mareike Petersen, Hannu Saarenmaa, Anton Güntsch, Ben Norton, Anke Penzlin, Claus Weiland, Eirik Rindal, Dagmar Triebel, Rachel Walcott | updated from v0.16 (22-Jun-2022) |
 |  |  |  |  |
 
 <!--  Title page. -->
@@ -172,15 +172,14 @@ These stages are often implemented as workflows, which can vary in their details
 
 ## 2.3 Harmonising the approach (informative)
 
-Multiple digitisation initiatives around the world capture digital data about specimens. An important concern in digitisation is how much detail to digitise from each physical specimen. While a photographic image can often be made quickly, transcribing and interpreting all the details from labels, enriching the data with external information, and making specific measurements of the specimen take more time and resources. Often, digitisation projects have been conceived to support specific scientific needs leading to variable outcomes in terms of what data is captured and how they are presented. The idea of ‘Minimum Information about a Digital Specimen’ (MIDS) has been conceived to structure this complexity.
+Multiple digitisation initiatives around the world capture digital data about specimens. An important concern in digitisation is how much detail to digitise from each physical specimen. While a photographic image can often be made quickly, transcribing and interpreting all the details from labels, enriching the data with external information, and making specific measurements of the specimen take more time and resources. Often, digitisation projects have been conceived to support specific scientific needs leading to variable outcomes in terms of what data are captured and how they are presented. The idea of ‘Minimum Information about a Digital Specimen’ (MIDS) has been conceived to structure this complexity.
 
 Mobilising, unifying and delivering natural science (bio- and geo-diversity) information at the scale, form and precision required by the scientific communities can be accomplished in part by harmonising policy into guidelines about practical levels of digitisation to apply and also in part by harmonising the information to be expected from each level of digitisation. The present specification addresses the latter.
-
 Harmonisation of information provides clarity about the minimum information that collection-holding institutions should be publishing in the future to make collections and digital specimens useful for multiple purposes of research, teaching and learning, etc. Similarly, by harmonising a framework that clarifies what is meant by different levels of digitisation it becomes easier to consistently measure the extent of digitisation achieved over time (e.g., via a collection digitisation dashboard) and to set priorities for the remaining work.
 
-The notions of extended specimens [Webster 2017] and Next Generation Collections [Schindel 2018], together with work of initiatives such as Integrated Digitized Biocollections (iDigBio), Distributed System of Scientific Collections (DiSSCo), National Research Collections Australia (NRCA) Digital, SpeciesLink, National Science & Technology Infrastructure (NSII), the Biodiversity Collections Network (BCoN) and the One World Collection further drive the need for data harmonisation. Collections-based science is global in nature and increasingly digital. In this context, barriers to interoperability and re-use must be lowered and eventually removed and global solutions are highly desirable.
+The notions of extended specimens [Webster 2017] and Next Generation Collections [Schindel 2018], together with work of initiatives such as Integrated digitised Biocollections (iDigBio), Distributed System of Scientific Collections (DiSSCo), National Research Collections Australia (NRCA) Digital, SpeciesLink, National Science & Technology Infrastructure (NSII), the Biodiversity Collections Network (BCoN) and the One World Collection project further drive the need for data harmonisation. Collections-based science is global in nature and increasingly digital. In this context, barriers to interoperability and re-use must be lowered and eventually removed and global solutions are highly desirable.
 
-The Minimum Information about a Digital Specimen (MIDS) specification, and its companion specification for information about collections – the Collection Description (CD) standard – aims to address these problems. Adoption and use of MIDS (and CD) contributes to making natural sciences specimen data more compliant with the guiding principles of FAIR (‘Findable, Accessible, Interoperable, Reusable’) [Wilkinson 2016, Mons 2017].
+The Minimum Information about a Digital Specimen (MIDS) specification, and its companion specification for information about collections – the Collection Description (CD) standard – aims to address these problems. Adoption and use of MIDS (and CD) contributes to making natural sciences specimen data more compliant with the guiding principles of FAIR (‘Findable, Accessible, Interoperable, Reusable’) [Wilkinson 2016, Mons 2017] and is a step towards enabling repeatability in research studies with FAIR specimen-based digital objects [Harjes 2020].
 
 ## 2.4 Accommodating variability in details of the process (informative)
 
@@ -208,13 +207,14 @@ Supplementary data can either be directly related to the physical specimen, as i
 
 MIDS optionally allows for the minimum information about a specimen to be extended by making provision to capture and publish related data.
 
+
 ## 3.3 Prior to digitisation
 
 In different cases, and to support processes in collection-holding institutions including accession processes and ‘digital by default’ processes, the need to create a digital record of a specimen can arise at a very early stage in the life cycle of an acquired specimen, even before digitisation processes have been initiated.
 
-In some instances, a photographic image can also be made or be already available at such a moment. Or data related to other actions, such as DNA or chemical analysis and publication can become available. Actions like taking a photograph or carrying out an analysis can take place before accession to a collection and digitisation. They can occur even without a physical specimen ending up as preserved material in a collection. Such actions represent the very beginning of a digitisation process and can be precursive to further digitisation steps later. 
+In some instances, a photographic image can also be made or be already available at such a moment. Or data related to other actions, such as DNA or chemical analysis and publication can become available. Actions like taking a photograph or carrying out an analysis can take place before accession to a collection and digitisation. They can occur even without a physical specimen ending up as preserved material in a collection. Such actions represent the very beginning of a digitisation process and can be precursive to further digitisation steps later.
 
-When needed at such moments, a bare catalogue record may be created to associate a specimen with a catalogue entry or database record. This should normally be via the specimen’s identifier, associating a bare minimum of digital data (a catalogue number and, ideally a persistent identifier – see 3.3 below) with a physical specimen.
+When needed at such moments, a bare catalogue record may be created to associate a specimen with a catalogue entry or database record. This should normally be via the specimen’s identifier, associating a bare minimum of digital data (a catalogue number and, ideally a persistent identifier – see 3.4 below) with a physical specimen.
 
 > Note 2:	MIDS supports early stage digital bare catalogue record creation by providing a pre-level of minimum information about a digital specimen, level zero (0) that is precursive to later steps.
 
@@ -230,7 +230,7 @@ As part of the minimum information required to make digital specimen data public
 
 ## 3.5 MIDS-1 Level of minimum information
 
-As outlined in Table 1, MIDS specifies three levels of ‘minimum information’, together with a pre-level, level zero (0). Excepting level 0, each MIDS level of minimum information is a superset of the preceding level. This specification covers MIDS Level 1, and includes the pre-level 0.
+As outlined in Table 1, MIDS specifies three levels of ‘minimum information’, together with a pre-level, level zero (0). Except for level 0, each MIDS level of minimum information is a superset of the preceding level.
 
 **Table 1: MIDS levels of minimum information**
 
@@ -278,15 +278,15 @@ As outlined in Table 1, MIDS specifies three levels of ‘minimum information’
   <tfoot>
    <tr>
     <th style="font-weight:400;text-align:left" colspan="3" >
-     Note:	Level 0 is equivalent to creating a simple catalogue record containing a physical specimen identifier, such as a barcode number. Level 0 often precedes fuller digitization steps that yield more detailed information. Hence, level 0 is termed a pre-level. Nevertheless, level 0 data is useful minimum information for advertising or knowing about the existence of specimens.
+     Note:	Level 0 is equivalent to creating a simple catalogue record containing a physical specimen identifier, such as a barcode number. Level 0 often precedes fuller digitisation steps that yield more detailed information. Hence, level 0 is termed a pre-level. Nevertheless, level 0 data is useful minimum information for advertising or knowing about the existence of specimens.
     </th>
    </tr>
   <tfoot>
 </table>
 
-**<span style="text-decoration:underline;">MIDS level 1</span>** is a basic level of information about a specimen. The creation of a basic digital record with an identifier enables all other information (including images and/or other media types) to be associated with a single physical specimen. Two elements to define the scope of a physical specimen and to provide some information about the kind of object, as well as the institution in which the specimen is held included to create a virtual representation of the physical collections, enabling similar search and browsing capabilities online as researchers and curators would have at the cabinets of physical specimens. Two metadata elements are included to provide information about when the record was last updated as well as how the user is permitted to use the information.
+**<span style="text-decoration:underline;">MIDS level 1</span>** is a basic level of information about a specimen. The creation of a basic digital record with an identifier enables all other information (including images and/or other media types) to be associated with a single physical specimen. Two elements to define the scope of a physical specimen and to provide some information about the kind of object, as well as the institution in which the specimen is held, are included to create a virtual representation of the physical collections, enabling similar search and browsing capabilities online as researchers and curators would have at the cabinets of physical specimens. Two metadata elements are included to provide information about when the record was last updated as well as how the user is permitted to use the information.
 
-**<span style="text-decoration:underline;">MIDS level 0</span>** (usually being established prior to any formal digitization and hence considered a pre-level) is a bare level of information that exists to make an association between a physical specimen with its identifier (barcode, for example) and an entry in a catalogue or database. One early action in a digitization process is the creation of a database record that acknowledges or coincides with the existence or accession of a physical specimen into a collection, but not necessarily with any other information digitized at that stage. Note, however that image(s) can be generated and referenced at this early stage.
+**<span style="text-decoration:underline;">MIDS level 0</span>** (usually being established prior to any formal digitization and hence considered a pre-level) is a bare level of information that exists to make an association between a physical specimen with its identifier (barcode, for example) and an entry in a catalogue or database. One early action in a digitisation process is the creation of a database record that acknowledges or coincides with the existence or accession of a physical specimen into a collection, but not necessarily with any other information digitised at that stage. Note, however that image(s) can be generated and referenced at this early stage.
 
 ## 3.6 Information elements expected and expansion beyond the minimum
 
