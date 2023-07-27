@@ -316,7 +316,7 @@ The information elements expected to be present in digital specimen data publish
    </th>
    <th>Purpose
    </th>
-   <th>Required (Biological/Geological/Paelaeontological)
+   <th>Required (Bio/Geo/Paelaeo)
    </th>
   </tr>
 
@@ -361,7 +361,7 @@ The information elements expected to be present in digital specimen data publish
    </th>
    <th>Purpose
    </th>
-   <th>Required (Biological/Geological/Paelaeontological)
+   <th>Required (Bio/Geo/Paelaeo)
    </th>
   </tr>
 
@@ -472,7 +472,7 @@ The information elements expected to be present in digital specimen data publish
    </th>
    <th>Purpose
    </th>
-   <th>Required (Biological/Geological/Paelaeontological)
+   <th>Required (Bio/Geo/Paelaeo)
    </th>
   </tr>
 
