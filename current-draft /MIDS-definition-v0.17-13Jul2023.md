@@ -321,7 +321,7 @@ The information elements expected to be present in digital specimen data publish
   </tr>
 
   <tr><td>3</td>
-   <td> [PhysicalSpecimenId](https://github.com/tdwg/mids/issues/10) <br>
+   <td> ([https://github.com/tdwg/mids/issues/10](https://github.com/tdwg/mids/issues/10)) <br>
    </td>
    <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
    </td>
