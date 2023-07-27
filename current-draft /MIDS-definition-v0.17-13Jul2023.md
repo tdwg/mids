@@ -304,7 +304,7 @@ Section 4.3 specifies additional requirements for handling of unknown or incompl
 
 ## 4.1 Information elements expected at MIDS level 0
 
-The information elements expected to be present in digital specimen data published at MIDS level 0 are listed in Table 3. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-0](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-0).
+The information elements expected to be present in digital specimen data published at MIDS level 0 are listed in Table 1 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-0](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-0).
 
 **Table 1: MIDS Level 0: Expected elements, mappings and recommendations for a bare record**
 
@@ -321,7 +321,7 @@ The information elements expected to be present in digital specimen data publish
   </tr>
 
   <tr><td>3</td>
-   <td> [PhysicalSpecimenID](https://github.com/tdwg/mids/issues/10) <br>
+   <td> PhysicalSpecimenID <br>
    </td>
    <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
    </td>
@@ -342,25 +342,14 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-  <tr><td>1</td>
-  <td>[Modified](https://github.com/tdwg/mids/issues/8)<br>
-   </td>
-   <td>UTC date/time of first creation or subsequent modification, if any
-   </td>
-   <td>To enable users (humans/machines) to determine if there have been any changes to the record since it was last viewed.
-   </td>
-   <td>Yes (all)
-   </td>
-  </tr>
-
 </table>
 
-An image and/or other multimedia may be present (see 5 below).The information elements expected to be present in digital specimen data published at MIDS level 1 are listed in Table 2.
+An image and/or other multimedia may be present.
 
 
+## 4.2 Information elements expected at MIDS level 1
 
-
-## 4.2 Information elements expected at MIDS level 0
+The information elements expected to be present in digital specimen data published at MIDS level 1 are listed in Table 2 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-1](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-1).
 
 **Table 2: MIDS Level 1: Expected elements, mappings and recommendations for a basic record**
 
@@ -370,7 +359,86 @@ An image and/or other multimedia may be present (see 5 below).The information el
    </th>
    <th>Definition
    </th>
-   <th>Recommendation
+   <th>Purpose
+   </th>
+   <th>Required (Biological/Geological/Paelaeontological)
+   </th>
+  </tr>
+
+  <tr><td>3</td>
+   <td> PhysicalSpecimenID <br>
+   </td>
+   <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
+   </td>
+   <td>To allow the curator/researcher to identify the physical specimen the data refer to. To allow citation of the specimen. To enable the attachment of additional information to the specimen record.
+   </td>
+   <td>Yes (all)
+   </td>
+  </tr>
+
+  <tr><td>4</td>
+   <td>Organization<br>
+  </td>
+   <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
+   </td>
+   <td>To allow a user to locate the physical location of the specimen.
+   </td>
+   <td>Yes (all)
+   </td>
+  </tr>
+
+  <tr><th></th>
+   <th>Name
+   </th>
+   <th>A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
+   </th>
+   <th>Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection.
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>SpecimenType
+   </th>
+   <th>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
+   </th>
+   <th>To delimit the specimens to which the MIDS specification refers.
+   </th>
+   <th>Required (Biological/Geological/Paelaeontological)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>MIDS information element
+   </th>
+   <th>Definition
+   </th>
+   <th>Purpose
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>ObjectType
+   </th>
+   <th>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
+   </th>
+   <th>To enable curators to determine equipment/method/cost of imaging the specimen, to enable researchers to determine equipment/method required for viewing/analysing the specimen, to enable curators/researchers to know in which collection/location within the institution the specimen is held.
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>License
+   </th>
+   <th>License under which the specimen data are published.
+   </th>
+   <th>To enable all users to determine how they can use the specimen data.
+   </th>
+   <th>Yes (all)
    </th>
   </tr>
 
@@ -379,65 +447,218 @@ An image and/or other multimedia may be present (see 5 below).The information el
    </td>
    <td>UTC date/time of first creation or subsequent modification, if any
    </td>
-   <td>Use [ISO 8601]. UTC date/time, extended format (for human readability).
+   <td>To enable users (humans/machines) to determine if there have been any changes to the record since it was last viewed.
+   </td>
+   <td>Yes (all)
    </td>
   </tr>
 
-  <tr><td>2</td>
-   <td>PhysicalSpecimenId<br>
-   </td>
-   <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
-   </td>
-   <td>To use a globally unique persistent identifier, preferably resolvable, eg Stable Identifiers or DOI.
-   </td>
+
+</table>
+
+An image and/or other multimedia may be present.
+
+## 4.3 Information elements expected at MIDS level 2
+
+The information elements expected to be present in digital specimen data published at MIDS level 2 are listed in Table 3 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-1](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-1).
+
+**Table 3: MIDS Level 2: Expected elements, mappings and recommendations for a regular record**
+
+<table>
+  <tr><th></th>
+   <th>MIDS information element
+   </th>
+   <th>Definition
+   </th>
+   <th>Purpose
+   </th>
+   <th>Required (Biological/Geological/Paelaeontological)
+   </th>
   </tr>
 
   <tr><td>3</td>
-   <td>Organisation<br>
-  </td>
-   <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
+   <td> PhysicalSpecimenID <br>
    </td>
-   <td>To include a human readable term and a globally unique persistent identifier from GrSciColl, GRID, ROR, etc.
+   <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
+   </td>
+   <td>To allow the curator/researcher to identify the physical specimen the data refer to. To allow citation of the specimen. To enable the attachment of additional information to the specimen record.
+   </td>
+   <td>Yes (all)
    </td>
   </tr>
 
   <tr><td>4</td>
-   <td>SpecimenType
+   <td>Organization<br>
+  </td>
+   <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
    </td>
-   <td>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
+   <td>To allow a user to locate the physical location of the specimen.
    </td>
-   <td>
-   </td>
-  </tr>
-  
-  <tr><td>5</td>
-   <td>ObjectType
-   </td>
-   <td>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
-   </td>
-   <td>
+   <td>Yes (all)
    </td>
   </tr>
 
-  <tr><td>6</td>
-   <td>Name<br>
+  <tr><th></th>
+   <th>Name
+   </th>
+   <th>A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
+   </th>
+   <th>Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection.
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>SpecimenType
+   </th>
+   <th>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
+   </th>
+   <th>To delimit the specimens to which the MIDS specification refers.
+   </th>
+   <th>Required (Biological/Geological/Paelaeontological)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>MIDS information element
+   </th>
+   <th>Definition
+   </th>
+   <th>Purpose
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>ObjectType
+   </th>
+   <th>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
+   </th>
+   <th>To enable curators to determine equipment/method/cost of imaging the specimen, to enable researchers to determine equipment/method required for viewing/analysing the specimen, to enable curators/researchers to know in which collection/location within the institution the specimen is held.
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>License
+   </th>
+   <th>License under which the specimen data are published.
+   </th>
+   <th>To enable all users to determine how they can use the specimen data.
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><td>1</td>
+  <td>Modified<br>
    </td>
-   <td>A name given to the object. Equivalent to the Dublin Core term dc:title. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, it’s scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
+   <td>UTC date/time of first creation or subsequent modification, if any
    </td>
-   <td>Examples:<br><em>Colias croceus</em> (Geoffroy, 1785), Ophthalmosaurus, Australian Baobab, Scottish rock, etc.
+   <td>To enable users (humans/machines) to determine if there have been any changes to the record since it was last viewed.
+   </td>
+   <td>Yes (all)
    </td>
   </tr>
-  
-   <tr><td>8</td>
-   <td>Licence<br>
-   </td>
-   <td>The licence under which the information is published. 
-   </td>
-   <td> Use Creative Commons license framework.
-   </td>
+
+  <tr><th></th>
+   <th>qualitativeLocation
+   </th>
+   <th>A term to describe where the specimen was collected. In combination with quantitativeLocation; should capture textual geographic information.
+   </th>
+   <th>A human readable location. Can also be used to help identify the quantitativeLocation.
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>quantitativeLocation
+   </th>
+   <th>A term to describe where the specimen was collected. A quantitative measure that would include coordinate or shape data, an identifier, or data that can be easily converted into a quantitative measure. In combination with the qualitative term, Locality.
+   </th>
+   <th>To enable a person or machine to identify and/or map the geographical location in which the collection was made.
+   </th>
+   <th>Yes (all)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>GeologicalAge
+   </th>
+   <th>Terms denoting the names of strata and/or their age from which a specimen is derived.
+   </th>
+   <th>To provide geological context to the specimen
+   </th>
+   <th>Yes (Geological)
+   </th>
+  </tr>
+
+
+  <tr><th></th>
+   <th>collectingAgent
+   </th>
+   <th>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a collecting identifier (recordNumber), should be listed first.
+   </th>
+   <th>For many biological collections this information has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location.
+   </th>
+   <th>Yes (Biological)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>dateCollected
+   </th>
+   <th>The date/time at which a gathering event occurred. For specimen gathering, this is the date/time when the event was recorded.
+   </th>
+   <th>
+   </th>
+   <th>Yes (Biological)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>collectingNumber
+   </th>
+   <th>An identifier given to the specimen at the time it was recorded. Often serves as a link between field notes and a specimen record.
+   </th>
+   <th>For many biological collections the collector in combination with collectingNumber has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location.
+   </th>
+   <th>Yes (Biological)
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>Type status
+   </th>
+   <th>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.
+   </th>
+   <th>Purpose
+   </th>
+   <th>
+   </th>
+  </tr>
+
+  <tr><th></th>
+   <th>Media
+   </th>
+   <th>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.
+   </th>
+   <th>Purpose
+   </th>
+   <th>Yes (Biological)
+   </th>
   </tr>
 
 </table>
+
+An image and/or other multimedia may be present.
+
+
+
 
 ## 4.3 Information element definitions
 The following subsections specify the details of the individual MIDS Level 1 information elements.
