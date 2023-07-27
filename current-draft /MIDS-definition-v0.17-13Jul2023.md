@@ -392,7 +392,7 @@ The information elements expected to be present in digital specimen data publish
    </td>
    <td>A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
    </td>
-   <th>Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection.
+   <td>Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection.
    </td>
    <td>Yes (all)
    </td>
