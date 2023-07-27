@@ -302,9 +302,65 @@ Sections 4.1 & 4.2 summarise in tables the information elements expected to be p
 
 Section 4.3 specifies additional requirements for handling of unknown or incomplete data that must be applied in conjunction with the relevant information elements.
 
-## 4.1 Information elements expected at MIDS level 1
+## 4.1 Information elements expected at MIDS level 0
 
-The information elements expected to be present in digital specimen data published at MIDS level 1 are listed in Table 2.
+The information elements expected to be present in digital specimen data published at MIDS level 0 are listed in Table 3. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-0](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-0).
+
+**Table 1: MIDS Level 0: Expected elements, mappings and recommendations for a bare record**
+
+<table>
+  <tr><th></th>
+   <th>MIDS information element
+   </th>
+   <th>Definition
+   </th>
+   <th>Purpose
+   </th>
+   <th>Required (Biological/Geological/Paelaeontological)
+   </th>
+  </tr>
+
+  <tr><td>3</td>
+   <td>[PhysicalSpecimenId](https://github.com/tdwg/mids/issues/10)<br>
+   </td>
+   <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
+   </td>
+   <td>To allow the curator/researcher to identify the physical specimen the data refer to. To allow citation of the specimen. To enable the attachment of additional information to the specimen record.
+   </td>
+   <td>Yes (all)
+   </td>
+  </tr>
+
+  <tr><td>4</td>
+   <td>Organization<br>
+  </td>
+   <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
+   </td>
+   <td>To allow a user to locate the physical location of the specimen.
+   </td>
+   <td>Yes (all)
+   </td>
+  </tr>
+
+  <tr><td>1</td>
+  <td>[Modified](https://github.com/tdwg/mids/issues/8)<br>
+   </td>
+   <td>UTC date/time of first creation or subsequent modification, if any
+   </td>
+   <td>To enable users (humans/machines) to determine if there have been any changes to the record since it was last viewed.
+   </td>
+   <td>Yes (all)
+   </td>
+  </tr>
+
+</table>
+
+An image and/or other multimedia may be present (see 5 below).The information elements expected to be present in digital specimen data published at MIDS level 1 are listed in Table 2.
+
+
+
+
+## 4.2 Information elements expected at MIDS level 0
 
 **Table 2: MIDS Level 1: Expected elements, mappings and recommendations for a basic record**
 
@@ -382,64 +438,6 @@ The information elements expected to be present in digital specimen data publish
   </tr>
 
 </table>
-
-
-## 4.2 Information elements expected at MIDS level 0
-
-The information elements expected to be present in digital specimen data published at MIDS level 0 are listed in Table 3.
-
-**Table 3: MIDS Level 0: Expected elements, mappings and recommendations for a bare record**
-
-<table>
-  <tr><th></th>
-   <th>MIDS information element
-   </th>
-   <th>Definition
-   </th>
-   <th>Requirement
-   </th>
-  </tr>
-
-  <tr><td>1</td>
-  <td>Modified<br>
-   </td>
-   <td>UTC date/time of first creation or subsequent modification, if any
-   </td>
-   <td>Use [ISO 8601]. UTC date/time, extended format (for human readability).
-   </td>
-  </tr>
-
-  <tr><td>2</td>
-   <td>MIDSLevel
-   </td>
-   <td>A categorisation of the type and depth of digitization achieved: Bare
-   </td>
-   <td>Integer, value = 0.
-   </td>
-  </tr>
-
-  <tr><td>3</td>
-   <td>PhysicalSpecimenId<br>
-   </td>
-   <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item, for example: specimen identifier, barcode, catalogue number, etc.
-   </td>
-   <td>Cardinality 1..n.
-   </td>
-  </tr>
-
-  <tr><td>4</td>
-   <td>Institution<br>[Code, Referent]
-  </td>
-   <td>Identifier(s) of the institution. Has two parts: i) Code: The name (or acronym) in use by the institution having custody of the object(s) or information referred to; and ii) Referent: An identifier of the organisation signified by Code.
-   </td>
-   <td>Code from <a href="https://www.gbif.org/grscicoll">GBIF Registry</a>.<br>Referent from 
-<a href="https://ror.org/">ROR</a> or <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page"> Wikidata</a>; else ‘unknown’.
-   </td>
-  </tr>
-
-</table>
-
-An image and/or other multimedia may be present (see 5 below).
 
 ## 4.3 Information element definitions
 The following subsections specify the details of the individual MIDS Level 1 information elements.
