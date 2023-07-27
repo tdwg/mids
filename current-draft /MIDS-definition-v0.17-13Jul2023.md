@@ -193,7 +193,7 @@ MIDS is a 'minimum specification'. This means that at any specific MIDS level a 
 
 Specific practices of digitisation and data publication vary widely among institutions, meaning that different elements of information can become available as the result of specific detailed workflows steps, the order of which can vary from one institution to another. Similarly, the way in which different elements of information are mapped to standard terms also varies. MIDS accommodates this variability and always allows the presence of information elements additional to the expected elements at any MIDS level. These can include elements listed at higher MIDS levels, as well as other elements beyond those listed; for example, institution or collection specific elements. As a general principle, institutions should publish the fullest available data about their collections and individual specimens at the earliest opportunity, expecting that such data is likely to become enriched and annotated over time.
 
-# 3 Principles of the MIDS-1 level of digitisation (normative)
+# 3 Principles of MIDS levels of digitisation (normative)
 
 ## 3.1 Authoritative data and variations in digitisation
 
@@ -228,7 +228,7 @@ As part of the minimum information required to make digital specimen data public
 
 > Note 5:	Beyond the recommendation above, the topic of persistent identification of specimen data is outside the scope of the present document.
 
-## 3.5 MIDS-1 Level of minimum information
+## 3.5 MIDS Levels of minimum information
 
 As outlined in Table 1, MIDS specifies three levels of ‘minimum information’, together with a pre-level, level zero (0). Except for level 0, each MIDS level of minimum information is a superset of the preceding level.
 
@@ -277,14 +277,18 @@ As outlined in Table 1, MIDS specifies three levels of ‘minimum information’
   </tr>
   <tfoot>
    <tr>
-    <th style="font-weight:400;text-align:left" colspan="3" >
+    <td style="font-weight:400;text-align:left" colspan="3" >
      Note:	Level 0 is equivalent to creating a simple catalogue record containing a physical specimen identifier, such as a barcode number. Level 0 often precedes fuller digitisation steps that yield more detailed information. Hence, level 0 is termed a pre-level. Nevertheless, level 0 data is useful minimum information for advertising or knowing about the existence of specimens.
-    </th>
+    </td>
    </tr>
   <tfoot>
 </table>
 
 **<span style="text-decoration:underline;">MIDS level 1</span>** is a basic level of information about a specimen. The creation of a basic digital record with an identifier enables all other information (including images and/or other media types) to be associated with a single physical specimen. Two elements to define the scope of a physical specimen and to provide some information about the kind of object, as well as the institution in which the specimen is held, are included to create a virtual representation of the physical collections, enabling similar search and browsing capabilities online as researchers and curators would have at the cabinets of physical specimens. Two metadata elements are included to provide information about when the record was last updated as well as how the user is permitted to use the information.
+
+**<span style="text-decoration:underline;">MIDS level 2</span>** is the regular level of information expected to be known about a specimen. Regular records include the latitude/longitude data which, along with taxon name, are critical for many research applications. For botanical specimens the inclusion of collector name, number and date are a priority, given their historical use in acting as the identifier for the specimen in literature. These terms are routinely used to identify the specimen in requests to curation staff.
+
+**<span style="text-decoration:underline;">MIDS level 3</span>** is an extended or rich level of information about a specimen. Extended or rich records include other data present or known about the specimen. Such records will need to be updated as additional labels and other information are added to the specimen over time. At level 3 there is no notion of completeness or of a full or complete record because new information is always valuable and can be added to an existing record at any time.
 
 **<span style="text-decoration:underline;">MIDS level 0</span>** (usually being established prior to any formal digitization and hence considered a pre-level) is a bare level of information that exists to make an association between a physical specimen with its identifier (barcode, for example) and an entry in a catalogue or database. One early action in a digitisation process is the creation of a database record that acknowledges or coincides with the existence or accession of a physical specimen into a collection, but not necessarily with any other information digitised at that stage. Note, however that image(s) can be generated and referenced at this early stage.
 
@@ -298,15 +302,15 @@ In addition to the information elements expected to be present as a minimum, MID
 
 # 4 Information content and element mappings for each MIDS Level (normative)
 
-Sections 4.1 & 4.2 summarise in tables the information elements expected to be present at MIDS levels 1 and 0 respectively. Full definitions of each information element, their mappings to other standards, constraints and examples are specified in tables in section 4.5.
+Sections 4.1 - 4.3 summarise in tables the information elements expected to be present at MIDS levels 0, 1 and 2 respectively. Full definitions of each information element, their mappings to other standards, constraints and examples are currently held in the TDWG MIDS Task Group GitHub site (https://github.com/tdwg/mids).
 
-Section 4.3 specifies additional requirements for handling of unknown or incomplete data that must be applied in conjunction with the relevant information elements.
+Section 4.x specifies additional requirements for handling of unknown or incomplete data that must be applied in conjunction with the relevant information elements.
 
 ## 4.1 Information elements expected at MIDS level 0
 
-The information elements expected to be present in digital specimen data published at MIDS level 0 are listed in Table 1 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-0](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-0).
+The information elements expected to be present in digital specimen data published at MIDS level 0 are listed in Table 2 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-0](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-0).
 
-**Table 1: MIDS Level 0: Expected elements, mappings and recommendations for a bare record**
+**Table 2: MIDS Level 0: Expected elements, mappings and recommendations for a bare record**
 
 <table>
   <tr><th></th>
@@ -349,9 +353,9 @@ An image and/or other multimedia may be present.
 
 ## 4.2 Information elements expected at MIDS level 1
 
-The information elements expected to be present in digital specimen data published at MIDS level 1 are listed in Table 2 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-1](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-1).
+The information elements expected to be present in digital specimen data published at MIDS level 1 are listed in Table 3 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-1](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-1).
 
-**Table 2: MIDS Level 1: Expected elements, mappings and recommendations for a basic record**
+**Table 3: MIDS Level 1: Expected elements, mappings and recommendations for a basic record**
 
 <table>
   <tr><th></th>
@@ -449,9 +453,9 @@ An image and/or other multimedia may be present.
 
 ## 4.3 Information elements expected at MIDS level 2
 
-The information elements expected to be present in digital specimen data published at MIDS level 2 are listed in Table 3 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-1](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-1).
+The information elements expected to be present in digital specimen data published at MIDS level 2 are listed in Table 4 below. The terms being developed for the information elements can be found in the TDWG MIDS GitHub site under [MIDS-2](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-2).
 
-**Table 3: MIDS Level 2: Expected elements, mappings and recommendations for a regular record**
+**Table 4: MIDS Level 2: Expected elements, mappings and recommendations for a regular record**
 
 <table>
   <tr><th></th>
@@ -575,7 +579,6 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-
   <tr><td>11</td>
    <td>collectingAgent
    </td>
@@ -635,141 +638,34 @@ The information elements expected to be present in digital specimen data publish
 
 An image and/or other multimedia may be present.
 
+## 4.4 Information elements expected at MIDS level 3
+
+The information elements expected to be present in digital specimen data published at MIDS level 3 are currently in development. The terms being developed for the information elements can be found in the TDWG MIDS Task Group GitHub site under [MIDS-3](https://github.com/tdwg/mids/issues?q=is%3Aissue+is%3Aopen+label%3AMIDS-3).
 
 
+## 4.5 Information element definitions
 
-## 4.3 Information element definitions
-The following subsections specify the details of the individual MIDS Level 1 information elements.
+All definitions of the MIDS information elements and their terms can be found in the TDWG MIDS Task Group GitHub site (https://github.com/tdwg/mids).
 
-*28 May 2022: MIDS elements beyond MIDS level 0 and 1 are not yet discussed and agreed. Additional documents will be added for each as they are agreed.*
+## 4.6 Handling of unknown and incomplete data
 
-### 4.3.1 MIDS element - Modified
-| <!-- --> | <!-- --> |
-| ---- | ---- |
-| **MIDS information element** | Modified |
-| **Definition** | UTC date/time of date/time of first creation or subsequent modification, if any |
-| **DwC term (latest, 2014-11-08)** | [modified](https://dwc.tdwg.org/terms/#dcterms:modified) (*note, is an imported dcterm*) |
-| **ABCD term name(3.0)** | [hasDateModified](http://rs.tdwg.org/abcd/terms/hasDateModified) |
-| **Applicable standard(s)/recommendation(s)** | Use [ISO 8601](https://www.iso.org/standard/70907.html). UTC date/time, extended format (for human readability) |
-| **Element identifier** |  |
-| **Required** | Yes |
-| **Repeatable** | No |
-| **Constraints** |  |
-| **Examples** | 2021-01-20T10:54:18Z |
-| ***Element specification status*** | *agreed; accepted in specification* |
-| ***Notes*** | *...* |
+Best practice dictates that wherever possible data should not be published with empty field values as this is misleading for both human users and machines. There are many reasons why data can be missing, unknown, incomplete or explicitly withheld [Groom 2019] and various tactics have been used in the past to deal with such situations. However, with the increasing use of machines to interpret and act upon data, variable past practices should be deprecated, and new, more consistent practices promoted. In the interest of presenting more meaningful corpora of minimum specimen information in the future, the present specification (4.6.1 - 4.6.3 below) recommends harmonising an approach for presenting minimum information fields where the content of those fields can be unknown or incomplete for a variety of reasons.
 
-### 4.3.2 MIDS element - MIDSLevel
-
-
-### 4.3.3 MIDS element - PhysicalSpecimenId
-| <!-- --> | <!-- --> |
-| ---- | ---- |
-| **MIDS information element** | PhysicalSpecimenId |
-| **Definition** | A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item, for example: specimen identifier, barcode, catalogue number, etc. |
-| **DwC term (latest, 2014-11-08)** | [catalogNumber](http://rs.tdwg.org/dwc/terms/catalogNumber) (*note, term used by GBIF is catalogNumber*) |
-| **ABCD term name(3.0)** | [physicalObjectID](http://rs.tdwg.org/abcd/terms/physicalObjectID) |
-| **Applicable standard(s)/recommendation(s)** | Cardinality 1..n |
-| **Element identifier** |  |
-| **Required** | Yes |
-| **Repeatable** | Yes. An object can have several identifiers.  |
-| **Constraints** | The physical specimen identifier, when given back to the organization indicated by the Institution information element must be sufficient to allow the organization to locate the object(s) the user is interested in. In cases where a single identifier identifies multiple objects (as is possible in some collections) information such as objectType, materialType and preparationType may also need to be given. |
-| **Examples** | *To be added*  |
-| ***Element specification status*** | *agreed* |
-| ***Notes*** | *...* |
-
-### 4.3.4 MIDS element - Institution
-| <!-- --> | <!-- --> |
-| ---- | ---- |
-| **MIDS information element** | **Institution [Code, Referent]** |
-| **Definition** | Identifier(s) of the institution. Has two parts: i) Code: The name (or acronym) in use by the institution having custody of the object(s) or information referred to; and ii) Referent:  An identifier of the organisation signified by Code. |
-| **DwC term (latest, 2014-11-08)** | i) [institutionCode](http://rs.tdwg.org/dwc/terms/institutionCode), ii) No equivalent |
-| **ABCD term name(3.0)** | i) [sourceInstitutionID](http://rs.tdwg.org/abcd/terms/sourceInstitutionID), ii) No equivalent |
-| **Applicable standard(s)/recommendation(s)** | Acronyms (namestrings) for Code will typically come from the [GBIF Registry of Scientific Collections (nee GrSciColl)](https://www.gbif.org/grscicoll); else ‘unknown’. Unique identifiers for Referent should come from either [ROR](https://ror.org/) or [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page); else ‘unknown’. |
-| **Element identifier** |  |
-| **Required** | Yes |
-| **Repeatable** | Yes. Multiple organisation identifiers are likely for the same organisation. Multiple name acronyms are also possible. See constraints |
-| **Constraints** | When there are multiple identifiers for the organisation represented by Code, the Referent part can be repeated as necessary i.e., *Institution [Code, Referent1, Referent2, ... ReferentN]*. <br>When an organisation is known by multiple Codes (e.g., due to historical reasons) the information element must be repeated for each Code with all of the Referents i.e., *Institution [Code1, Referent1, Referent2, ... ReferentN]*, *Institution [Code2, Referent1, Referent2, ... ReferentN]*.  |
-| **Examples** | *To be added*  |
-| ***Element specification status*** | *agreed; accepted in specification* |
-| ***Notes*** | *...* |
-
-### 4.3.5 MIDS element - MaterialSample
-| <!-- --> | <!-- --> |
-| ---- | ---- |
-| **MIDS information element** | MaterialSample |
-| **Definition** | High-level term for the classification of curated objects. |
-| **DwC term (latest, 2014-11-08)** | proposed:  |
-| **ABCD term name (3.0)** |  |
-| **Applicable standard(s)/recommendation(s)** | |
-| **Element identifier** |  |
-| **Required** | No |
-| **Repeatable** | No |
-| **Constraints** |  |
-| **Examples** | *To be added* |
-| ***Element specification status*** | *agreed; accepted in specification. Created following TG mtg no. 7.* |
-| ***Notes*** |  |
-
-### 4.6.6 MIDS element - PreparationType
-| <!-- --> | <!-- --> |
-| ---- | ---- |
-| **MIDS information element** | PreparationType |
-| **Definition** | General terms for the classification of curated objects according to the way they have been prepared.  In combination with ObjectType - hierarchical; a more specific classification than described by ObjectType. |
-| **DwC term (latest, 2014-11-08)** | preparations |
-| **ABCD term name (3.0)** | Unit/SpecimenUnit/Preparations/Preparation/PreparationType |
-| **Applicable standard(s)/recommendation(s)** | |
-| **Element identifier** |  |
-| **Required** | Yes |
-| **Repeatable** | No |
-| **Constraints** | Controlled vocabulary. Preparation Type should be set in conjunction with MaterialSample, as each MaterialSample has specific Preparation Types. |
-| **Examples** | *To be added* |
-| ***Element specification status*** | *proposed alteration* |
-| ***Notes*** | *Same interpretation as [cd:preparationType](https://github.com/tdwg/cd/issues/64). Must not be used for classifying objects by taxon. Definition of the controlled vocabulary is still needed.* |
-
-
-### 4.3.7 MIDS element - Name
-| <!-- --> | <!-- --> |
-| ---- | ---- |
-| **MIDS information element** | Name |
-| **Definition** | A name given to the object. Equivalent to the Dublin Core term [dc:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title). Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, it’s scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that. |
-| **DwC equivalent term (latest, 2014-11-08)** | [scientificName](http://rs.tdwg.org/dwc/terms/scientificName), [organismName](https://dwc.tdwg.org/list/#dwc_organismName), [vernacularName](https://dwc.tdwg.org/list/#dwc_vernacularName), etc. |
-| **ABCD equivalent term (3.0)** | [name](http://rs.tdwg.org/abcd/terms/name), [fullScientificName](http://rs.tdwg.org/abcd/terms/fullScientificName), [informalName](http://rs.tdwg.org/abcd/terms/informalName), etc. |
-| **Applicable standard(s)/recommendation(s)** | |
-| **Element identifier** | name |
-| **Required** | Yes |
-| **Repeatable** | No |
-| **Constraints** | None |
-| **Examples** | *Colias croceus* (Geoffroy, 1785), Ophthalmosaurus, Australian Baobab, Scottish rock, etc. |
-| ***Element specification status*** | *agreed; accepted in specification* |
-| ***Notes*** | *...* |
- 
-### 4.3.8 MIDS element - Licence
-| <!-- --> | <!-- --> |
-| ---- | ---- |
-| **MIDS information element** | Licence |
-| **Definition** | The licence under which the information is published. |
-| **DwC equivalent term (latest, 2014-11-08)** | |
-| **ABCD equivalent term (3.0)** |  |
-| **Applicable standard(s)/recommendation(s)** | |
-| **Element identifier** | name |
-| **Required** | Yes |
-| **Repeatable** | No |
-| **Constraints** | None |
-| **Examples** | *CC-0* |
-| ***Element specification status*** | *proposed* |
-| ***Notes*** | *...* |
-
-## 4.4 Handling of unknown and incomplete data
-
-Best practice dictates that wherever possible data should not be published with empty field values as this is misleading for both human users and machines. There are many reasons why data can be missing, unknown, incomplete or explicitly withheld [Groom 2019] and various tactics have been used in the past to deal with such situations. However, with the increasing use of machines to interpret and act upon data, variable past practices should be deprecated, and new, more consistent practices promoted. In the interest of presenting more meaningful corpora of minimum specimen information in the future, the present specification (4.5.1 - 4.5.3 below) recommends harmonising an approach for presenting minimum information fields where the content of those fields can be unknown or incomplete for a variety of reasons.
-
-### 4.4.1 Unknown datetime in CreatedON/ModifiedON information elements
+### 4.6.1 Unknown datetime in CreatedON/ModifiedON information elements
 
 If the creation and/or modification date/time of a specimen data record is not known, the standard form for unspecified date/time, as specified in ISO 8601-2:2019 should be used for the createdON and/or modifiedON information element(s) i.e., “X*” or “XXXX-XX-XX”.
 
-### 4.4.3 Unknown values for other information elements
+### 4.6.2 Geographical data information elements
 
-Table 4 lists the terms that should be used in lieu of any of the information elements listed in Table 2 & 3 above being left empty.
+To achieve MIDS level 2, each geographical information element listed in Table 3 (i.e., qualitativeLocation and quantitativeLocation) must be provided.
+
+If such information is not present on the specimen label, but can be inferred/interpreted from other information present or from other sources, it should be provided. If such information is not present and cannot be inferred it should be recorded as “unknown:missing” (4.6.3 below).
+
+Country level information has particular importance and this (or at least one other more localised named area) should always be provided.
+
+### 4.6.3 Unknown values for other information elements
+
+Table 6 lists the terms that should be used in lieu of any of the information elements listed in Tables 2 - 4 above being left empty.
 
 **Table 4: Terms for missing data values in lieu of empty information elements**
 
@@ -850,60 +746,24 @@ Based on [Groom 2019], Table 1. [CC BY](https://creativecommons.org/licenses/by/
 
   <tfoot>
    <tr>
-    <th style="font-weight:400;text-align:left" colspan="3">
+    <td style="font-weight:400;text-align:left" colspan="3">
     Note 1:	The generic unknown indicates that the information is indeed not available.
     <br>
     Note 2:	The additives undigitized, missing and indecipherable allow elaboration as to why the data are unavailable, if this reason is known.
     <br>
     Note 3:	known:withheld indicates that the data are digitally available (e.g., in a primary source) and could potentially be retrieved after contacting the data provider.
-    </th>
+    </td>
    </tr>
   </tfoot> 
 </table>
 
 # 5 Images and other media types (normative)
 
-Many but not all digitization projects and programmes produce images of specimens and their accompanying label(s). It is helpful to users and machines, when searching for available digital specimens to know if images are available. Thus, a MIDS level information element (2) may be supplemented with one or both the designators specified in Table 7. 
-
-As part of the minimum information about a specimen, digital specimens should (if possible) include at least one image of the complete specimen and its accompanying label(s). If images are present, the MIDS level of the digital specimen must be supplemented with the indicator ‘i’ indicating the availability of image(s).
-
-Digital specimens may include multiple images of different types and/or other types of media. If other media type(s) are present, the MIDS level of the digital specimen must be supplemented with the indicator ‘m’ to indicate the availability of other media type(s).
-
-**Table 5: Media elements of MIDS record types**
-
-<table>
-  <tr>
-   <td><strong>MIDS level</strong>
-   </td>
-   <td><strong>Object image type</strong>
-   </td>
-   <td><strong>Recommendation</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>i
-   </td>
-   <td>Object image with label
-   </td>
-   <td>Image should include the whole specimen where possible. Original label(s) should be included either in the same image or as separate images.
-   </td>
-  </tr>
-  <tr>
-   <td>m
-   </td>
-   <td>Other multimedia present
-   </td>
-   <td>No specific recommendation.
-   </td>
-  </tr>
-</table>
-
-Specimens can require more than one image to properly display all features of interest. Thus, multiple images can be present for a specimen. However, characterising the number and nature of image and other multimedia types available as outputs of digitization processes is outside the scope of the present specification.
+Specimens can require more than one image to properly display all features of interest. Thus, multiple images can be present for a specimen. However, characterising the number and nature of image and other multimedia types available as outputs of digitisation processes is outside the scope of the present specification.
 
 # 6 Guidelines for machine-actionability (normative)
 
-<div style="color:red">To do: &lt;insert text. This is the publishing/sharing aspect that is often treated separate from and after digitization. Publicly available means not only to humans but also for machines to find/access as well. FAIR statement of how MIDS supports each of the 15 principles.>
-</div>
+Section in development
 
 # 7 Recommendations for collection-holding institutions
 
@@ -915,14 +775,12 @@ The information elements expected by MIDS Level 1 are the minimum amount of info
 
 # 8 Data quality
 
-Concerns about publishing junk data are not solved by MIDS. Collection-holding institutions should operate adequate quality controls during digitisation processes to ensure that published data are valid data, to the best of knowledge. Attention to prevention of digitization errors, simple (automated) checks and basic rules, such as avoiding unfilled information fields (i.e., use specific ‘unknown’ or ‘not specified’ values instead of leaving fields blank) each contribute to ensuring valid data.
+Concerns about publishing junk data are not solved by MIDS. Collection-holding institutions should operate adequate quality controls during digitisation processes to ensure that published data are valid data, to the best of knowledge. Attention to prevention of digitisation errors, simple (automated) checks and basic rules, such as avoiding unfilled information fields (i.e., use specific ‘unknown’ or ‘not specified’ values instead of leaving fields blank) each contribute to ensuring valid data.
 
 
 # 9 Conformance (normative)
 
 ## 9.1 Principle means of conformance
-
-*28 May 2022: ICS proforma tables to be revised - not presently uptodate. See current proposal under issue [#50](https://github.com/tdwg/mids/issues/50)*.
 
 The principle means of conformance with the present specification must be through implementation of its requirements in workflows and processes of specimen digitisation and data management.
 
