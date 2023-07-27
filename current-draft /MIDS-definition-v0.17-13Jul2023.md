@@ -320,7 +320,7 @@ The information elements expected to be present in digital specimen data publish
    </th>
   </tr>
 
-  <tr><td>3</td>
+  <tr><td>1</td>
    <td> PhysicalSpecimenID <br>
    </td>
    <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
@@ -331,7 +331,7 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-  <tr><td>4</td>
+  <tr><td>2</td>
    <td>Organization<br>
   </td>
    <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
@@ -365,7 +365,7 @@ The information elements expected to be present in digital specimen data publish
    </th>
   </tr>
 
-  <tr><td>3</td>
+  <tr><td>1</td>
    <td> PhysicalSpecimenID <br>
    </td>
    <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
@@ -376,7 +376,7 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-  <tr><td>4</td>
+  <tr><td>2</td>
    <td>Organization<br>
   </td>
    <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
@@ -387,62 +387,51 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-  <tr><th></th>
-   <th>Name
-   </th>
-   <th>A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
-   </th>
+  <tr><td>3</td>
+   <td>Name
+   </td>
+   <td>A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
+   </td>
    <th>Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection.
-   </th>
-   <th>Yes (all)
-   </th>
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>SpecimenType
-   </th>
-   <th>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
-   </th>
-   <th>To delimit the specimens to which the MIDS specification refers.
-   </th>
-   <th>Required (Biological/Geological/Paelaeontological)
-   </th>
+  <tr><td>4</td>
+   <td>SpecimenType
+   </td>
+   <td>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
+   </td>
+   <td>To delimit the specimens to which the MIDS specification refers.
+   </td>
+   <td>Required (Biological/Geological/Paelaeontological)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>MIDS information element
-   </th>
-   <th>Definition
-   </th>
-   <th>Purpose
-   </th>
-   <th>Yes (all)
-   </th>
+  <tr><td>5</td>
+   <td>ObjectType
+   </td>
+   <td>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
+   </td>
+   <td>To enable curators to determine equipment/method/cost of imaging the specimen, to enable researchers to determine equipment/method required for viewing/analysing the specimen, to enable curators/researchers to know in which collection/location within the institution the specimen is held.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>ObjectType
-   </th>
-   <th>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
-   </th>
-   <th>To enable curators to determine equipment/method/cost of imaging the specimen, to enable researchers to determine equipment/method required for viewing/analysing the specimen, to enable curators/researchers to know in which collection/location within the institution the specimen is held.
-   </th>
-   <th>Yes (all)
-   </th>
+  <tr><td>6</td>
+   <td>License
+   </td>
+   <td>License under which the specimen data are published.
+   </td>
+   <td>To enable all users to determine how they can use the specimen data.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>License
-   </th>
-   <th>License under which the specimen data are published.
-   </th>
-   <th>To enable all users to determine how they can use the specimen data.
-   </th>
-   <th>Yes (all)
-   </th>
-  </tr>
-
-  <tr><td>1</td>
+  <tr><td>7</td>
   <td>Modified<br>
    </td>
    <td>UTC date/time of first creation or subsequent modification, if any
