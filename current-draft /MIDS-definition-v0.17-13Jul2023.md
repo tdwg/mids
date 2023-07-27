@@ -465,7 +465,7 @@ The information elements expected to be present in digital specimen data publish
    </th>
   </tr>
 
-  <tr><td>3</td>
+  <tr><td>1</td>
    <td> PhysicalSpecimenID <br>
    </td>
    <td>A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc.
@@ -476,7 +476,7 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-  <tr><td>4</td>
+  <tr><td>2</td>
    <td>Organization<br>
   </td>
    <td>A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier.
@@ -487,62 +487,51 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-  <tr><th></th>
-   <th>Name
-   </th>
-   <th>A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
-   </th>
-   <th>Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection.
-   </th>
-   <th>Yes (all)
-   </th>
+  <tr><td>3</td>
+   <td>Name
+   </td>
+   <td>A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, how it is labelled, etc. This name is not necessarily its name according to an accepted scientific classification, identification, or taxonomic determination (i.e., scientific name) but it often can be the same as that.
+   </td>
+   <td>Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>SpecimenType
-   </th>
-   <th>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
-   </th>
-   <th>To delimit the specimens to which the MIDS specification refers.
-   </th>
-   <th>Required (Biological/Geological/Paelaeontological)
-   </th>
+  <tr><td>4</td>
+   <td>SpecimenType
+   </td>
+   <td>High-level term to delimit and define specimens. For example: preserved specimen, fossil specimen, as opposed to observation.
+   </td>
+   <td>To delimit the specimens to which the MIDS specification refers.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>MIDS information element
-   </th>
-   <th>Definition
-   </th>
-   <th>Purpose
-   </th>
-   <th>Yes (all)
-   </th>
+  <tr><td>5</td>
+   <td>ObjectType
+   </td>
+   <td>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
+   </td>
+   <td>To enable curators to determine equipment/method/cost of imaging the specimen, to enable researchers to determine equipment/method required for viewing/analysing the specimen, to enable curators/researchers to know in which collection/location within the institution the specimen is held.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>ObjectType
-   </th>
-   <th>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType. For example: microscope slide, pinned insect, herbarium sheet.
-   </th>
-   <th>To enable curators to determine equipment/method/cost of imaging the specimen, to enable researchers to determine equipment/method required for viewing/analysing the specimen, to enable curators/researchers to know in which collection/location within the institution the specimen is held.
-   </th>
-   <th>Yes (all)
-   </th>
+  <tr><td>6</td>
+   <td>License
+   </td>
+   <td>License under which the specimen data are published.
+   </td>
+   <td>To enable all users to determine how they can use the specimen data.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>License
-   </th>
-   <th>License under which the specimen data are published.
-   </th>
-   <th>To enable all users to determine how they can use the specimen data.
-   </th>
-   <th>Yes (all)
-   </th>
-  </tr>
-
-  <tr><td>1</td>
+  <tr><td>7</td>
   <td>Modified<br>
    </td>
    <td>UTC date/time of first creation or subsequent modification, if any
@@ -553,93 +542,93 @@ The information elements expected to be present in digital specimen data publish
    </td>
   </tr>
 
-  <tr><th></th>
-   <th>qualitativeLocation
-   </th>
-   <th>A term to describe where the specimen was collected. In combination with quantitativeLocation; should capture textual geographic information.
-   </th>
-   <th>A human readable location. Can also be used to help identify the quantitativeLocation.
-   </th>
-   <th>Yes (all)
-   </th>
+  <tr><td>8</td>
+   <td>qualitativeLocation
+   </td>
+   <td>A term to describe where the specimen was collected. In combination with quantitativeLocation; should capture textual geographic information.
+   </td>
+   <td>A human readable location. Can also be used to help identify the quantitativeLocation.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>quantitativeLocation
-   </th>
-   <th>A term to describe where the specimen was collected. A quantitative measure that would include coordinate or shape data, an identifier, or data that can be easily converted into a quantitative measure. In combination with the qualitative term, Locality.
-   </th>
-   <th>To enable a person or machine to identify and/or map the geographical location in which the collection was made.
-   </th>
-   <th>Yes (all)
-   </th>
+  <tr><td>9</td>
+   <td>quantitativeLocation
+   </td>
+   <td>A term to describe where the specimen was collected. A quantitative measure that would include coordinate or shape data, an identifier, or data that can be easily converted into a quantitative measure. In combination with the qualitative term, Locality.
+   </td>
+   <td>To enable a person or machine to identify and/or map the geographical location in which the collection was made.
+   </td>
+   <td>Yes (all)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>GeologicalAge
-   </th>
-   <th>Terms denoting the names of strata and/or their age from which a specimen is derived.
-   </th>
-   <th>To provide geological context to the specimen
-   </th>
-   <th>Yes (Geological)
-   </th>
+  <tr><td>10</td>
+   <td>GeologicalAge
+   </td>
+   <td>Terms denoting the names of strata and/or their age from which a specimen is derived.
+   </td>
+   <td>To provide geological context to the specimen
+   </td>
+   <td>Yes (Geological)
+   </td>
   </tr>
 
 
-  <tr><th></th>
-   <th>collectingAgent
-   </th>
-   <th>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a collecting identifier (recordNumber), should be listed first.
-   </th>
-   <th>For many biological collections this information has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location.
-   </th>
-   <th>Yes (Biological)
-   </th>
+  <tr><td>11</td>
+   <td>collectingAgent
+   </td>
+   <td>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a collecting identifier (recordNumber), should be listed first.
+   </td>
+   <td>For many biological collections this information has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location.
+   </td>
+   <td>Yes (Biological)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>dateCollected
-   </th>
-   <th>The date/time at which a gathering event occurred. For specimen gathering, this is the date/time when the event was recorded.
-   </th>
-   <th>
-   </th>
-   <th>Yes (Biological)
-   </th>
+  <tr><td>12</td>
+   <td>dateCollected
+   </td>
+   <td>The date/time at which a gathering event occurred. For specimen gathering, this is the date/time when the event was recorded.
+   </td>
+   <td>
+   </td>
+   <td>Yes (Biological)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>collectingNumber
-   </th>
-   <th>An identifier given to the specimen at the time it was recorded. Often serves as a link between field notes and a specimen record.
-   </th>
-   <th>For many biological collections the collector in combination with collectingNumber has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location.
-   </th>
-   <th>Yes (Biological)
-   </th>
+  <tr><td>13</td>
+   <td>collectingNumber
+   </td>
+   <td>An identifier given to the specimen at the time it was recorded. Often serves as a link between field notes and a specimen record.
+   </td>
+   <td>For many biological collections the collector in combination with collectingNumber has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location.
+   </td>
+   <td>Yes (Biological)
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>Type status
-   </th>
-   <th>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.
-   </th>
-   <th>Purpose
-   </th>
-   <th>
-   </th>
+  <tr><td>14</th>
+   <td>Type status
+   </td>
+   <td>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
   </tr>
 
-  <tr><th></th>
-   <th>Media
-   </th>
-   <th>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.
-   </th>
-   <th>Purpose
-   </th>
-   <th>Yes (Biological)
-   </th>
+  <tr><td>15</td>
+   <td>Media
+   </td>
+   <td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.
+   </td>
+   <td>Purpose
+   </td>
+   <td>Yes (Biological)
+   </td>
   </tr>
 
 </table>
