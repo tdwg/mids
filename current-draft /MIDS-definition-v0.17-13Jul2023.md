@@ -405,7 +405,7 @@ The information elements expected to be present in digital specimen data publish
    </td>
    <td>To delimit the specimens to which the MIDS specification refers.
    </td>
-   <td>Required (Biological/Geological/Paelaeontological)
+   <td>Yes (all)
    </td>
   </tr>
 
