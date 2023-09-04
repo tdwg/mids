@@ -134,7 +134,7 @@ The [CETAF Digitisation Working Group (DWG)](https://cetafdigitization.biowikifa
 Cite as:
 *tbc*
 
-Earlier drafts:
+### Earlier drafts:
 [MIDS-definition-v0.16-28May2022](https://github.com/tdwg/mids/blob/working-draft/current-drafts/MIDS-definition-v0.16-28May2022.md)
 Cite as:
 *Haston, E., Hardisty, A., Addink, W., Dillen, M., Groom, Q., Chapman, C. et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.16, 28 May 2022*.
