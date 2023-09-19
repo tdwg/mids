@@ -11,7 +11,7 @@ Version history
 <!--  Title page. -->
 <div style="page-break-before: always">
 <p style="font-size:24px;font-weight:700">
-Title: Minimum Information about a Digital Specimen (MIDS) - MIDS-1
+Title: The Minimum Information about a Digital Specimen (MIDS) specification for Natural Science Collections
 </p>
 </div>
 
