@@ -5,7 +5,7 @@ Version history
 
 | Version | Date | Author(s) | Changes |
 | --- | --- | --- | --- |
-| v0.17 | 13-Jul-2023 | Elspeth Haston, Cat Chapman, Alex R Hardisty, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Deborah Paul, Mareike Petersen, Hannu Saarenmaa, Anton Güntsch, Ben Norton, Anke Penzlin, Claus Weiland, Eirik Rindal, Dagmar Triebel, Rachel Walcott | updated from v0.16 (22-Jun-2022) |
+| v0.17 | 13-Jul-2023 | Elspeth Haston, Alex R Hardisty, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Deborah Paul, Mareike Petersen, Hannu Saarenmaa, Anton Güntsch, Ben Norton, Anke Penzlin, Claus Weiland, Eirik Rindal, Dagmar Triebel, Rachel Walcott, Cat Chapman | updated from v0.16 (22-Jun-2022) |
 |  |  |  |  |
 
 <!--  Title page. -->
@@ -23,7 +23,7 @@ This version: _V0.17_
 
 Abstract: Minimum Information about a Digital Specimen (MIDS) is a specification defining the information elements expected to be present when publishing digitised specimen information at various levels of digitisation. Digital Specimens are online digital representations of their physical counterparts in natural science collections. The definition of digitisation used here is the process of making physical objects digitally available. Levels of digitisation represent a simple categorisation of the type and depth of digitisation achieved by different approaches.
 
-Contributors: Elspeth Haston, Cat Chapman, Alex R Hardisty, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Deborah Paul, Mareike Petersen, Hannu Saarenmaa, Anton Güntsch, Ben Norton, Anke Penzlin, Claus Weiland, Eirik Rindal, Dagmar Triebel [to be completed and confirmed]
+Contributors: Elspeth Haston, Alex R Hardisty, Wouter Addink, Mathias Dillen, Falko Glöckler, Quentin Groom, Deborah Paul, Mareike Petersen, Hannu Saarenmaa, Anton Güntsch, Ben Norton, Anke Penzlin, Claus Weiland, Eirik Rindal, Dagmar Triebel, Rachel Walcott, Cat Chapman [to be completed and confirmed]
 
 Creator: _&lt;to be completed>_
 
