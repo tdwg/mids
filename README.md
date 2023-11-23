@@ -62,6 +62,7 @@ Become involved and contribute by:
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 | Claus Weiland  | Senckenberg Society for Nature Research  | @cp-weiland |
 | Karin Wiltschke | Natural History Museum Vienna | @Karin-Wiltschke |
+| Ben Norton | North Carolina Museum of Natural Sciences | ben.norton AT naturalsciences.org |
 
 ## Repo structure
 
