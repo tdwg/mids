@@ -7,7 +7,7 @@ Title: Minimum Information about a Digital Specimen (MIDS)
 
 **Status, 29-July-2021**
 
-The MIDS specification is presently under development, with a focus on settling MIDS level 1 by September 2021.
+The MIDS specification is presently under development.
 
 The current working draft can be found in the [current-draft](https://github.com/tdwg/mids/tree/working-draft/current-draft%20) folder of this repository.
 
