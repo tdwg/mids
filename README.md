@@ -31,8 +31,8 @@ Become involved and contribute by:
 
 | Name | Affiliation | github name / Email |
 | --- | --- | --- |
-| Alex Hardisty | Cardiff University | @hardistyar / hardistyar AT cardiff.ac.uk|  
-| Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk |  
+| Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk|  
+| Cat Chapman | Florida Museum of Natural History |  / cchapman AT floridamuseum |  
 
 ### Core Members
 
@@ -62,6 +62,7 @@ Become involved and contribute by:
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 | Claus Weiland  | Senckenberg Society for Nature Research  | @cp-weiland |
 | Karin Wiltschke | Natural History Museum Vienna | @Karin-Wiltschke |
+| Ben Norton | North Carolina Museum of Natural Sciences | ben.norton AT naturalsciences.org |
 
 ## Repo structure
 
@@ -130,8 +131,16 @@ The [CETAF Digitisation Working Group (DWG)](https://cetafdigitization.biowikifa
 ## Resources
 
 ### Current draft of the specification
-[MIDS-definition-v0.14-29Mar2021.md](https://github.com/tdwg/mids/blob/working-draft/current-draft/MIDS-definition-v0.14-29Mar2021.md)
+[MIDS-definition-v0.17-13Jul2023](https://github.com/tdwg/mids/blob/working-draft/current-draft%20/MIDS-definition-v0.17-13Jul2023.md)
+Cite as:
+*tbc*
 
+### Earlier drafts:
+[MIDS-definition-v0.16-28May2022](https://github.com/tdwg/mids/blob/working-draft/current-drafts/MIDS-definition-v0.16-28May2022.md)
+Cite as:
+*Haston, E., Hardisty, A., Addink, W., Dillen, M., Groom, Q., Chapman, C. et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.16, 28 May 2022*.
+
+[MIDS-definition-v0.14-29Mar2021](https://github.com/tdwg/mids/blob/working-draft/old-drafts/MIDS-definition-v0.14-29Mar2021.md)
 Cite as:
 *Hardisty, A., Addink, W., Dillen, M., Groom, Q., Haston, E., et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.14, 29 Mar 2021*.
 
