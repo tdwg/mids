@@ -66,7 +66,7 @@ Become involved and contribute by:
 
 ## Repo structure
 
-The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the specification during it's development inlcuding the [most recent draft version](https://github.com/tdwg/mids/tree/working-draft/current-draft) of the specification. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
+The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the specification during its development including the [most recent draft version](https://github.com/tdwg/mids/tree/working-draft/current-draft) of the specification. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
 
 ## TG Way of working
 
