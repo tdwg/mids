@@ -2,7 +2,7 @@
 
 This is the repository for the MIDS Task Group, dealing with Minimum Information about a Digital Specimen.
 
-This README last updated: 24 May 2021.
+This README last updated: 15 May 2024.
 
 ## About the group
 
