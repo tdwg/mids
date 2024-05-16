@@ -19,7 +19,7 @@ Become involved and contribute by:
 
 - Contacting the Conveners and/or signing up to the [task group mailing list](http://lists.tdwg.org/mailman/listinfo/tdwg-mids).
   
-- Participating in the monthly meetings (first Thursday of the month, UTC 13:30 - 15:00).
+- Participating in the meetings. The timing of these are currently weekly on Thursdays at 14:00 UTC. Contact the Conveners for more information.
 
 - Watching this github repository. Submitting or commenting on an issue.
 
@@ -33,6 +33,10 @@ Become involved and contribute by:
 | --- | --- | --- |
 | Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk|  
 | Cat Chapman | Florida Museum of Natural History |  / cchapman AT floridamuseum |  
+
+### Previous Conveners
+
+Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 
 ### Core Members
 
@@ -66,7 +70,9 @@ Become involved and contribute by:
 
 ## Repo structure
 
-The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the specification during its development including the [most recent draft version](https://github.com/tdwg/mids/tree/working-draft/current-draft) of the specification. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
+The [main branch](https://github.com/tdwg/mids) contains the current documentation, including the most recently released draft version of the standard, the information elements and the mapping.
+
+The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the standard during its development including the [current draft](https://github.com/tdwg/mids/tree/working-draft/current-draft) which is being actively updated. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
 
 ## TG Way of working
 
