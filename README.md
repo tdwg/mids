@@ -2,24 +2,24 @@
 
 This is the repository for the MIDS Task Group, dealing with Minimum Information about a Digital Specimen.
 
-This README last updated: 24 May 2021.
+This README last updated: 15 May 2024.
 
 ## About the group
 
 The [MIDS Task Group](https://www.tdwg.org/community/cd/mids/) is a task group to develop a standard for Minimum Information about a Digital Specimen (MIDS). The TG is chartered by its parent [Collection Descriptions Interest Group](https://www.tdwg.org/community/cd/). For full details of the TG and its scope, [read the charter](https://www.tdwg.org/community/cd/mids/).
 
-The day-to-day operations of the Task Group is documented in this repository. You can also track and participate in the work of the group by watching this repository and monitoring the group's [issues tracker](https://github.com/tdwg/mids/issues). The TG meets monthly by Zoom.
+The day-to-day operations of the Task Group is documented in this repository. You can also track and participate in the work of the group by watching this repository and monitoring the group's [issues tracker](https://github.com/tdwg/mids/issues). To be sure of hearing about meetings and updates join the group's  [mailing list](http://lists.tdwg.org/mailman/listinfo/tdwg-mids)
 
-The new MIDS standard will be complementary to the Collection Descriptions standard that is also under the responsibility of the [Collection Descriptions Interest Group](https://www.tdwg.org/community/cd/).
+The MIDS specification will be complementary to the Collection Descriptions standard that is also under the responsibility of the [Collection Descriptions Interest Group](https://www.tdwg.org/community/cd/).
 
 ## How to become involved and contribute
-This Task Group welcomes anyone who has a practical interest in minimum information standards, Digital Specimen information, experience with digitization processes and workflows and the subsequent management (including making public) of the outputs of digitization, including reporting requirements for management and funding agencies.
+This Task Group welcomes anyone who has a practical interest in minimum information standards, Digital Specimen information, experience with digitisation processes and workflows and the subsequent management (including making public) of the outputs of digitisation, including reporting requirements for management and funding agencies.
 
 Become involved and contribute by:
 
 - Contacting the Conveners and/or signing up to the [task group mailing list](http://lists.tdwg.org/mailman/listinfo/tdwg-mids).
   
-- Participating in the monthly meetings (first Thursday of the month, UTC 13:30 - 15:00).
+- Participating in the meetings. The timing of these are currently weekly on Thursdays at 14:00 UTC. Contact the Conveners for more information.
 
 - Watching this github repository. Submitting or commenting on an issue.
 
@@ -33,6 +33,10 @@ Become involved and contribute by:
 | --- | --- | --- |
 | Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk|  
 | Cat Chapman | Florida Museum of Natural History |  / cchapman AT floridamuseum |  
+
+### Previous Conveners
+
+Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 
 ### Core Members
 
@@ -62,13 +66,13 @@ Become involved and contribute by:
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 | Claus Weiland  | Senckenberg Society for Nature Research  | @cp-weiland |
 | Karin Wiltschke | Natural History Museum Vienna | @Karin-Wiltschke |
-| Ben Norton | North Carolina Museum of Natural Sciences | ben.norton AT naturalsciences.org |
+| Ben Norton |  | <michaelnorton.ben@gmail.com> |
 
 ## Repo structure
 
-The [master branch](https://github.com/tdwg/mids) contains this README.md file and the [released public version](MIDS-definition.md) of the MIDS specification. As of 03 November 2020, work is still in progress and there is not yet a released Version 1.0 of the specification.
+The [main branch](https://github.com/tdwg/mids) contains the current documentation, including the most recently released draft version of the standard, the information elements and the mapping.
 
-The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the current working draft in the [current-draft](https://github.com/tdwg/mids/tree/working-draft/current-draft) folder. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
+The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the standard during its development including the [current draft](https://github.com/tdwg/mids/tree/working-draft/current-draft) which is being actively updated. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
 
 ## TG Way of working
 
@@ -94,16 +98,7 @@ All other issues than MIDS Element issues are used to raise issues (concerns) re
 | MIDS-3 | Info element appears at MIDS level 3. |
 | | |
 | status: ... | Status value of MIDS Element definition. *See next subsection for possible status values.* |
-| | |
-| specification | improvements, additions, changes needed to the specification text |
-| question | Further information is requested |
-| bug | Something isn't working |
-| duplicate | This issue or pull request already exists |
-| enhancement | New feature, function or request |
-| good first issue | Good for newcomers |
-| help wanted | Extra help is needed with this issue |
-| invalid | This does not seem right |
-| wontfix | This will not be worked on |
+
 
 ### Status values of MIDS Element definitions
 A MIDS Element definition can have one of five statuses, as listed in the following table
@@ -118,15 +113,9 @@ A MIDS Element definition can have one of five statuses, as listed in the follow
 | status: deprecated | The element definition should no longer be used and will eventually be removed from MIDS. |
 | status: removed | The element definition has been removed from MIDS. |
 
-### Allowed state transitions
-The normal flow of state transitions for MIDS Element issues is the following:
 
-*Not yet discussed* --> *under discussion* --> *agreed* --> *accepted into specification*
-
-From either of the *agreed* or *accepted into specification* states, the status of the MIDS Element definition can change to the *has issues* state and from there it can re-enter the *under discussion* state when the matter is picked up again for discussion within the TG.
-
-## TG relation to CETAF Digitization WG
-The [CETAF Digitisation Working Group (DWG)](https://cetafdigitization.biowikifarm.net/cdig/) collaborates on digitization issues and collectively works together to share practical experiences to increase capacity and capability to digitize natural science collections. In this sense, DWG works with the MIDS materials produced by the present task group to discuss, implement, evaluate and provide input/feedback on the development of MIDS specifications to the present task group.
+## TG relation to CETAF Digitisation WG
+The [CETAF Digitisation Working Group (DWG)](https://cetafdigitization.biowikifarm.net/cdig/) collaborates on digitisation issues and collectively works together to share practical experiences to increase capacity and capability to digitize natural science collections. In this sense, DWG works with the MIDS materials produced by the present task group to discuss, implement, evaluate and provide input/feedback on the development of MIDS specifications to the present task group.
 
 ## Resources
 
@@ -136,7 +125,7 @@ Cite as:
 *tbc*
 
 ### Earlier drafts:
-[MIDS-definition-v0.16-28May2022](https://github.com/tdwg/mids/blob/working-draft/current-drafts/MIDS-definition-v0.16-28May2022.md)
+[MIDS-definition-v0.16-28May2022](https://github.com/tdwg/mids/blob/working-draft/old-drafts/MIDS-definition-v0.16-28May2022.md)
 Cite as:
 *Haston, E., Hardisty, A., Addink, W., Dillen, M., Groom, Q., Chapman, C. et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.16, 28 May 2022*.
 
@@ -147,7 +136,5 @@ Cite as:
 ### Other resources
 Borsch, T., Stevens, A.-D., Häffner, E., Güntsch, A., Berendsohn, W.G., et al. (2020): A complete digitization of German herbaria is possible, sensible and should be started now. Research Ideas and Outcomes 6: e50675. https://doi.org/10.3897/rio.6.e50675.
 
-MISC 2012. iDigBio MISC Data Element Catalog (Phase 1, V0, rev. 15 December 2012). https://www.idigbio.org/wiki/images/c/c9/Phase_I_Report.pdf.   
+iDigBio MISC Data Element Catalog (Phase 1, V0, rev. 15 December 2012). https://www.idigbio.org/wiki/images/c/c9/Phase_I_Report.pdf.   
 
-
-END.
