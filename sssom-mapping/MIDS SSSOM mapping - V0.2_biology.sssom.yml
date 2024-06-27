@@ -1,0 +1,18 @@
+curie_map:
+  ac: http://rs.tdwg.org/ac/terms/
+  dc: http://purl.org/dc/terms/
+  dwc: http://rs.tdwg.org/dwc/terms/
+  gbif: http://rs.gbif.org/terms/1.0/
+  mids: https://www.tdwg.org/community/cd/mids/
+  orcid: https://orcid.org/
+  owl: http://www.w3.org/2002/07/owl#
+  semapv: https://w3id.org/semapv/vocab/
+  skos: http://www.w3.org/2004/02/skos/core#
+  sssom: https://w3id.org/sssom/
+mapping_set_id: SSSOM_MIDS_Biology_02
+mapping_set_version: 0.2
+mapping_set_title: SSSOM_MIDS_Biology
+license: https://creativecommons.org/publicdomain/zero/1.0/
+mapping_provider: https://github.com/tdwg/mids
+mapping_date: 20204-06-20
+object_preprocessing: semapv:RegexRemoval
