@@ -25,5 +25,3 @@ GeographicalLocalityID,mids3,Geographical Locality ID,An identifier for the geog
 IdentifiedByID,mids3,Identified By ID,"A list (concatenated and separated) of the identifier(s) for the person, people, groups, or organizations responsible for assigning the scientific name to the subject.
 
 ",To provide provenance for the identification of the specimen.,"It is strongly recommended to use resolvable ORCiD identifiers for people, or Wikidata identifiers for people or expeditions.",https://www.wikidata.org/wiki/Q94522; https://orcid.org/0000-0001-7698-3945 | https://www.wikidata.org/wiki/Q276405,Yes (all)
-AssociatedMediaID,mids3,Associated Media ID,A list (concatenated and separated) of identifiers of media associated with the Specimen.,To allow a user (human or machine) to locate mediafiles of the specimen,It is strongly recommended to follow Audiovisual Core standards; identifier(s) for IIIF manifest and/or image,,Yes (all)
-Mass,mids 3,Mass,"The quantity of matter in a specimen, particularly for minerals, phases and meteorites",,,,
