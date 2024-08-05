@@ -56,8 +56,8 @@ The mappings must include most of the following properties as columns, in the or
 * `sssom:mapping_justification`: Optional to indicate how the mapping was established.
 * `sssom:author_id`: An ID for the asserter of the mapping (not necessarily the same person who compiled the mappings into the SSSOM format). Recommended to use ORCID.
 * `sssom:creator_id`: An ID for the creator of the mapping in the SSSOM format.
-* `sssom:subject_type`: The type of property of the MIDS element. Currently defined as `rdf property` but this needs further confirmation.
-* `sssom:object_type`: The type of property of the term in the standard. This should be a controlled vocabulary to indicate what data format the standard uses. Needs investigation.
+* `sssom:subject_type`: The type of property of the MIDS element. Currently defined as `rdf property`.
+* `sssom:object_type`: The type of property of the term in the standard. 
 * `sssom:object_source`: Query that is needed to retrieve values of the mapped term. Required when data is in a more structured format such as XML.
 * `sssom:mapping_date`: ISO date of when the mapping was asserted by the author.
 * `sssom:object_match_field`: A `|`-delimited list of object_ids which combine to form an `owl:intersectionOf` mapping.
