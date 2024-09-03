@@ -54,6 +54,7 @@ Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 | Pieter Huybrechts | Meise Botanic Garden | @PietrH |
 | Chris Hunter | GigaDB, BGI Group | @only1chunts |
 | Gunnhild Marthinsen | University of Oslo Natural History Museum | g.m.marthinsen AT nhm.uio.no |
+| Ben Norton |  | <michaelnorton.ben@gmail.com> |
 | Deborah Paul | University of Illinois Urbana-Champaign / Species File Group | @debpaul |
 | Richard Pyle | Bernice Pauahi Bishop Museum | deepreef AT bishopmuseum.org |
 | Mareike Petersen | Museum für Naturkunde Berlin (MfN) | mareike.petersen AT mfn.berlin |
@@ -66,7 +67,7 @@ Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 | Claus Weiland  | Senckenberg Society for Nature Research  | @cp-weiland |
 | Karin Wiltschke | Natural History Museum Vienna | @Karin-Wiltschke |
-| Ben Norton |  | <michaelnorton.ben@gmail.com> |
+
 
 ## Repo structure
 
@@ -83,39 +84,9 @@ The [github repository TDWG TG MIDS](https://github.com/tdwg/mids) together with
 
 Github issues are used in two ways to make progress. Labels indicate the kind of issue and other information. See issue label meanings below.
 
-Issues labelled with the black 'MIDS Element' label are used to hold the working definition of a specific MIDS information element. Other labels (MIDS-0, MIDS-1, MIDS-2, MIDS-3) indicate which MIDS levels the information belongs to. These MIDS Elements are also labelled with a 'status: ...' label to indicate current discussion/agreement status. The values for this label are listed below, together with an explanation of the allowed state transitions.
+Issues labelled with the black 'MIDS Element' label are used to hold the working definition of a specific MIDS information element. Other labels (MIDS-0, MIDS-1, MIDS-2, MIDS-3) indicate which MIDS levels the information belongs to.  
 
-All other issues than MIDS Element issues are used to raise issues (concerns) relating to the specification, such as bugs, suggestions for improvement, request for clarification, etc. These are labelled appropriately according to the second half of the list below.
-
-### Issue label meanings
-
-| **Label** | **Meaning** |
-| ---- | ---- |
-| MIDS Element | Defines and tracks progress towards agreement on a MIDS information element that appears at one or more MIDS levels. |
-| MIDS-0 | Info element appears at MIDS level 0. |
-| MIDS-1 | Info element appears at MIDS level 1. |
-| MIDS-2 | Info element appears at MIDS level 2. |
-| MIDS-3 | Info element appears at MIDS level 3. |
-| | |
-| status: ... | Status value of MIDS Element definition. *See next subsection for possible status values.* |
-
-
-### Status values of MIDS Element definitions
-A MIDS Element definition can have one of five statuses, as listed in the following table
-
-| **Status label value** | **Meaning** |
-| ---- | ---- |
-| status: not yet discussed | The element has not been discussed yet. |
-| status: under discussion | The element is being discussed in the task group. |
-| status: agreed | The definition of the element at the level it appears at has been agreed by the task group. |
-| status: accepted in specification | The agreed element definition has been written into the draft specification.  |
-| status: has issues | The element definition has issues associated with it. |
-| status: deprecated | The element definition should no longer be used and will eventually be removed from MIDS. |
-| status: removed | The element definition has been removed from MIDS. |
-
-
-## TG relation to CETAF Digitisation WG
-The [CETAF Digitisation Working Group (DWG)](https://cetafdigitization.biowikifarm.net/cdig/) collaborates on digitisation issues and collectively works together to share practical experiences to increase capacity and capability to digitize natural science collections. In this sense, DWG works with the MIDS materials produced by the present task group to discuss, implement, evaluate and provide input/feedback on the development of MIDS specifications to the present task group.
+All other issues than MIDS Element issues are used to raise issues (concerns) relating to the specification, such as bugs, suggestions for improvement, request for clarification, etc.
 
 ## Resources
 
