@@ -90,7 +90,23 @@ All other issues than MIDS Element issues are used to raise issues (concerns) re
 
 ## Resources
 
-### Current draft of the specification
+MIDS is being developed within the following structure:
+
+**MIDS Levels** - Four levels have been defined and can be found [here](https://github.com/tdwg/mids/tree/main/standard/mids-levels)
+
+**MIDS Information Elements** - The information elements have been defined and can be found [here](https://github.com/tdwg/mids/tree/main/standard/information_elements)
+
+**MIDS SSSOM Mapping** - The elements of each MIDS level have been mapped to terms as used in common domain data standards, such as Darwin Core or ABCD and can be found [here](https://github.com/tdwg/mids/tree/main/sssom-mapping)
+
+**MIDS Wiki** - A wiki is being developed to provide more information on the terms and concepts represented in MIDS, and guidance on how the MIDS may be used in practice. This can be found [here](https://github.com/tdwg/mids/wiki/)
+
+**MIDS Implementations** - The following implementations have been developed and can be tested by users.
+- **MIDS Calculator** - The [MIDS Calculator](https://github.com/AgentschapPlantentuinMeise/MIDSCalculator) developed at Meise Botanic Garden uses a zipped GBIF annotated Darwin Core Archive. This enables the user to define their own dataset from GBIF. It also enables the implementation of value permissions for some of the information elements.
+- **MIDS Checker** - The [MIDS Checker](https://naturalhistorymuseum.github.io/gamc/
+) developed at the Natural History Museum London interacts directly with the GBIF API. This allows a more direct calculation, although constrained by the data available via the API and is restricted to predefined datasets in GBIF.
+
+### Most recent draft of the specification
+We are currently developing the documentation in an updated structure on GitHub. Until this is in place, the most recent draft of the MIDS specification can be found here: 
 [MIDS-definition-v0.17-13Jul2023](https://github.com/tdwg/mids/blob/working-draft/current-draft%20/MIDS-definition-v0.17-13Jul2023.md)
 Cite as:
 *tbc*
