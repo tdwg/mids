@@ -51,14 +51,14 @@ Table 1. Vocabularies from which terms have been borrowed (non-normative)
 
 Note: URIs for terms in most of these namespaces do not dereference to anything.  The authoritative documentation can be obtained by clicking on the vocabulary names in the table.
 
-| Vocabulary | Abbreviation | Namespaces and abbreviations |
-|------------|--------------|------------------------------|
-| [Darwin Core](https://dwc.tdwg.org/terms/) | DwC         | `dwc: = http://rs.tdwg.org/dwc/terms/`
-| [Dublin Core](http://dublincore.org/documents/dcmi-terms/) | DC          | `dc: = http://purl.org/dc/elements/1.1/, dcterms: = http://purl.org/dc/terms/` |
-| [Schema.org](https://schema.org/) | Schema      | `schema: =  https://schema.org/version/latest/schemaorg-current-https.rdf` |
-| [Resource Description Framework](https://www.w3.org/RDF/) | RDF | `rdf: = http://www.w3.org/1999/02/22-rdf-syntax-ns#` |
-| [Access to Biological Collection Data](https://abcd.tdwg.org/) | ABCD | `abcd: = https://abcd.tdwg.org/terms/` |
+| Vocabulary                                                     | Abbreviation  | Namespaces and abbreviations                                                   |
+|----------------------------------------------------------------|---------------|--------------------------------------------------------------------------------|
+| [Darwin Core](https://dwc.tdwg.org/terms/)                     | DwC           | `dwc: = http://rs.tdwg.org/dwc/terms/`                                         |
+| [Dublin Core](http://dublincore.org/documents/dcmi-terms/)     | DC            | `dc: = http://purl.org/dc/elements/1.1/, dcterms: = http://purl.org/dc/terms/` |
+| [Schema.org](https://schema.org/)                              | Schema        | `schema: =  https://schema.org/version/latest/schemaorg-current-https.rdf`     |
+| [Resource Description Framework](https://www.w3.org/RDF/)      | RDF           | `rdf: = http://www.w3.org/1999/02/22-rdf-syntax-ns#`                           |
+| [Access to Biological Collection Data](https://abcd.tdwg.org/) | ABCD          | `abcd: = https://abcd.tdwg.org/terms/`                                         |
 
+## 3 Namespaces, Prefixes and Term Names
 
-## 3 Namespaces, Prefixes and Information Element Names
-DRAFT
+***Pending***
