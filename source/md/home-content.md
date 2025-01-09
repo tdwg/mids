@@ -12,4 +12,4 @@ Getting started links[](#getting-started)
 *   Provide feedback through a [github issue](https://github.com/tdwg/mids/issues)
 
 -------------
-*Last Updated: January 8th, 2025*
+*Last Updated: January 9th, 2025*
