@@ -1,0 +1,19 @@
+/*
+LTC Logo Styles
+*/
+
+/* Logo ------------------------------------------- */
+main.wrapper,
+header.header .container {
+	position: relative;
+}
+.logo-wrapper {
+	position: absolute;
+	right: 10%;
+	top: 60px;
+	z-index: 100;
+}
+.logo-wrapper img.custom-logo {
+	max-width: 120px;
+	height: auto;
+}
