@@ -93,11 +93,11 @@ All other issues than MIDS Element issues are used to raise issues (concerns) re
 
 MIDS is being developed within the following structure:
 
-**MIDS Levels** - Four levels have been defined and can be found [here](https://github.com/tdwg/mids/tree/main/standard/mids-levels)
+**MIDS Levels** - Four levels have been defined and can be found [here](https://github.com/tdwg/mids/blob/main/source/terms/mids-levels/)
 
-**MIDS Information Elements** - The information elements have been defined and can be found [here](https://github.com/tdwg/mids/tree/main/standard/information_elements)
+**MIDS Information Elements** - The information elements have been defined and can be found [here](https://github.com/tdwg/mids/tree/main/source/terms/information_elements)
 
-**MIDS SSSOM Mapping** - The elements of each MIDS level have been mapped to terms as used in common domain data standards, such as Darwin Core or ABCD and can be found [here](https://github.com/tdwg/mids/tree/main/sssom-mapping)
+**MIDS SSSOM Mapping** - The elements of each MIDS level have been mapped to terms as used in common domain data standards, such as Darwin Core or ABCD and can be found [here](https://github.com/tdwg/mids/tree/main/source/mappings)
 
 **MIDS Wiki** - A wiki is being developed to provide more information on the terms and concepts represented in MIDS, and guidance on how the MIDS may be used in practice. This can be found [here](https://github.com/tdwg/mids/wiki/)
 
