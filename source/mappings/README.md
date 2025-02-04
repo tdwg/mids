@@ -7,7 +7,7 @@ In this readme, we will explain how exactly we are using the SSSOM standard and 
 
 ## Mapping availability
 
-Currently, we host the latest drafts of mappings created by the MIDS task group on this [TDWG MIDS repository](https://github.com/tdwg/mids), under the `sssom-mapping` [directory](https://github.com/tdwg/mids/tree/main/sssom-mapping).
+Currently, we host the latest drafts of mappings created by the MIDS task group on this [TDWG MIDS repository](https://github.com/tdwg/mids), under the `sssom-mapping` [directory](https://github.com/tdwg/mids/tree/main/source/mappings).
 
 Mapping files are currently separated by standard (e.g. dwc for Darwin Core) and by domain (e.g. biology). This info can also be found in the MappingSet metadata.
 
