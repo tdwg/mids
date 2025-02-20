@@ -1,0 +1,71 @@
+informationElement_localName	example
+PhysicalSpecimenID	http://herbarium.bgbm.org/object/B100277113
+PhysicalSpecimenID	(O-F-2201154, 30eff5c2-97b4-4eeb-bb46-8c12a1cf0f37, 12254)
+Organization	RBGE
+Organization	https://www.gbif.org/grscicoll/institution/0237598a-853a-492c-af74-a723fe251799
+Organization	MNHN
+Organization	 https://www.gbif.org/grscicoll/institution/fe534fe7-dccd-4d79-8313-c11b2ea854ab
+Organization	BZ
+Organization	https://www.gbif.org/grscicoll/institution/6a6ac6c5-1b8a-48db-91a2-f8661274ff80
+Name	Colias croceus (Geoffroy, 1785)
+Name	Ophthalmosaurus
+Name	Australian Baobab
+Name	Scottish rock
+Name	Fungus gnats
+Name	Diptera
+SpecimenType	PreservedSpecimen
+SpecimenType	FossilSpecimen
+ObjectType	Microscope slide
+ObjectType	pinned insect
+ObjectType	herbarium sheet
+ObjectType	DNA extract
+ObjectType	gDNA
+ObjectType	tissue
+ObjectType	ethanol preserved
+ObjectType	Living
+ObjectType	Blood
+ObjectType	Sperm sample
+ObjectType	Blown eggshell
+ObjectType	Mounted
+ObjectType	Study skin
+License	CC0
+License	CC0 1.0 Universal
+License	https://creativecommons.org/publicdomain/zero/1.0/
+License	CC BY
+License	CC BY-SA
+Modified	2021-01-20T10:54:18
+Modified	2021-01-20
+QualitativeLocation	Flinders Ranges, Arkaroola Wilderness Sanctuary, on rough track north of Arkaroola Village by Radium Creek, 120 meters past the turn-off for the Ridgetop Track, off rough graded track in dry sandy gravely creek bed.
+QuantitativeLocation	-30.23713, 139.33683, WGS84
+QuantitativeLocation	https://www.geonames.org/7839420/flinders-ranges.html
+QuantitativeLocation	https://gadm.org/maps/AUS/southaustralia/flindersranges.html
+CollectingAgent	Carl Linnaeus
+DateCollected	2023-12-08
+DateCollected	2023-12
+DateCollected	s.d.
+CollectingNumber	BPL-1001
+CollectingNumber	154/23
+CollectingNumber	254
+CollectingNumber	s.n.
+Media	https://www.unimus.no/felles/bilder/web_hent_bilde.php?id=14501286&type=jpeg
+TypeStatus	Holotype
+TypeStatus	Isotype
+TypeStatus	Syntype
+TypeStatus	Cotype
+TypeStatus	Epitype
+TypeStatus	Neotype
+TypeStatus	Lectotype
+InstitutionID	https://ror.org/01xtthb56
+InstitutionID	https://www.gbif.org/grscicoll/collection/772f9e37-4643-452b-82b4-a06550283096
+InstitutionID	https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381
+CollectorID	https://orcid.org/0000-0003-1568-xxxx
+CollectorID	https://www.wikidata.org/wiki/Q94522
+ScientificNameID	urn:lsid:ipni.org:names:184409-1
+ScientificNameID	mindat:1:1:1375:4
+ScientificNameID	https://mindat.org/4ca61d6f-4208-8fb2-3b0eecbcs8f0
+ScientificNameID	urn:lsid:marinespecies.org:taxname:347049
+ScientificNameID	urn:lsid:zoobank.org:act:021CD126-41BA-45BF-AB74-B04B7ED01422
+GeographicalLocalityID	
+IdentifiedByID	https://www.wikidata.org/wiki/Q94522
+IdentifiedByID	https://orcid.org/0000-0001-7698-3945
+IdentifiedByID	https://www.wikidata.org/wiki/Q276405
