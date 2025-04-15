@@ -222,6 +222,30 @@ table tbody tr td ul.td-list li span {
 	font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 	font-size: 0.9rem;
 }
+table tbody tr td ul.block-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+table tbody tr td ul.block-list li {
+	display: block;
+	float: left;
+	line-height: 1.8;
+	width: 100%;
+	border-bottom: 1px solid rgb(222, 226, 230);
+}
+table tbody tr td ul.block-list li span {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 100%;
+	white-space: break-spaces;
+	/*background-color: rgba(230, 230, 230, 1); */
+	/*border-radius: 6px; */
+	font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+	font-size: 0.9rem;
+}
+
+
 table tbody tr.skos-tr,
 table tbody tr.skos-tr td {
 	position: relative;
@@ -519,6 +543,16 @@ table.table-sssom .accordion-toggle.collapsed .expand-button:after {
 	border-right: 2px solid #DCDCDC;
 	padding-right: 4px;
 }
+
+.table.table-sssom-nested {
+	padding: 10px 5px;
+}
+.table.table-sssom-nested tr:nth-child(even) {
+	background-color: rgba(230,230,230,0.4);
+}
+
+
+
 table.nested-table tbody tr td {
 	padding: 4px 4px 4px 8px;
 }
@@ -602,10 +636,12 @@ th.popover-container .popover .popover-body {
 table.table-sssom-nested th i.fa-question-circle {
 	font-size: 12px;
 	cursor: pointer;
+	color: #04592D;
 }
 span.close:hover {
 	text-decoration: underline;
 }
+
 span.close,
 .popover a.close,
 .popover .close,
@@ -614,6 +650,18 @@ span.close,
 	float: right;
 	color: #FFFFFF;
 }
+/* Mappings Page ------------------------ */
+table.table-sssom tbody table.table-sssom-nested.nested-table {
+	border: none;
+	margin: 10px 10px 10px 10px;
+}
+table.table.table-condensed.table-sssom.table-child thead tr {
+	background-color: rgba(220,220,220,0.5);
+}
+table.table-condensed.striped-rows tbody tr:nth-child(4n+1) {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
 
 /* Mermaid Diagram ----------------------------------- */
 [id^="mermaid"] {
@@ -645,6 +693,12 @@ span.close,
 	stroke: rgba(250,250,250,0.5) !important;
 }
 /* Responsives ----------------- */
+
+@media only screen and (min-width: 1200px) {
+	.table-responsive.print-avoid table.table-condensed{
+		overflow: hidden;
+	}
+}
 @media only screen and (max-width: 767px) {
 	main {
 		max-width: 100%;
