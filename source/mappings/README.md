@@ -19,9 +19,7 @@ The files should take the `mapping_set_id` from the metadata block as a filename
 
 ## Mapping specification
 ### General recommendations
-When a field has multiple values, it is recommended to delimit it using the `|` (pipe) character. It is optional to make this enumeration more human-readable by including whitespace around it, i.e. padding the pipe with spaces.
-
-Therefore, when interpreting a `|`-delimited string, any trailing whitespace must be ignored.
+When a field has multiple values, it is recommended to delimit it using the `|` (pipe) character.
 
 Any SSSOM mapping files should be UTF-8 encoded.
 
@@ -46,7 +44,7 @@ The Mappings must be a valid tab-separated values (tsv) text file. String quotat
 The mappings must include most of the following properties as columns, in the order specified. Column names must include the proper namespace, even if it is mostly `sssom:`. `_label` terms are optional, but if used should be added in the same order as they occur in the [list of Mapping terms](https://mapping-commons.github.io/sssom/Mapping/).
 
 * `sssom:subject_id`: The MIDS element being mapped to.
-* `sssom:subject_category`: The MIDS level of the MIDS element, specified as `mids0` and so on.
+* `sssom:subject_category`: The MIDS level of the MIDS element, specified as `mids:MIDS0` and so on.
 * `sssom:predicate_id`: The type of relation between the MIDS element and the term that is being mapped to it. We currently recognize three types of relations:
   * `skos:narrowMatch`: The MIDS element may be found in multiple terms of the standard that is being mapped, all of which should have this predicate. This is similar to the logic of an `OR` operator.
   * `skos:exactMatch`: The MIDS element maps exactly to a term in the standard, and therefore no instances of `skos:narrowMatch` can apply for this MIDS element.
@@ -58,7 +56,6 @@ The mappings must include most of the following properties as columns, in the or
 * `sssom:creator_id`: An ID for the creator of the mapping in the SSSOM format.
 * `sssom:subject_type`: The type of property of the MIDS element. Currently defined as `rdf property`.
 * `sssom:object_type`: The type of property of the term in the standard. 
-* `sssom:object_source`: Query that is needed to retrieve values of the mapped term. Required when data is in a more structured format such as XML.
 * `sssom:mapping_date`: ISO date of when the mapping was asserted by the author.
 * `sssom:object_match_field`: A `|`-delimited list of object_ids which combine to form an `owl:intersectionOf` mapping.
 * `sssom:comment`: Clarifications.
