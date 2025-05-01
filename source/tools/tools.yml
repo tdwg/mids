@@ -1,0 +1,13 @@
+# tools.yml
+# Tools Profiles for StaDocGen
+# mids/app/md
+# 
+# 2025-05-01
+tools:
+  - title: GBIF API MIDS Calculator
+    description:
+    landing_page: https://naturalhistorymuseum.github.io/gamc/
+    download_url:
+    requirements: None
+    screenshots:
+
