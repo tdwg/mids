@@ -8,6 +8,7 @@ Primary Theme Color: #04592D;
 Revised Theme Color: #04592D
 Dark Green: #04592D
 #04592D
+
 */
 .header.bg-no-image,
 .custom-bg-color {
@@ -172,7 +173,10 @@ table tbody tr:nth-child(even) {
 .content-header-wrapper table tbody tr:nth-child(even) {
 	background-color: rgba(230, 230, 230, 0.3);
 }
-thead tr.class a,
+table tbody tr:nth-child(2n).hide-table-padding {
+	background-color: #FFFFFF;
+}
+	thead tr.class a,
 thead tr th.class a,
 tbody tr.class a,
 tbody tr td.class a {
@@ -428,7 +432,10 @@ table.table-sssom thead,
 table.table-sssom tbody {
 	border: none;
 }
-
+table.accordian-collapse,
+tr.accordian-toggle {
+	transition: all 0.4s ease;
+}
 table.table-sssom thead th {
 	font-size: 0.9rem;
 	text-align: right;
@@ -440,6 +447,10 @@ table.table-sssom thead th a {
 table.table-sssom tbody tr td {
 	border-top: 1px solid rgb(222, 226, 230);
 	border-bottom: 1px solid rgb(222, 226, 230);
+}
+table.table-sssom tbody tr td.nested-td-container {
+	border-top: none;
+	border-bottom: none;
 }
 table.table-sssom tbody tr.hide-table-padding td.hide-td {
 	width: 0%;
@@ -550,16 +561,22 @@ table.table-sssom .accordion-toggle.collapsed .expand-button:after {
 .table.table-sssom-nested tr:nth-child(even) {
 	background-color: rgba(230,230,230,0.4);
 }
-
-
-
-table.nested-table tbody tr td {
-	padding: 4px 4px 4px 8px;
+table.nested-table {
+	border-top:0;
+	margin-top: 15px;
+	padding: 10px;
 }
-table.nested-table tbody tr td:first-of-type {
-	padding: 0 0.5rem;
+table tbody tr.accordion-toggle:not(.collapsed) {
+	border-top: 2px solid #04592D;
+		border-left: 2px solid #04592D;
+		border-right: 2px solid #04592D;
 }
+td.nested-td-container{
+		border-left: 2px solid #04592D;
+		border-right: 2px solid #04592D;
+	border-bottom: 2px solid #04592D;
 
+}
 
 
 /* Footer --------------------------------------------- */
@@ -602,32 +619,70 @@ table.table-sssom tbody tr th.col-w-25 {
 table.table-sssom tbody tr th.col-w-55 {
 	width: 52%;
 }
+/* NESTED TABLE----------------------------------------------------- */
 table.table-sssom tbody table.nested-table {
-	border-top: 2px solid rgba(100,100,100,0.5);
-	border-top: 2px solid rgba(100,100,100,0.5);
 	border-left: none;
 	border-right: none;
 	height: 0;
 	padding: 0;
 }
 table.table-sssom tbody table.nested-table tbody tr th {
-	width: 15%;
-	padding: 4px 8px 4px 0;
+	width: 25%;
 	border-top: 1px solid rgb(222, 226, 230);
 	border-bottom: 1px solid rgb(222, 226, 230);
 }
+table.table-sssom tbody table.nested-table tbody tr th,
 table.table-sssom tbody table.nested-table tbody tr td {
-	width: 85%;
-	padding: 4px 8px;
+	border:none;
+}
+table.table-sssom tbody table.nested-table tbody tr {
+	border-bottom: 1px solid rgb(222, 226, 230);
+}
+table.table-sssom tbody table.nested-table tbody tr td {
+	width: 75%;
 }
 table.table-sssom tbody table.nested-table tbody tr th,
 table.table-sssom tbody table.nested-table tbody tr td {
 	font-size: 14px;
 }
 table.table-sssom tbody table.nested-table tbody tr th {
-	padding-left: 8px;
 	border-bottom: none;
 }
+
+.table.table-sssom-nested tr:nth-child(2n),
+td.nested-td-container table.nested-table,
+td.nested-td-container table.nested-table tbody tr:nth-child(4n+1) {
+	background: #FFFFFF;
+}
+table.table-sssom tbody table.nested-table tbody tr td,
+table.table-sssom tbody table.nested-table tbody tr th {
+	padding: 8px 12px;
+}
+table.table-sssom tbody table.nested-table tbody tr th {
+	border-right: 2px solid #DCDCDC;
+
+}
+
+.popover-th {
+	cursor:pointer;
+}
+i.fa.fa-question-circle.doc-help-tip {
+	opacity: 0;
+	transition: .5s all;
+	float: right;
+	padding-top: 4px;
+}
+.popover-th:hover i.fa.fa-question-circle.doc-help-tip {
+	opacity: 1;
+}
+.popover .popover-header {
+	background-color:  #04592D;
+	color: #FFFFFF;
+}
+.popover {
+	border: 1px solid #04592D;
+}
+
 
 th.popover-container .popover .popover-header,
 th.popover-container .popover .popover-body {
@@ -662,6 +717,15 @@ table.table-condensed.striped-rows tbody tr:nth-child(4n+1) {
 	background-color: rgba(220, 220, 220, 0.4);
 }
 
+/* Tools Table --------------------------- */
+table.table-tools caption {
+	font-size: 18px;
+	color: rgb(20,20,20);
+	font-weight:600;
+}
+table.table-tools  {
+
+}
 
 /* Mermaid Diagram ----------------------------------- */
 [id^="mermaid"] {

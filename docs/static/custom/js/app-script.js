@@ -25,4 +25,12 @@ $(document).ready(function () {
 		}
 	});
 
+	if (location.hash !== null && location.hash !== "") {
+		console.log("Hash Found");
+		console.log(location.hash);
+		let accordian = $(location.hash).data('bs-target');
+		console.log(accordian);
+		$(accordian).collapse('show');
+
+	}
 });
