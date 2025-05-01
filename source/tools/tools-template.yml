@@ -1,0 +1,13 @@
+# tools-template.yml
+# stadocgen
+# mids/app/md
+# 
+# 2025-05-01
+tools:
+  - title:
+    description:
+    landing_page:
+    download_url:
+    requirements:
+    screenshots:
+
