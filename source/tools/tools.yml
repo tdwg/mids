@@ -4,22 +4,22 @@
 # 
 # 2025-05-01
 tools:
-  - title: GBIF API MIDS Calculator
-    description: The GBIF API MIDS Calculator is a web-based tool for calculating MIDS scores on biological datasets uploaded to GBIF. The goal of this tool is to make it easy for anyone to check the current MIDS level of their GBIF dataset without having to download the data themselves or run specialist software on their computer.
-	landing_page: https://naturalhistorymuseum.github.io/gamc/
-	download_url: 
+  - title: "GBIF API MIDS Calculator"
+    description: "The GBIF API MIDS Calculator is a web-based tool for calculating MIDS scores on biological datasets uploaded to GBIF. The goal of this tool is to make it easy for anyone to check the current MIDS level of their GBIF dataset without having to download the data themselves or run specialist software on their computer."
+    landing_page: "https://naturalhistorymuseum.github.io/gamc/"
+    download_url: 
     documentation_url: 
     github_repo: 
-    requirements: None
+    requirements:
     last_updated: 
     screenshots:
-  - title: MIDS Calculator
-	description: The MIDSCalculator is a Shiny app written in R, which allows users to calculate MIDS scores for each record in a submitted dataset, and explore the results.
-	landing_page: 
-	download_url: https://drive.google.com/drive/folders/1ioRhHIvdYI88yoPTsYLG_k5-8n-05CiP
-	documentation_url: https://github.com/AgentschapPlantentuinMeise/MIDSCalculator/blob/main/help/howtouse.md
-	github_repo: https://github.com/AgentschapPlantentuinMeise/MIDSCalculator
-	requirements: 
-	last_updated: 
-	screenshots: 
+  - title: "MIDS Calculator"
+    description: "The MIDSCalculator is a Shiny app written in R, which allows users to calculate MIDS scores for each record in a submitted dataset, and explore the results."
+    landing_page: 
+    download_url: "https://drive.google.com/drive/folders/1ioRhHIvdYI88yoPTsYLG_k5-8n-05CiP"
+    documentation_url: "https://github.com/AgentschapPlantentuinMeise/MIDSCalculator/blob/main/help/howtouse.md'
+    github_repo: "https://github.com/AgentschapPlantentuinMeise/MIDSCalculator"
+    requirements: 
+    last_updated: "2025-04-16"
+    screenshots: 
 	
