@@ -579,22 +579,7 @@ td.nested-td-container{
 }
 
 
-/* Footer --------------------------------------------- */
 
-.footer-logo {
-	max-width: 150px;
-	height: auto;
-}
-.list-inline-item .footer-logo {
-	height: 40px;
-	width: auto;
-}
-body > footer p {
-	color: #FFFFFF;
-}
-body > footer p a {
-	color: rgb(160,140,230);
-}
 /* Testing Collapse */
 
 table.table-sssom tbody tr th {
@@ -723,11 +708,80 @@ table.table-tools caption {
 	color: rgb(20,20,20);
 	font-weight:600;
 }
-table.table-tools  {
-
+/* Footer ------------------------------------------------------------------------- */
+.footer-logo {
+	max-width: 150px;
+	height: auto;
+}
+.list-inline-item .footer-logo {
+	height: 40px;
+	width: auto;
+}
+body > footer p {
+	color: #FFFFFF;
+}
+footer.custom-bg-color p.footer-caption a {
+	color: #FFFFFF;
 }
 
-/* Mermaid Diagram ----------------------------------- */
+
+
+
+/* Mermaid E-R Diagrams ----------------------------------------------------------- */
+/* Alt Colors
+Original:#043B58;
+Red: #8C3515
+Green: #235900
+Green 2: #006653
+Purple: #04592D
+*/
+/* Fullscreen */
+.mermaid {
+	background-color: #FFFFFF;
+}
+.toggle-fullscreen-btn {
+	top: 10px;
+	right: 10px;
+	border: 0;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+.toggle-fullscreen-svg {
+	display: block;
+	height: auto;
+}
+.toggle-fullscreen-svg path {
+	transform-box: view-box;
+	transform-origin: 12px 12px;
+	fill: none;
+	stroke: rgb(150,150,151);
+	stroke-width: 3;
+	transition: .15s;
+}
+.toggle-fullscreen-btn:hover path:nth-child(1),
+.toggle-fullscreen-btn:focus path:nth-child(1) {
+	transform: translate(-2px, -2px);
+}
+.toggle-fullscreen-btn:hover path:nth-child(2),
+.toggle-fullscreen-btn:focus path:nth-child(2) {
+	transform: translate(2px, -2px);
+}
+.toggle-fullscreen-btn:hover path:nth-child(3),
+.toggle-fullscreen-btn:focus path:nth-child(3) {
+	transform: translate(2px, 2px);
+}
+.toggle-fullscreen-btn:hover path:nth-child(4),
+.toggle-fullscreen-btn:focus path:nth-child(4) {
+	transform: translate(-2px, 2px);
+}
+.toggle-fullscreen-btn:not(.on) .icon-fullscreen-leave {
+	display: none;
+}
+.toggle-fullscreen-btn.on .icon-fullscreen-enter {
+	display: none;
+}
 [id^="mermaid"] {
 }
 .diagram-wrapper {
@@ -756,7 +810,7 @@ table.table-tools  {
 .diagram-wrapper svg[id^="mermaid"] line.divider {
 	stroke: rgba(250,250,250,0.5) !important;
 }
-/* Responsives ----------------- */
+/* Responsives ------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
 	.table-responsive.print-avoid table.table-condensed{
@@ -834,12 +888,13 @@ table.table-tools  {
 	table.table-sssom tbody table.nested-table tbody tr th {
 		paddin-right: 0;
 		padding-left: 10px;
-		width: 24%;
+		width: 100%;
 	}
 	table.table-sssom tbody table.nested-table tbody tr td {
-		width: 72%;
+		width: 100%;
 		padding-right: 0;
-		padding-left: 0;
+		padding-left: 10px;
+		padding-top: 0;
 	}
 	tbody tr.nested-thead-tr {
 		height: 0;
@@ -862,13 +917,8 @@ table.table-tools  {
 	table.table-sssom tbody [data-bs-toggle="collapse"].collapsed .indicator-td .fa:after {
 		content: 'Show Additional Details';
 	}
-
-
 }
-
-
 @media only screen and (max-width: 480px) {
-
 	main .container.content {
 		max-width: 100%;
 		width: 100%;
@@ -887,61 +937,4 @@ table.table-tools  {
 		-webkit-column-gap: 0px;
 	}
 }
-
-/* Mermaid E-R Diagrams --------------------------------------------------- */
-/* Alt Colors
-Original:#043B58;
-Red: #8C3515
-Green: #235900
-Green 2: #006653
-Purple: #04592D
-*/
-/* Fullscreen */
-.mermaid {
-	background-color: #FFFFFF;
-}
-.toggle-fullscreen-btn {
-	top: 10px;
-	right: 10px;
-	border: 0;
-	padding: 0;
-	background: none;
-	cursor: pointer;
-	outline: none;
-}
-.toggle-fullscreen-svg {
-	display: block;
-	height: auto;
-}
-.toggle-fullscreen-svg path {
-	transform-box: view-box;
-	transform-origin: 12px 12px;
-	fill: none;
-	stroke: rgb(150,150,151);
-	stroke-width: 3;
-	transition: .15s;
-}
-.toggle-fullscreen-btn:hover path:nth-child(1),
-.toggle-fullscreen-btn:focus path:nth-child(1) {
-	transform: translate(-2px, -2px);
-}
-.toggle-fullscreen-btn:hover path:nth-child(2),
-.toggle-fullscreen-btn:focus path:nth-child(2) {
-	transform: translate(2px, -2px);
-}
-.toggle-fullscreen-btn:hover path:nth-child(3),
-.toggle-fullscreen-btn:focus path:nth-child(3) {
-	transform: translate(2px, 2px);
-}
-.toggle-fullscreen-btn:hover path:nth-child(4),
-.toggle-fullscreen-btn:focus path:nth-child(4) {
-	transform: translate(-2px, 2px);
-}
-.toggle-fullscreen-btn:not(.on) .icon-fullscreen-leave {
-	display: none;
-}
-.toggle-fullscreen-btn.on .icon-fullscreen-enter {
-	display: none;
-}
-
 
