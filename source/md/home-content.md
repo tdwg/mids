@@ -9,6 +9,8 @@ Getting started links[](#getting-started)
 -----------------------------------
 *   [Normative Information Element & Levels List](https://tdwg.github.io/mids/information-elements/index.html)
 *   [Mappings](https://tdwg.github.io/mids/mappings/index.html)
+*   [Tools](https://tdwg.github.io/mids/tools/index.html)
+*   [About](https://tdwg.github.io/mids/about/index.html)
 *   Provide feedback through a [github issue](https://github.com/tdwg/mids/issues)
 
 -------------
