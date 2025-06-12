@@ -33,4 +33,10 @@ The MIDS level aimed at within a digitisation programme will depend on many fact
 
 It is important to keep in mind that MIDS defines the “Minimum” information at each level and it is strongly encouraged to capture more information if possible.
 
-*Last Updated: 6 February 2025*
+## How to calculate MIDS
+
+The MIDS score can be calculated for an individual specimen by assessing the information required for each MIDS level and the information present in the digitised specimen. The data can be mapped to [Darwin Core terms](https://www.tdwg.org/standards/dwc/) or the [Access to Biological Collection Data (ABCD) Schema](https://www.tdwg.org/standards/abcd/) and then to the [MIDS information elements](https://tdwg.github.io/mids/information-elements/index.html) using the [mapping examples](https://tdwg.github.io/mids/mappings/index.html) provided.
+
+To make the calculations easier, [tools](https://tdwg.github.io/mids/tools/index.html) are being developed to enable the MIDS score to be calculated for each specimen within large datasets. These tools work on existing datasets in the [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) or the [Distributed System of Scientific Collections](https://www.dissco.eu/) or users can create their own datasets in Darwin Core Archive format ([Guidance](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide)) or in [ABCD format](https://www.tdwg.org/standards/abcd/). These tools make calculating the MIDS score for large collections possible, as well as providing the results in a format to enable users to understand the data which are impacting the MIDS score.
+
+*Last Updated: 12 June 2025*
