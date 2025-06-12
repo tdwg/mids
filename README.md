@@ -89,30 +89,31 @@ Issues labelled with the black 'MIDS Element' label are used to hold the working
 
 All other issues than MIDS Element issues are used to raise issues (concerns) relating to the specification, such as bugs, suggestions for improvement, request for clarification, etc.
 
+Milestones are being used to structure work and progress.
+
 ## Resources
+
+A [MIDS website](https://tdwg.github.io/mids/index.html) has been created for the draft version of MIDS to help visualise and understand the structure and to provide information about resources including tools used to calculate MIDS scores.
 
 MIDS is being developed within the following structure:
 
-**MIDS Levels** - Four levels have been defined and can be found [here](https://github.com/tdwg/mids/blob/main/source/terms/mids-levels/)
+**MIDS Levels** - Four levels have been defined and can be found on the [Information Elements webpage](https://tdwg.github.io/mids/information-elements/index.html)
 
-**MIDS Information Elements** - The information elements have been defined and can be found [here](https://github.com/tdwg/mids/tree/main/source/terms/information_elements)
+**MIDS Information Elements** - The information elements have been defined and can be found on the [Information Elements webpage](https://tdwg.github.io/mids/information-elements/index.html)
 
-**MIDS SSSOM Mapping** - The elements of each MIDS level have been mapped to terms as used in common domain data standards, such as Darwin Core or ABCD and can be found [here](https://github.com/tdwg/mids/tree/main/source/mappings)
+**MIDS SSSOM Mapping** - The elements of each MIDS level have been mapped to terms as used in common domain data standards, such as Darwin Core or ABCD and can be found on the [Mappings webpage](https://tdwg.github.io/mids/mappings/index.html)
 
-**MIDS Wiki** - A wiki is being developed to provide more information on the terms and concepts represented in MIDS, and guidance on how the MIDS may be used in practice. This can be found [here](https://github.com/tdwg/mids/wiki/)
+**MIDS Tools** - Several tools have been developed and can be tested by users. They can be found on the [MIDS Tools webpage](https://tdwg.github.io/mids/mappings/index.html)
 
-**MIDS Implementations** - The following implementations have been developed and can be tested by users.
-- **MIDS Calculator** - The [MIDS Calculator](https://github.com/AgentschapPlantentuinMeise/MIDSCalculator) developed at Meise Botanic Garden uses a zipped GBIF annotated Darwin Core Archive. This enables the user to define their own dataset from GBIF. It also enables the implementation of value permissions for some of the information elements.
-- **MIDS Checker** - The [MIDS Checker](https://naturalhistorymuseum.github.io/gamc/
-) developed at the Natural History Museum London interacts directly with the GBIF API. This allows a more direct calculation, although constrained by the data available via the API and is restricted to predefined datasets in GBIF.
+### Most recent draft of MIDS
 
-### Most recent draft of the specification
-We are currently developing the documentation in an updated structure on GitHub. Until this is in place, the most recent draft of the MIDS specification can be found here: 
+The [MIDS website](https://tdwg.github.io/mids/index.html) is now the most up to date version of the Minimum Information about a Digitised Specimen (MIDS).
+
+### Earlier drafts:
 [MIDS-definition-v0.17-13Jul2023](https://github.com/tdwg/mids/blob/working-draft/current-draft%20/MIDS-definition-v0.17-13Jul2023.md)
 Cite as:
 *tbc*
 
-### Earlier drafts:
 [MIDS-definition-v0.16-28May2022](https://github.com/tdwg/mids/blob/working-draft/old-drafts/MIDS-definition-v0.16-28May2022.md)
 Cite as:
 *Haston, E., Hardisty, A., Addink, W., Dillen, M., Groom, Q., Chapman, C. et al. (Draft) Minimum Information about a Digital Specimen (MIDS) v0.16, 28 May 2022*.
