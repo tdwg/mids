@@ -1,5 +1,5 @@
 ## Why use MIDS?
-
+  
 The need to rapidly digitize millions of specimens in Natural History Collections has led to a staged approach for data capture being widely adopted. Mass digitization programs have generally started with the creation of skeletal or stub records, which can then be expanded as more funding or support becomes available. When combined with the previous practice of creating relatively complete data records for each specimen, there is currently a significant variation in the level of digitization both within and between collections.
 
 [The Minimum Information about a Digital Specimen (MIDS) specification](https://github.com/tdwg/mids) has been designed to provide a means of measuring and monitoring the level of digitisation of specimens within a collection. It provides guidance for prioritising the data to be captured as well as recommendations for data standards and mapping structures.
