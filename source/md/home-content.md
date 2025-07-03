@@ -1,11 +1,10 @@
 ## What is MIDS?
 
-The Minimum Information about a Digital Specimen (MIDS) standard specifies the information elements expected to be present when providing access to specimens within a digital framework. Digital specimens are online digital representations of their physical counterparts in natural science collections. The definition of digitization used here is making physical objects digitally available in terms of data and/or media. Several 'levels of digitization' (0-3) represent a simple categorization of the type and depth of digitization achieved by different approaches to digitization. These are defined in detail in the [Information Elements](https://tdwg.github.io/mids/information-elements/index.html) page.
+The Minimum Information about a Digital Specimen (MIDS) standard has been designed to provide a means of measuring and monitoring the level of digitization of specimens within a collection. It provides guidance for prioritizing the data to be captured as well as recommendations for data standards and mapping structures.
+
+MIDS specifies the information elements expected to be present when providing access to specimens within a digital framework. Digital specimens are online digital representations of their physical counterparts in natural science collections. The definition of digitization used here is making physical objects digitally available in terms of data and/or media. Several 'levels of digitization' (0-3) represent a simple categorization of the type and depth of digitization achieved by different approaches to digitization. These are defined in detail in the [Information Elements](https://tdwg.github.io/mids/information-elements/index.html) page.
 
 The need to rapidly digitize millions of specimens in Natural History Collections has led to a staged approach for data capture being widely adopted. Mass digitization programs have generally started with the creation of skeletal or stub records, which can then be expanded as more funding or support becomes available. When combined with the previous practice of creating relatively complete data records for each specimen, there is currently a significant variation in the level of digitization both within and between collections.
-
-[The Minimum Information about a Digital Specimen (MIDS) specification](https://github.com/tdwg/mids) has been designed to provide a means of measuring and monitoring the level of digitisation of specimens within a collection. It provides guidance for prioritising the data to be captured as well as recommendations for data standards and mapping structures.
-
 
 Getting started links[](#getting-started)
 -----------------------------------
