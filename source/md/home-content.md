@@ -40,19 +40,19 @@ The Minimum Information about a Digital Specimen (MIDS) framework offers a clear
 
 ### MIDS Level 0 (Bare):
 
-A minimal record that links a specimen to an identifier (e.g., a register number or barcode). It confirms the specimen's existence but includes no detailed information, laying the groundwork for further digitization.
+> A minimal record that links a specimen to an identifier (e.g., a register number or barcode). It confirms the specimen's existence but includes no detailed information, laying the groundwork for further digitization.
 
 ### MIDS Level 1 (Basic):
 
-Adds basic taxonomic details (e.g., species name) and physical information about the specimen. This allows for basic searchability and gives a simple representation of the collection for internal and external users.
+> Adds basic taxonomic details (e.g., species name) and physical information about the specimen. This allows for basic searchability and gives a simple representation of the collection for internal and external users.
 
 ### MIDS Level 2 (Regular):
 
-Expands on Level 1 with more detailed data, such as geographic and temporal information, collection event details, and multimedia like images. This level supports more thorough scientific research.
+> Expands on Level 1 with more detailed data, such as geographic and temporal information, collection event details, and multimedia like images. This level supports more thorough scientific research.
 
 ### MIDS Level 3 (Extended):
 
-The most detailed level, linking the specimen to external datasets through persistent identifiers (e.g., Publication DOIs). This significantly boosts research potential by connecting the specimen to specialised data across different platforms.
+> The most detailed level, linking the specimen to external datasets through persistent identifiers (e.g., Publication DOIs). This significantly boosts research potential by connecting the specimen to specialised data across different platforms.
 
 ## How to use MIDS for digitization planning
 
