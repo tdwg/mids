@@ -6,6 +6,8 @@ MIDS specifies the information elements expected to be present when providing ac
 
 The need to rapidly digitize millions of specimens in Natural History Collections has led to a staged approach for data capture being widely adopted. Mass digitization programs have generally started with the creation of skeletal or stub records, which can then be expanded as more funding or support becomes available. When combined with the previous practice of creating relatively complete data records for each specimen, there is currently a significant variation in the level of digitization both within and between collections.
 
+MIDS defines what information about a specimen should be available but it does not attach specific value to that information because attaching value depends both upon the information itself and the purpose to which that is put.
+
 Getting started links[](#getting-started)
 -----------------------------------
 *   [Normative Information Element & Levels List](https://tdwg.github.io/mids/information-elements/index.html)
@@ -17,18 +19,16 @@ Getting started links[](#getting-started)
 -------------
 ## Aims
 
-To assist in the prioritisation of data to be published to make digital specimen information useful for multiple purposes of research, teaching and learning, etc.;
-
-To provide a metric for the digitisation of collections;
+- To provide a metric for the digitisation of collections
+- To assist in the prioritisation of data to be published to make digital specimen information useful for multiple purposes of research, teaching and learning
 
 Outcomes of these aims include:
 
-- To improve the quality of published data by providing recommendations to collection managers about relevant data standards and ontologies;
-- To support and contribute towards assessments of fitness for purpose of data (suitability) for feeding specific types of data processing pipelines;
-- To assist researchers to know what information to include in their publications about specimens they have used in their research, and,
-- To enable efficient querying, aggregation and self-contained data processing by computing systems (machine-actionability, de Smedt 2020) based on provision of rich contextual (meta)data in compliance with the FAIR principles (Wilkinson 2016).
+- To improve the quality of published data by providing recommendations to collection managers about relevant data standards and ontologies
+- To support and contribute towards assessments of fitness for purpose of data (suitability) for feeding specific types of data processing pipelines
+- To assist researchers to know what information to include in their publications about specimens they have used in their research
+- To enable efficient querying, aggregation and self-contained data processing by computing systems (machine-actionability, de Smedt 2020) based on provision of rich contextual (meta)data in compliance with the FAIR principles (Wilkinson 2016)
 
-MIDS defines what information about a specimen should be available but it does not attach specific value to that information because attaching value depends both upon the information itself and the purpose to which that is put.
 
 ## Audience
 
