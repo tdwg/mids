@@ -1,5 +1,4 @@
 # SSSOM mapping of MIDS elements (DRAFT)
-$${\color{red} This\space document\space is\space still\space in\space draft\space stage! }$$
 
 We intend to use the [SSSOM standard](https://w3id.org/sssom/spec) to effectively map the elements of each MIDS level to terms as used in common domain data standards, such as Darwin Core or ABCD, or even any ad hoc data model linked to an infrastructure such as GBIF or a local collection management system.
 

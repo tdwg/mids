@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Minimum Information about a Digital Specimen Tools</title>
+	<title>Minimum Information about a Digital Specimen Resources</title>
 	<meta property="og:url" content="https://tdwg.github.io/mids/list/">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Minimum Information about a Digital Specimen Documentation">
@@ -48,7 +48,7 @@
 				</li>
                 <li class="navbar-item">
 					<a class="nav-link nav-link-active"
-                       href="index.html">Tools</a>
+                       href="index.html">Resources</a>
 				</li>
                 <li class="navbar-item">
 					<a class="nav-link "
@@ -68,7 +68,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-lg-8 position-relative mx-auto">
-				<h1>Tools</h1>
+				<h1>Resources</h1>
 				<div class="lead"></div>
 			</div>
 		</div>
@@ -77,10 +77,23 @@
     <a id="top"></a>
 	<div class="container content">
 		<div class="row">
-            <div class="col-md-12 col-lg-10 mx-auto">
-                <h2><span style="color:red">DRAFT</span></h2>
-                
-                 <h3 id="3-dwc-mappings-table">MIDS Tools</h3>
+            <div class="col-lg-3 mx-auto">
+                <div class="toc">
+    <h6>On this page</h6>
+    <ul>
+        <li><a href="#1-tools">1 MIDS Tools</a>
+        <li><a href="#2-glossary">2 Glossary</a>
+        <li><a href="#top"><em>Return to Top</em></a></li>
+    </ul>
+</div>
+  
+  
+            </div>
+           <div class="col-lg-9 order-lg-first mx-auto">
+               <h2><span style="color:red">DRAFT</span></h2>
+                 <span id="1-tools"></span>
+                 
+                 <h3 id="2-mids-tools">MIDS Tools</h3>
 <div class="table-outer-wrapper">
     <div class="term-table-wrapper">
         
@@ -111,7 +124,7 @@
                         
                         
                             <tr>
-                                <th>Last Updated</th>:</th>
+                                <th>Last Updated:</th>
                                 <td>2024-07-22</td>
                             </tr>
                         
@@ -151,7 +164,7 @@
                         
                         
                             <tr>
-                                <th>Last Updated</th>:</th>
+                                <th>Last Updated:</th>
                                 <td>2025-05-07</td>
                             </tr>
                         
@@ -159,6 +172,103 @@
                 </table>
             </div>
         
+            <div class="table-responsive print-avoid">
+                <table class="table table-condensed table-tools caption-top">
+                <caption>Distributed System of Scientific Collections (DiSSCo)</caption>
+                    <tbody>
+                            <tr>
+                                <th>Description:</th>
+                                <td>The Distributed System of Scientific Collections is an emerging European Research Infrastructure aimed at accelerating the digitisation of Natural History Collections. For each specimen, DiSSCo ingests it calculates the MIDS level of the specimen and adds it to the data. The calculation is based on the SSSOM mapping provided by the MIDS Work Group but DiSSCo does (not yet) use the SSSOM directly.</td>
+                            </tr>
+                            <tr>
+                                <th>Landing Page:</th>
+                                <td><a href="https://disscover.dissco.eu/" rel="noopener">https://disscover.dissco.eu/</a></td>
+                            </tr>
+                        
+                         
+                        
+                            <tr>
+                                <th>GitHub Repository:</th>
+                                <td><a href="https://github.com/DiSSCo" rel="noopener">https://github.com/DiSSCo</a></td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <th>Last Updated:</th>
+                                <td>2025-05-27</td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</div>
+                 <h3 id="2-glossary">MIDS Glossary</h3>
+    <div class="glossary-wrapper">
+        <dl class="glossary">
+            
+                <dt id="bare-record">Bare Record</dt>
+                <dd>The association between an identifier of a physical specimen and its initial digital representation, allowing for subsequent unambiguous attachment of all other information (cf. basic record, regular record and extended record).</dd>
+                
+            
+                <dt id="basic-record">Basic Record</dt>
+                <dd>A limited set of information about the specimen; for example, physical specimen identifier and barcode details, and details of the collection it belongs to (cf. bare record, regular record and extended record).</dd>
+                
+            
+                <dt id="content-data">(Content) Data</dt>
+                <dd>Data relating directly to describing physical specimens, such as images of those specimens, information from specimen labels (scientific name, location where collected, date collected, collector name, etc.), links to third-party semantic resources, or measurements and other analyses of specimens.</dd>
+                
+            
+                <dt id="digital-specimen">Digital Specimen</dt>
+                <dd>A digital representation on the Internet (digital twin) corresponding to a physical specimen in a natural science collection.</dd>
+                
+            
+                <dt id="digitization">Digitisation</dt>
+                <dd>The process of converting analog information about physical specimens (e.g. in natural science collections) to digital form, which therefore includes electronic text, images and other representations; and making that publicly available.</dd>
+                
+            
+                <dt id="extended-record">Extended Record</dt>
+                <dd>A comprehensive set of elements describing the specimen; for example: all label data, annotations and identification history (cf. bare record, basic record and regular record).</dd>
+                
+            
+                <dt id="information-element">Information Element</dt>
+                <dd>A designation for a specific piece of information about the specimen which has a definition and is mapped to relevant schemas to determine whether a dataset satisfies each information element within each MIDS level.</dd>
+                
+            
+                <dt id="informative">Informative</dt>
+                <dd>Providing background or additional information.</dd>
+                
+            
+                <dt id="levels-of-digitization">Levels of Digitisation</dt>
+                <dd>A simple categorisation of the type and depth of digitisation achieved by different approaches to digitisation.</dd>
+                
+            
+                <dt id="collection">Collection</dt>
+                <dd>Within the context of MIDS, a collection is an accumulated group of objects with a focal characteristic that is assembled and maintained by an individual or organization over time. A collection comprises multiple items that are conceptually or physically arranged together for a specific purpose and audience, according to a collection plan.</dd>
+                
+                    <dd><span class="sources">Sources: Lightweight Information Describing Objects (LIDO) http://terminology.lido-schema.org/lido01053</span></dd>
+                
+            
+                <dt id="natural-sciences-collection">Natural Science Collection</dt>
+                <dd>A collection comprised of objects that occur naturally (in contrast to an anthropogenic origin), such as preserved plants and animals, fossils, rocks and minerals, gems, etc. curated and maintained by an institution such as a museum or a university.</dd>
+                
+            
+                <dt id="normative">Normative</dt>
+                <dd>Those aspects of a standard that shall be implemented in order for a particular system to be compliant to the standard.</dd>
+                
+                    <dd><span class="sources">Sources: ISO/IEC 14496-3:2019(en)</span></dd>
+                
+            
+                <dt id="persistent-identifier">Persistent identifier (PID)</dt>
+                <dd>A persistent identifier is a string (functioning as a symbol) that acts as a (globally) unique and long-lasting reference to a thing. The identifier can be persistently resolved to digitally actionable meaningful information about the identified thing.</dd>
+                
+            
+                <dt id="regular-record">Regular Record</dt>
+                <dd>A set of information describing the specimen; for example, physical specimen identifier, barcode details, taxon name, collection date and place, collector, etc. (cf. bare record, basic record and extended record).</dd>
+                
+            
+        </dl>
     </div>
 </div>
             </div>

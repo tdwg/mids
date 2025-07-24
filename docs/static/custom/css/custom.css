@@ -810,6 +810,24 @@ Purple: #04592D
 .diagram-wrapper svg[id^="mermaid"] line.divider {
 	stroke: rgba(250,250,250,0.5) !important;
 }
+/* Glossary dl/dt/dd -----------------------------------------------------------------------------------*/
+dl.glossary {
+	display: grid;
+	grid-gap: 4px 16px;
+	grid-template-columns: max-content;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0;
+	grid-column-start: 2;
+}
+dd span {
+	font-size: 90%;
+	color: rgba(100,100,100);
+	font-style: italic;
+}
 /* Responsives ------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
