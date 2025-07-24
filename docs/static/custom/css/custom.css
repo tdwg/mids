@@ -824,6 +824,7 @@ dd {
 	grid-column-start: 2;
 }
 dd span {
+	display: block;
 	font-size: 90%;
 	color: rgba(100,100,100);
 	font-style: italic;
