@@ -11,7 +11,7 @@ glossary:
 	definition: "A limited set of information about the specimen; for example, physical specimen identifier and barcode details, and details of the collection it belongs to (cf. bare record, regular record and extended record)."
 	id: "basic-record"
   - prefLabel: "(Content) Data"
-	definition: "data relating directly to describing physical specimens, such as images of those specimens, information from specimen labels (scientific name, location where collected, date collected, collector name, etc.), links to third-party semantic resources, or measurements and other analyses of specimens."
+	definition: "Data relating directly to describing physical specimens, such as images of those specimens, information from specimen labels (scientific name, location where collected, date collected, collector name, etc.), links to third-party semantic resources, or measurements and other analyses of specimens."
 	id: "content-data"
   - prefLabel: "Digital Specimen"
 	definition: "A digital representation on the Internet (digital twin) corresponding to a physical specimen in a natural science collection."
@@ -45,8 +45,7 @@ glossary:
   - prefLabel: "Persistent identifier (PID)"
 	definition: "a persistent identifier is a string (functioning as a symbol) that acts as a (globally) unique and long-lasting reference to a thing. The identifier can be persistently resolved to digitally actionable meaningful information about the identified thing."
 	id: "persistent-identifier"
-  - prefLabel: "Regular Record"
-	definition: "A set of information describing the specimen; for example, physical specimen identifier, barcode details, taxon name, collection date and place, collector, etc. (cf. bare record, basic record and extended record)."
-	id: "regular-record"
-	
-  	
+  - prefLabel: "Intermediate Record"
+	definition: "An intermediary level of information including data that have been agreed over time as essential for most scientific purposes."
+	id: "intermediate-record"
+	  	
