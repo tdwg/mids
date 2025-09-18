@@ -20,11 +20,11 @@ Become involved and contribute by:
 
 - Contacting the Conveners and/or signing up to the [task group mailing list](http://lists.tdwg.org/mailman/listinfo/tdwg-mids).
   
-- Participating in the meetings. The timing of these are currently weekly on Thursdays at 14:00 UTC. Contact the Conveners for more information.
+- Participating in the meetings. The timing of these is currently weekly on Thursdays at 14:00 UTC. Contact the Conveners for more information.
 
-- Watching this github repository. Submitting or commenting on an issue.
+- Watching this GitHub repository. Submitting or commenting on an issue.
 
-- Using and evaluating the the specification as it emerges and providing feedback e.g., by submitting an issue or suggesting a new need.
+- Using and evaluating the specification as it emerges and providing feedback, e.g., by submitting an issue or suggesting a new need.
 
 ## Members
 
@@ -34,6 +34,7 @@ Become involved and contribute by:
 | --- | --- | --- |
 | Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk|  
 | Cat Chapman | Florida Museum of Natural History |  / cchapman AT floridamuseum |  
+| Mathias Dillen | Meise Botanic Garden | @matdillen |
 
 ### Previous Conveners
 
@@ -45,7 +46,6 @@ Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 | --- | --- | --- |  
 | Wouter Addink | Naturalis Biodiversity Center | @wouteraddink |
 | Christian Bölling | Museum für Naturkunde Berlin (MfN) | @cboelling |  
-| Mathias Dillen | Meise Botanic Garden | @matdillen |
 | Gabriele Dröge | Botanic Garden and Botanical Museum Berlin | @gdadade |
 | Dag Endresen | University of Oslo, Natural History Museum | @dagendresen |  
 | Falko Glöckler | Museum für Naturkunde Berlin (MfN) | falko.gloeckler AT mfn.berlin |
@@ -55,7 +55,7 @@ Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 | Pieter Huybrechts | Meise Botanic Garden | @PietrH |
 | Chris Hunter | GigaDB, BGI Group | @only1chunts |
 | Gunnhild Marthinsen | University of Oslo Natural History Museum | g.m.marthinsen AT nhm.uio.no |
-| Ben Norton |  | <michaelnorton.ben@gmail.com> |
+| Ben Norton | Independent | <michaelnorton.ben@gmail.com> |
 | Deborah Paul | University of Illinois Urbana-Champaign / Species File Group | @debpaul |
 | Richard Pyle | Bernice Pauahi Bishop Museum | deepreef AT bishopmuseum.org |
 | Mareike Petersen | Museum für Naturkunde Berlin (MfN) | mareike.petersen AT mfn.berlin |
@@ -72,22 +72,22 @@ Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 
 ## Repo structure
 
-The [main branch](https://github.com/tdwg/mids) contains the current documentation, including the most recently released draft version of the standard, the information elements and the mapping.
+The [main branch](https://github.com/tdwg/mids) contains the current documentation, including the most recently released draft version of the standard, the information elements, and the mapping.
 
-The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the standard during its development including the [current draft](https://github.com/tdwg/mids/tree/working-draft/current-draft) which is being actively updated. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
+The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the standard during its development, including the [current draft](https://github.com/tdwg/mids/tree/working-draft/current-draft), which is being actively updated. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
 
 ## TG Way of working
 
-### Repo, email and meetings
+### Repo, email, and meetings
 The [github repository TDWG TG MIDS](https://github.com/tdwg/mids) together with the [TG mailing list](http://lists.tdwg.org/mailman/listinfo/tdwg-mids) and regular TG meetings is the way of working.
 
-[Github issues](https://github.com/tdwg/mids/issues) and their [status labels](https://github.com/tdwg/mids/labels) provide the main way of keeping track of issues, discussions and progress.
+[Github issues](https://github.com/tdwg/mids/issues) and their [status labels](https://github.com/tdwg/mids/labels) provide the main way of keeping track of issues, discussions, and progress.
 
-Github issues are used in two ways to make progress. Labels indicate the kind of issue and other information. See issue label meanings below.
+GitHub issues are used in two ways to make progress. Labels indicate the kind of issue and other information. See issue label meanings below.
 
 Issues labelled with the black 'MIDS Element' label are used to hold the working definition of a specific MIDS information element. Other labels (MIDS-0, MIDS-1, MIDS-2, MIDS-3) indicate which MIDS levels the information belongs to.  
 
-All other issues than MIDS Element issues are used to raise issues (concerns) relating to the specification, such as bugs, suggestions for improvement, request for clarification, etc.
+All issues other than MIDS Element issues are used to raise issues (concerns) relating to the specification, such as bugs, suggestions for improvement, requests for clarification, etc.
 
 Milestones are being used to structure work and progress.
 
