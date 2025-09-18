@@ -6,12 +6,13 @@ curie_map:
   semapv: https://w3id.org/semapv/vocab/
   skos: http://www.w3.org/2004/02/skos/core#
   sssom: https://w3id.org/sssom/
-mapping_set_id: sssom_mids_abcd_biology_02
-mapping_set_version: 0.2
+mapping_set_id: mids_abcd_biology_1
+mapping_set_version: 1
 mapping_set_title: MIDS SSSOM mappings for ABCD in the Biology domain
+mapping_set_description: First release of these mappings according to the versioned specification of how SSSOM is implemented for MIDS calculations.
 license: https://creativecommons.org/publicdomain/zero/1.0/
 mapping_provider: https://github.com/tdwg/mids
-mapping_date: 2024-07-01
+mapping_date: 2025-09-18
 object_preprocessing: semapv:RegexRemoval
 object_type: abcd
 subject_type: biology
