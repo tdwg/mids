@@ -245,7 +245,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                     <tr id="MIDS2">
                         <td>2</td>
                         <td>Intermediate</td>
-                        <td>A regular level of information including data that have been agreed over time as essential for most scientific purposes.</td>
+                        <td>An intermediary level of information including data that have been agreed over time as essential for most scientific purposes.</td>
                         <td>Key information fields that have been agreed over time as essential for most scientific purposes.</td>
                     </tr>
                 
@@ -304,7 +304,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                 
                     <li><a href="#DateCollected">DateCollected</a></li>
                 
-                    <li><a href="#GeologicalAge">GeologicalAge</a></li>
+                    <li><a href="#GeologicalContext">GeologicalContext</a></li>
                 
                     <li><a href="#Media">Media</a></li>
                 
@@ -327,13 +327,13 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                 
                     <li><a href="#IdentifiedByID">IdentifiedByID</a></li>
                 
+                    <li><a href="#IndentifiedAsID">IndentifiedAsID</a></li>
+                
                     <li><a href="#InstitutionID">InstitutionID</a></li>
                 
                     <li><a href="#Mass">Mass</a></li>
                 
                     <li><a href="#MediaID">MediaID</a></li>
-                
-                    <li><a href="#ScientificNameID">ScientificNameID</a></li>
                 
             </ul>
          </div>
@@ -568,7 +568,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
 
                         <tr>
                             <th scope="row">Definition</th>
-                            <td>License under which the specimen data are published</td>
+                            <td>License under which the specimen data are published.</td>
                         </tr>
 
                         
@@ -581,7 +581,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                         
                             <tr>
                                 <th scope="row">Purpose</th>
-                                <td>To enable all users to determine how they can use the specimen data</td>
+                                <td>To enable all users to determine how they can use the specimen data.</td>
                             </tr>
                         
 
@@ -666,13 +666,13 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
 
                         <tr>
                             <th scope="row">Definition</th>
-                            <td>UTC date/time of date/time of first creation or subsequent modification, if any</td>
+                            <td>UTC date/time of date/time of first creation or subsequent modification, if any.</td>
                         </tr>
 
                         
                             <tr>
                                 <th scope="row">Usage Note</th>
-                                <td>Use ISO 8601. UTC date/time, extended format (for human readability)</td>
+                                <td>Use ISO 8601. UTC date/time, extended format (for human readability).</td>
                             </tr>
                         
 
@@ -862,7 +862,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
 
                         <tr>
                             <th scope="row">Definition</th>
-                            <td>General term to describe the kind of specimen. In combination with SpecimenType - hierarchical; a more specific classification than described by SpecimenType.</td>
+                            <td>General term to describe the kind of specimen.</td>
                         </tr>
 
                         
@@ -1072,7 +1072,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                         
                             <tr>
                                 <th scope="row">Usage Note</th>
-                                <td>It is recommended to use s.n. (sine numero - without number) or equivalent if not present</td>
+                                <td>It is recommended to use s.n. (sine numero - without number) or equivalent if not present.</td>
                             </tr>
                         
 
@@ -1220,14 +1220,14 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
     
 
     
-        <span id="GeologicalAge"></span>
+        <span id="GeologicalContext"></span>
         <div class="term-table-wrapper">
             <div class="table-responsive print-avoid">
                 <table class="table table-compact table-terms">
                     <thead>
                         <tr>
                             <th colspan="2">Element Name
-                                <span class="title">GeologicalAge</span></th>
+                                <span class="title">GeologicalContext</span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1238,7 +1238,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
 
                         <tr>
                             <th scope="row">Label</th>
-                            <td>Geological Age</td>
+                            <td>Geological Context</td>
                         </tr>
 
                          <tr>
@@ -1252,20 +1252,20 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
 
                         <tr>
                             <th scope="row">Definition</th>
-                            <td>Refers to the geological age of a Earth Science specimen (i.e. Fossil, Rock, Mineral or Meteorite) and can be any kind of stratigraphic age, isotopically determined age or structural age.</td>
+                            <td>Refers to the geologic information associated with an earth sciences specimen, including interpreted ages from radiometric dating and associated lithostratigraphic, chronostratigraphic, and biostratigraphic geologic units.</td>
                         </tr>
 
                         
                             <tr>
                                 <th scope="row">Usage Note</th>
-                                <td>If relevant, it is recommended follow the International Commission on Stratigraphy chart, and that litho- and biostratigraphy, where available, should also be provided.</td>
+                                <td>Where applicable or possible, adherence to the conventions in the International Stratigraphic Guide and the usage of authoritative stratigraphic lexicons as sources of geologic unit names are highly recommended</td>
                             </tr>
                         
 
                         
                             <tr>
                                 <th scope="row">Purpose</th>
-                                <td>To provide information about the age of the geological, mineralogical, fossil or meteorite specimen</td>
+                                <td>Designate specimens enriched with information specific to earth sciences and astromaterials collections.</td>
                             </tr>
                         
 
@@ -1337,14 +1337,14 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                         
                             <tr>
                                 <th scope="row">Usage Note</th>
-                                <td>It is strong recommendation to follow Audiovisual Core standards; identifier for IIIF manifest and/or image</td>
+                                <td>It is strongly recommended to follow Audiovisual Core standards; identifier for IIIF manifest and/or image</td>
                             </tr>
                         
 
                         
                             <tr>
                                 <th scope="row">Purpose</th>
-                                <td>To allow a user to locate mediafiles of the specimen</td>
+                                <td>To allow a user to locate mediafiles of the specimen.</td>
                             </tr>
                         
 
@@ -1953,6 +1953,85 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
     
 
     
+        <span id="IndentifiedAsID"></span>
+        <div class="term-table-wrapper">
+            <div class="table-responsive print-avoid">
+                <table class="table table-compact table-terms">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Element Name
+                                <span class="title">IndentifiedAsID</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Element URI</th>
+                            <td> (Pending)</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Label</th>
+                            <td>Indentifier As ID</td>
+                        </tr>
+
+                         <tr>
+                            <th scope="row">Level</th>
+                            <td>
+                                <a href="#MIDS3">
+                                    MIDS Level 3
+                                </a>
+                             </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Definition</th>
+                            <td>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</td>
+                        </tr>
+
+                        
+                            <tr>
+                                <th scope="row">Usage Note</th>
+                                <td>It is strongly recommended to use identifiers from the recognised nomenclators for the appropriate taxonomic group (e.g. the International Plant Names Index (IPNI), MycoBank, AlgaeBase, Mindat, etc).</td>
+                            </tr>
+                        
+
+                        
+                            <tr>
+                                <th scope="row">Purpose</th>
+                                <td>To uniquly identify the taxon name of a specimen in a machine readable format.</td>
+                            </tr>
+                        
+
+                        
+                            
+
+                        
+                            
+                            <tr>
+                                <th scope="row">isRequiredBy</th>
+                                <td>
+                                    <ul class="td-list">
+                                        
+                                            <li><span>Biology</span></li>
+                                        
+                                            <li><span>Geology</span></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                         
+                        
+                    </tbody>
+                </table>
+                <div class="sssom-table-wrapper ">
+    
+</div>
+            </div>
+        </div>
+    
+
+    
         <span id="InstitutionID"></span>
         <div class="term-table-wrapper">
             <div class="table-responsive print-avoid">
@@ -1985,7 +2064,7 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
 
                         <tr>
                             <th scope="row">Definition</th>
-                            <td>An identifier for the institution having custody of the object(s)</td>
+                            <td>An identifier for the institution having custody of the object(s).</td>
                         </tr>
 
                         
@@ -2156,14 +2235,14 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                         
                             <tr>
                                 <th scope="row">Usage Note</th>
-                                <td>It is strongly recommended to follow Audiovisual Core standards; identifier(s) for IIIF manifest and/or image</td>
+                                <td>It is strongly recommended to follow Audiovisual Core standards; identifier(s) for IIIF manifest and/or image.</td>
                             </tr>
                         
 
                         
                             <tr>
                                 <th scope="row">Purpose</th>
-                                <td>To allow a user (human or machine) to locate mediafiles of the specimen</td>
+                                <td>To allow a user (human or machine) to locate mediafiles of the specimen.</td>
                             </tr>
                         
 
@@ -2188,104 +2267,6 @@ In Section 5, the Element Name, Element URI, Definition, Required are normative.
                             </tr>
                         
                          
-                        
-                    </tbody>
-                </table>
-                <div class="sssom-table-wrapper ">
-    
-</div>
-            </div>
-        </div>
-    
-
-    
-        <span id="ScientificNameID"></span>
-        <div class="term-table-wrapper">
-            <div class="table-responsive print-avoid">
-                <table class="table table-compact table-terms">
-                    <thead>
-                        <tr>
-                            <th colspan="2">Element Name
-                                <span class="title">ScientificNameID</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Element URI</th>
-                            <td> (Pending)</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Label</th>
-                            <td>Scientific Name ID</td>
-                        </tr>
-
-                         <tr>
-                            <th scope="row">Level</th>
-                            <td>
-                                <a href="#MIDS3">
-                                    MIDS Level 3
-                                </a>
-                             </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Definition</th>
-                            <td>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</td>
-                        </tr>
-
-                        
-                            <tr>
-                                <th scope="row">Usage Note</th>
-                                <td>It is strongly recommended to use identifiers from the recognised nomenclators for the appropriate taxonomic group (e.g. the International Plant Names Index (IPNI), MycoBank, AlgaeBase, Mindat, etc).</td>
-                            </tr>
-                        
-
-                        
-                            <tr>
-                                <th scope="row">Purpose</th>
-                                <td>To uniquly identify the taxon name of a specimen in a machine readable format.</td>
-                            </tr>
-                        
-
-                        
-                            
-
-                        
-                            
-                            <tr>
-                                <th scope="row">isRequiredBy</th>
-                                <td>
-                                    <ul class="td-list">
-                                        
-                                            <li><span>Biology</span></li>
-                                        
-                                            <li><span>Geology</span></li>
-                                        
-                                    </ul>
-                                </td>
-                            </tr>
-                        
-                         
-                            
-                            <tr>
-                                <th scope="row">Examples</th>
-                                <td>
-                                    <ul class="block-list">
-                                        
-                                            <li><span>urn:lsid:ipni.org:names:184409-1</span></li>
-                                        
-                                            <li><span>mindat:1:1:1375:4</span></li>
-                                        
-                                            <li><span>https://mindat.org/4ca61d6f-4208-8fb2-3b0eecbcs8f0</span></li>
-                                        
-                                            <li><span>urn:lsid:marinespecies.org:taxname:347049</span></li>
-                                        
-                                            <li><span>urn:lsid:zoobank.org:act:021CD126-41BA-45BF-AB74-B04B7ED01422</span></li>
-                                        
-                                    </ul>
-                                </td>
-                            </tr>
                         
                     </tbody>
                 </table>
