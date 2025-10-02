@@ -44,11 +44,11 @@ The Minimum Information about a Digital Specimen (MIDS) framework offers a clear
 
 ### MIDS Level 1 (Basic):
 
-> Adds basic taxonomic details (e.g., species name) and physical information about the specimen. This allows for basic searchability and gives a simple representation of the collection for internal and external users.
+> Adds basic taxonomic details (e.g., species name) and physical information about the specimen. This enables basic searchability and provides a straightforward representation of the collection for both internal and external users.
 
-### MIDS Level 2 (Regular):
+### MIDS Level 2 (Intermediate):
 
-> Expands on Level 1 with more detailed data, such as geographic and temporal information, collection event details, and multimedia like images. This level supports more thorough scientific research.
+Expands on Level 1 with more detailed data, including geographic and temporal information, collection event details, and multimedia content such as images. This level supports more thorough scientific research.
 
 ### MIDS Level 3 (Extended):
 
@@ -56,11 +56,11 @@ The Minimum Information about a Digital Specimen (MIDS) framework offers a clear
 
 ## How to use MIDS for digitization planning
 
-The MIDS standard sits at the heart of all aspects of the digitization process and can be used to build a digitization strategy and programme. A digitization strategy normally includes sections covering the vision, the reasons for digitizing, the intended users of the digitized specimens, the scope and prioritization, the strategic objectives and metrics of success and impact (https://dissco.github.io/DigitisationPlanning/DigPlanning.html). It is easy to see that MIDS is critical for the metrics of success. The mapping of data within MIDS is a key part of building the data structure within a digitization programme, including mapping to Darwin Core or ABCDEFG and publication on international aggregator portals such as GBIF, GeoCASE, MinDat, etc.
+The MIDS standard sits at the heart of all aspects of the digitization process and can be used to build a digitization strategy and programme. A digitization strategy includes typically sections covering the vision, the reasons for digitizing, the intended users of the digitized specimens, the scope and prioritization, the strategic objectives, and metrics of success and impact (https://dissco.github.io/DigitisationPlanning/DigPlanning.html). MIDS is crucial for achieving success metrics. The mapping of data within MIDS is a key part of building the data structure within a digitization programme, including mapping to Darwin Core or ABCDEFG and publication on international aggregator portals such as GBIF, GeoCASE, MinDat, etc.
 
-The recommendations included in the MIDS elements will help decision-making about the relevant standards to use, including identifiers. This data structure will also help with managing data in an institutional collections management system (CMS) and with ancillary processes such as citizen science portals.
+The recommendations included in the MIDS elements will help decision-making about the relevant standards to use, including identifiers. This data structure will also aid in managing data within an institutional collections management system (CMS) and with ancillary processes, such as citizen science portals.
 
-The different levels of MIDS relate to a staged digitization programme, which may require different funding, equipment, and workflows for each stage of the process. Using MIDS will help identify costs for each stage of digitization, as each level has a clearly defined minimum set of information. Each MIDS digitization level has been defined to reflect a broad use case, helping to build a business case for funding. In addition, the information elements within each MIDS level have a definition and a purpose to support communication to encourage buy-in from colleagues or funders.
+The different levels of MIDS relate to a staged digitization programme, which may require different funding, equipment, and workflows for each stage of the process. Using MIDS will help identify costs for each stage of digitization, as each level has a clearly defined minimum set of information. Each MIDS digitization level has been determined to reflect a broad use case, helping to build a business case for funding. In addition, the information elements within each MIDS level have a definition and a purpose to support communication to encourage buy-in from colleagues or funders.
 
 ## How to use MIDS to prioritize digitization
 
