@@ -82,8 +82,9 @@
     <ul>
         <li><a href="#1-mapping-specification">1. Mapping Specifications</a></li>
         <li><a href="#2-mappings-tables">2. Mappings Tables</a></li>
-        <li><a href="#3-dwc-mappings-table">3. Darwin Core Mappings</a></li>
-        <li><a href="#4-abcd-mappings-table">4. ABCD Mappings</a></li>
+        <li><a href="#3-filterable-quick-ref-table">2.1 Quick Reference Table</a></li>
+        <li><a href="#4-dwc-mappings-table">2.2 Darwin Core Mappings</a></li>
+        <li><a href="#5-abcd-mappings-table">2.3 ABCD Mappings</a></li>
         <li><a href="#top"><em>Return to Top</em></a></li>
     </ul>
 </div>
@@ -92,90 +93,100 @@
                 <div class="col-lg-9 order-lg-first mx-auto">
                     <div class="content-header-wrapper">
                         <h2><span style="color:red">DRAFT</span></h2>
-                        <h1>SSSOM mapping of MIDS elements (DRAFT)</h1>
+                        <span id="1-mapping-specification"></span>
+                        <h1>SSSOM mapping of MIDS elements</h1>
 
-<p>We intend to use the <a href="https://w3id.org/sssom/spec">SSSOM standard</a> to effectively map the elements of each MIDS level to terms as used in common domain data standards, such as Darwin Core or ABCD, or even any ad hoc data model linked to an infrastructure such as GBIF or a local collection management system.</p>
+<p>We use the <a href="https://w3id.org/sssom/spec">SSSOM standard</a> to effectively map the elements of each MIDS level to terms as used in common domain data standards, such as Darwin Core or ABCD, but this implementation could also support other data models such as those used by a local collection management system. These mappings should make the MIDS calculation process machine actionable and reproducible.</p>
 
-<p>Here we explain how exactly we are using the SSSOM standard and what this means for both the creation and interpretation of the mapping.</p>
+<p>In this readme, we will explain how exactly we are using the SSSOM standard and what this means for both the creation and interpretation of the mapping. The mappings are intended to connect MIDS elements to their corresponding terms in different data standards, in a simple manner. More complex models might not be compatible with SSSOM and require intricate RDF mappings to work. This is currently outside the scope of the MIDS standard. The mappings SHOULD be agnostic to the serialization of the standard as applied to a data source for which MIDS levels are to be calculated. Hence, mappings are for example between MIDS and Darwin Core, but not MIDS and a Darwin Core Archive.</p>
 
 <h2>Mapping availability</h2>
 
-<p>Currently, we host the latest drafts of mappings created by the MIDS task group on this <a href="https://github.com/tdwg/mids">TDWG MIDS repository</a>, under the <code>sssom-mapping</code> <a href="https://github.com/tdwg/mids/tree/main/source/mappings">directory</a>.</p>
+<p>Currently, we host the latest drafts of mappings created by the MIDS task group on the <a href="https://github.com/tdwg/mids">TDWG MIDS repository</a>, under the <code>mappings</code> <a href="https://github.com/tdwg/mids/tree/main/source/mappings">directory</a>.</p>
 
-<p>Mapping files are currently separated by standard (e.g. dwc for Darwin Core) and by domain (e.g. biology). This info can also be found in the MappingSet metadata.</p>
+<p>Mapping files are currently separated by standard (e.g. dwc for Darwin Core) and by domain (e.g. biology). This info can also be found in the MappingSet metadata under <code>object_type</code> and <code>subject_type</code> respectively.</p>
 
 <h2>Mapping file structure</h2>
 
 <p>We make use of a separate serialisation for the MappingSet metadata block (in YAML) and for the Mappings block (in tsv), in line with the <a href="https://mapping-commons.github.io/sssom/spec-formats-tsv/">guide</a> from SSSOM documentation. We separate both data types so we do not need to combine the two serialisation formats into a single file.</p>
 
-<p>The files should take the <code>mapping_set_id</code> from the metadata block as a filename, with a suffix of <code>.sssom.tsv</code> or <code>.sssom.yml</code>. There are currently no rules set for the generation of this <code>mapping_set_id</code>.</p>
+<p>The files SHOULD take the <code>mapping_set_id</code> from the metadata block as a filename, with a suffix of <code>.sssom.tsv</code> or <code>.sssom.yml</code>.</p>
 
 <h2>Mapping specification</h2>
 
 <h3>General recommendations</h3>
 
-<p>When a field has multiple values, it is recommended to delimit it using the <code>|</code> (pipe) character. It is optional to make this enumeration more human-readable by including whitespace around it, i.e. padding the pipe with spaces.</p>
+<p>When a field has multiple values, it is recommended to delimit it using the <code>|</code> (pipe) character, without any leading or trailing whitespace unless they are part of the value.</p>
 
-<p>Therefore, when interpreting a <code>|</code>-delimited string, any trailing whitespace must be ignored.</p>
-
-<p>Any SSSOM mapping files should be UTF-8 encoded.</p>
+<p>Any SSSOM mapping file SHOULD be UTF-8 encoded.</p>
 
 <h3>Composition of the MappingSet</h3>
 
-<p>The MappingSet must be a valid YAML text file and include as its first element a <code>curie_map</code> which includes definitions of all namespaces used in the Mappings. </p>
+<p>The MappingSet MUST be a valid YAML text file and include as its first element a <code>curie_map</code> which includes definitions of all namespaces used in the Mappings. </p>
 
-<p>It is recommended that the MappingSet further includes, in no particular order:</p>
+<p>A MappingSet SHOULD further include:</p>
 
 <ul>
-<li><code>mapping_set_id</code>: A unique identifier to be used for this specific MappingSet and its associated Mappings.</li>
+<li><code>mapping_set_id</code>: A unique identifier to be used for this specific MappingSet and its associated Mappings. <code>mapping_set_id</code> should be constructed as a concatenation (using <code>_</code> to concatenate) of the prefix <code>mids</code> and the metadata terms <code>object_type</code>, <code>subject_type</code> and <code>mapping_set_version</code>.</li>
 <li><code>license</code>: A URI specifying the license (or lack thereof) of these mappings.</li>
-<li><code>mapping_set_title</code>: A human-readable title for the MappingSet.</li>
-<li><code>mapping_set_version</code>: An optional version indicator.</li>
+<li><code>mapping_set_version</code>: A MappingSet version indicator. Recommended practice is to use an incrementing integer starting at 1. Any change to the Mappings or MappingSet requires a new version.</li>
 <li><code>mapping_provider</code>: A reference URL or persistent ID for the source or entity which makes this MappingSet available.</li>
-<li><code>mapping_date</code>: Date the Mappings were last modified. This does not include the MappingSet metadata.</li>
-<li><code>object_preprocessing</code>: If any preprocessing needs to be applied to the terms that are to be mapped, this should be documented here. Best practice is to use a controlled vocabulary such as <code>semapv</code>. If the preprocessing technique has any parameters, these should be included in the Mappings. For example, if <code>object_preprocessing</code> includes <code>semapv:RegexRemoval</code>, then a column with name <code>semapv:RegexRemoval</code> should be included in the Mappings and the parameters (<code>|</code>-delimited if more than one) should be included in that column.</li>
-<li><code>object_type</code>: The standard to map to. Namespace can be taken from the curie_map.</li>
+<li><code>mapping_date</code>: Date the Mappings or MappingSet were last modified.</li>
+<li><code>object_type</code>: The standard to map to. Recommended practice is to use the namespace from the curie_map. Alternatively a URI or other persistent ID.</li>
 <li><code>subject_type</code>: Domain the mappings apply to. A formal definition of domains will be included in the MIDS specification.</li>
+</ul>
+
+<p>A MappingSet can optionally also include:</p>
+
+<ul>
+<li><code>mapping_set_title</code>: A human-readable title for the MappingSet.</li>
+<li><code>mapping_set_description</code>: A human-readable description for the MappingSet. This can include a list of latest changes, but it is recommended to principally store these at the Mappings level in <code>sssom:comment</code>.</li>
+<li><code>object_preprocessing</code>: If any preprocessing needs to be applied to the terms that are to be mapped, this should be documented here. Best practice is to use a controlled vocabulary such as <code>semapv</code>. If the preprocessing technique has any parameters, these should be included in the Mappings. For example, if <code>object_preprocessing</code> includes <code>semapv:RegexRemoval</code>, then a column with name <code>semapv:RegexRemoval</code> should be included in the Mappings and the parameters (<code>|</code>-delimited if more than one) should be included in that column.</li>
 </ul>
 
 <h3>Composition of the Mappings</h3>
 
-<p>The Mappings must be a valid tab-separated values (tsv) text file. String quotation using single <code>"</code> pairs is allowed. <code>"</code> characters as part of a field require the whole field to be quoted, and need to be individually escaped with a second <code>"</code>. This follows the <a href="https://mapping-commons.github.io/sssom/spec-formats-tsv/#quoting">recommendation</a> made in the SSSOM specification.</p>
+<p>The Mappings MUST be a valid tab-separated values (tsv) text file. String quotation using single <code>"</code> pairs is allowed. <code>"</code> characters as part of a field require the whole field to be quoted, and need to be individually escaped with a second <code>"</code>. This follows the <a href="https://mapping-commons.github.io/sssom/spec-formats-tsv/#quoting">recommendation</a> made in the SSSOM specification.</p>
 
-<p>The mappings must include most of the following properties as columns, in the order specified. Column names must include the proper namespace, even if it is mostly <code>sssom:</code>. <code>_label</code> terms are optional, but if used should be added in the same order as they occur in the <a href="https://mapping-commons.github.io/sssom/Mapping/">list of Mapping terms</a>.</p>
+<p>The mappings MUST include most of the following properties as columns, in the order specified. OPTIONAL columns may be omitted. Column names MUST include the proper namespace, even if it is mostly <code>sssom:</code>. <code>_label</code> terms from the sssom specification are all optional, but if used should be added in the same order as they occur in the <a href="https://mapping-commons.github.io/sssom/Mapping/">list of Mapping terms</a>.</p>
 
 <ul>
-<li><code>sssom:subject_id</code>: The MIDS element being mapped to.</li>
-<li><code>sssom:subject_category</code>: The MIDS level of the MIDS element, specified as <code>mids0</code> and so on.</li>
-<li><code>sssom:predicate_id</code>: The type of relation between the MIDS element and the term that is being mapped to it. We currently recognize three types of relations:
+<li><code>sssom:subject_id</code>: MUST. The MIDS element being mapped to.</li>
+<li><code>sssom:subject_category</code>: MUST. The MIDS level of the MIDS element, specified as <code>mids:MIDS0</code> and so on.</li>
+<li><code>sssom:predicate_id</code>: MUST. The type of relation between the MIDS element and the term that is being mapped to it. We currently recognize three types of relations:
 <ul>
 <li><code>skos:narrowMatch</code>: The MIDS element may be found in multiple terms of the standard that is being mapped, all of which should have this predicate. This is similar to the logic of an <code>OR</code> operator.</li>
 <li><code>skos:exactMatch</code>: The MIDS element maps exactly to a term in the standard, and therefore no instances of <code>skos:narrowMatch</code> can apply for this MIDS element.</li>
 <li><code>owl:intersectionOf</code>: The MIDS element maps exactly to a combination of terms in the standard. The combination is specified in the <code>sssom:object_match_field</code> column (<code>|</code>-delimited), but only once for one of the combination member rows. It is in theory possible that a MIDS element maps to multiple overlapping combinations of terms in the mapped standard. This is similar to the logic of an <code>AND</code> operator.</li>
 </ul></li>
-<li><code>sssom:object_id</code>: ID of a term in the mapped standard.</li>
-<li><code>sssom:object_category</code>: ID of a category in the mapped standard. A category will typically indicate which file of the standard the term may be found in, if it is more complex in structure. Darwin Core extensions are an example.</li>
-<li><code>sssom:mapping_justification</code>: Optional to indicate how the mapping was established.</li>
-<li><code>sssom:author_id</code>: An ID for the asserter of the mapping (not necessarily the same person who compiled the mappings into the SSSOM format). Recommended to use ORCID.</li>
-<li><code>sssom:creator_id</code>: An ID for the creator of the mapping in the SSSOM format.</li>
-<li><code>sssom:subject_type</code>: The type of property of the MIDS element. Currently defined as <code>rdf property</code>.</li>
-<li><code>sssom:object_type</code>: The type of property of the term in the standard. </li>
-<li><code>sssom:object_source</code>: Query that is needed to retrieve values of the mapped term. Required when data is in a more structured format such as XML.</li>
-<li><code>sssom:mapping_date</code>: ISO date of when the mapping was asserted by the author.</li>
-<li><code>sssom:object_match_field</code>: A <code>|</code>-delimited list of object_ids which combine to form an <code>owl:intersectionOf</code> mapping.</li>
-<li><code>sssom:comment</code>: Clarifications.</li>
-<li><code>semapv:RegexRemoval</code>: As an example of how <code>object_preprocessing</code> at the MappingSet level can be used. This field should be populated with a <code>|</code>-delimited list of values that are not sufficient to fullfill the condition of a MIDS level. Recommendation is to always start with a leading <code>|</code>, to emphasize that empty strings (in addition to default <code>null</code> values) are not sufficient to fulfill a MIDS condition.</li>
+<li><code>sssom:object_id</code>: MUST. ID of a term in the mapped standard.</li>
+<li><code>sssom:object_category</code>: OPTIONAL. ID of a category in the mapped standard. A category will typically indicate which file of the standard the term may be found in, if it is more complex in structure. Darwin Core extensions are an example.</li>
+<li><code>sssom:mapping_justification</code>: OPTIONAL. To indicate how the mapping was established.</li>
+<li><code>sssom:author_id</code>: OPTIONAL. An ID for the asserter of the mapping (not necessarily the same person who compiled the mappings into the SSSOM format). Recommended to use ORCID.</li>
+<li><code>sssom:creator_id</code>: MUST. An ID for the creator of the mapping in the SSSOM format.</li>
+<li><code>sssom:subject_type</code>: OPTIONAL. The type of property of the MIDS element. Currently defined as <code>rdf property</code>.</li>
+<li><code>sssom:object_type</code>: OPTIONAL. The type of property of the term in the standard. </li>
+<li><code>sssom:mapping_date</code>: MUST. ISO date of when the mapping was asserted by the author.</li>
+<li><code>sssom:object_match_field</code>: OPTIONAL. A <code>|</code>-delimited list of object_ids which combine to form an <code>owl:intersectionOf</code> mapping.</li>
+<li><code>sssom:comment</code>: OPTIONAL. Clarifications.</li>
+<li><code>semapv:RegexRemoval</code>: OPTIONAL. As an example of how <code>object_preprocessing</code> at the MappingSet level can be used. This field should be populated with a <code>|</code>-delimited list of values that are not sufficient to fullfill the condition of a MIDS level. Recommendation is to always start with a leading <code>|</code>, to emphasize that empty strings (in addition to default <code>null</code> values) are not sufficient to fulfill a MIDS condition.</li>
 </ul>
 
 <h2>Interpretation of the Mappings</h2>
 
-<p>Often, the ultimate outcome of MIDS is a level score for each processed specimen. A level is reached if all MIDS elements that are defined at that level or below it, have non-<code>null</code> values for any of the provided mappings. This includes a single <code>narrowMatch</code> or <code>exactMatch</code>, or a complete combination of <code>intersectionOf</code>, for each Element.</p>
+<p>The ultimate outcome of a MIDS calculation is a level score for each processed specimen. A level is reached if all MIDS elements that are defined at that level or below it, have non-<code>null</code> values for any of the provided mappings. This includes a single <code>narrowMatch</code> or <code>exactMatch</code>, or a complete combination of <code>intersectionOf</code>, for each Element.</p>
 
-<p>The calculation process requires data formulated following the mapped standard to be checked for null values in each mapping. <code>object_preprocessing</code> may also apply to exclude insufficient non-null values. The outcome of this is a binary map of all mappings with true or false (1 or 0) depending on whether a value was found. This map is then thresholded into a single value of the MIDS level reached, which is the minimal level of MIDS for which all elements have at least one mapping that returns true.</p>
+<p>The calculation process requires data formulated following the mapped standard to be checked for null values in each mapping. <code>object_preprocessing</code> may also apply to exclude other insufficient non-null values, such as <code>unknown:undigitized</code> as recommended in <a href="https://doi.org/10.1093/database/baz129">Groom et aL. (2019)</a>. The outcome of this calculation is a binary map of all mappings with true or false (1 or 0) depending on whether a value was found. This map is then thresholded into a single value of the MIDS level reached, which is the minimal level of MIDS for which all elements have at least one mapping that returns true.</p>
 
-<p>The binary map is currently no formal defined outcome of MIDS and implementers can calculate it in any way they want. It is useful to show these more detailed results to the data providers, as they make it more clear why a certain MIDS level was (not) met.</p>
+<p>The binary map is currently no formal defined outcome of MIDS and implementers can calculate it in any way they want. It is useful to show these more detailed results to the data providers, as they make it more clear why a certain MIDS level was (not) met. Recommended practice is to at least produce and, ideally, store the following metadata for each specimen processed in the calculation:</p>
 
-<h1>MIDS Mappings</h1>
+<ul>
+<li><code>dc:identifier</code>: A persistent ID for the specimen that was processed in the MIDS calculation.</li>
+<li><code>dc:created</code>: An ISO date of when the calculation was performed.</li>
+<li><code>sssom:mapping_set_id</code>: MappingSet ID of the mappings used for the calculation.</li>
+<li><code>dwc:datasetID</code>: An ID for the dataset processed. Can be versioned.</li>
+<li><code>dc:publisher</code>: Entity responsible for the calculation process.</li>
+</ul>
 
                         <h2>SSSOM <span id="sssom-ref"><span></h2>
 
@@ -189,8 +200,71 @@
 
                     </div>
                     <h2 id="2-mappings-tables">Mapping Tables</h2>
-                    <h3 id="3-dwc-mappings-table">Darwin Core Mapping Table</h3>
-<p>The tables below provides a tabulated quick reference of MIDS mappings.</p>
+                    <h3 id="3-filterable-quick-ref-table">2.1 Filterable Quick Reference Table</h3>
+<p>The table below provides a filterable table to serve as a quick reference to MIDS mappings. For details mappings with comprehensive metadata, please see the Darwin Core and ABCD Mappings tables.</p>
+<div class="filters">
+
+    <div class="form-inline d-flex align-items-center">
+         <div class="filter-group form-group margin-right-12">
+            <label for="namespaceFilter">Standard</label>
+            <select id="namespaceFilter" class="form-select">
+                <option value="">All Standards</option>
+                <option value="dwc">Darwin Core</option>
+                <option value="abcd">ABCD</option>
+            </select>
+        </div>
+        <div class="filter-group form-group margin-right-12">
+            <label for="levelFilter">Level</label>
+            <select id="levelFilter" class="form-select">
+                <option value="">All Levels</option>
+            </select>
+        </div>
+
+         <div class="filter-group form-group margin-right-12">
+            <label for="infoElementFilter">Information Element</label>
+            <select id="infoElementFilter" class="form-select">
+                <option value="">All Information Elements</option>
+            </select>
+        </div>
+
+        <div class="filter-group form-group margin-right-12">
+            <label for="termFilter">Search Terms</label>
+            <input type="text" id="termFilter" placeholder="Type to search..." class="form-control">
+        </div>
+
+         <div class="filter-group filter-btns">
+            <button onclick="resetFilters()" class="btn btn-sm btn-primary align-self-end">Reset Filters</button>
+        </div>
+    </div>
+
+</div>
+<div class="table-outer-wrapper">
+    <div class="term-table-wrapper">
+        <div class="table-responsive print-avoid">
+            <div class="table-container table-responsive">
+                <table id="mappingsTable" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>sssom:subject_category</th>
+                            <th>sssom:subject_id</th>
+                            <th>sssom:object_category</th>
+                            <th>sssom:object_id</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="5" class="loading">Loading data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stats" id="stats"></div>
+        </div>
+    </div>
+</div>
+
+                    <h3 id="4-dwc-mappings-table">2.2 Darwin Core Mapping Table</h3>
+<p>The table below provides Darwin Core to MIDS mappings with comprehensive metadata.</p>
 
 <div class="table-outer-wrapper">
     <div class="term-table-wrapper">
@@ -12076,8 +12150,8 @@
         </div>
     </div>
 </div>
-                    <h3 id="4-abcd-mappings-table">ABCD Mapping Table</h3>
-<p>The tables below provides a tabulated quick reference of MIDS mappings.</p>
+                    <h3 id="5-abcd-mappings-table">2.3 ABCD Mapping Table</h3>
+<p>The table below provides ABCD to MIDS mappings with comprehensive metadata.</p>
 
 <div class="table-outer-wrapper">
     <div class="term-table-wrapper">
@@ -17704,6 +17778,7 @@
 	<script src="../static/assets/theme/js/popper.min.js"></script>
 	<script src="../static/assets/theme/js/bootstrap.min.js"></script>
 	<script src="../static/custom/js/app-script.js"></script>
+    <script src="../static/custom/js/mappings-filters.js"></script>
     <script>
         $(document).ready(function() {
 			 $('*[data-href]').on('click', function() {
