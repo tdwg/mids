@@ -110,7 +110,7 @@
         // Update statistics display
         function updateStats() {
             const stats = document.getElementById('stats');
-            stats.textContent = `Showing ${filteredData.length} of ${allData.length} employees`;
+            stats.textContent = `${filteredData.length} of ${allData.length}`;
         }
 
         // Reset all filters
