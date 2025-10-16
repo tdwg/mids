@@ -96,11 +96,10 @@
 
             tbody.innerHTML = filteredData.map(item => `
                 <tr>
-                    <td data-th="Subject Category: ">${item.sssom_subject_category}</td>
-                    <td data-th="Subject ID: ">${item.sssom_subject_id}</td>
-                    <td data-th="Object Category: ">${item.sssom_object_category}</td>
-                    <td data-th="Object ID: ">${item.sssom_object_id}</td>
-                    <td class="indicator-td"><i class="fa"></i> </td>
+                    <td data-th="Level: ">${item.sssom_subject_category}</td>
+                    <td data-th="Information Element: ">${item.sssom_subject_id}</td>
+                    <td data-th="Class: ">${item.sssom_object_category}</td>
+                    <td data-th="Term: ">${item.sssom_object_id}</td>
                 </tr>
             `).join('');
         }

@@ -416,17 +416,13 @@ a.property {
 	color: #09591D;
     border-color: #09591D;
 }
-
-
 main.wrapper .toc ul {
 	list-style-type: none;
 	padding-left: 0;
 }
-
 .content table.table-terms td:first-of-type{
 	width:120px
 }
-
 table.table-sssom>:not(:first-child),
 table.table-sssom thead,
 table.table-sssom tbody {
@@ -458,7 +454,6 @@ table.table-sssom tbody tr.hide-table-padding td.hide-td {
 /* Collapse Tables ----------------------------------------- */
 /* chevron up f077
 chevron down f078
-
  */
 
 table.table-sssom thead th .fa:before,
@@ -489,7 +484,6 @@ table.table-sssom thead tr th {
 	font-size: 0.9rem;
 	font-weight: 500;
 	padding: .25rem .25rem;
-
 }
 a.th-collapser {
 	display: block;
@@ -528,7 +522,6 @@ table.table-sssom tr.hide-table-padding td {
 table.table-sssom tbody > tr > th {
 	text-align: left;
 }
-
 table.table-sssom .expand-button {
 	position: relative;
 }
@@ -541,6 +534,11 @@ table.table-sssom .accordion-toggle .expand-button:after {
 }
 table.table-sssom .accordion-toggle.collapsed .expand-button:after {
 	content: '+';
+}
+tr.accordian-toggle,
+tr.accordian-toggle th,
+tr.accordian-toggle td {
+	cursor: pointer;
 }
 /* Nested Table */
 .inner-table-grid .row {
@@ -571,14 +569,15 @@ table tbody tr.accordion-toggle:not(.collapsed) {
 		border-left: 2px solid #04592D;
 		border-right: 2px solid #04592D;
 }
+table tbody tr.accordion-toggle {
+	cursor: pointer;
+}
 td.nested-td-container{
-		border-left: 2px solid #04592D;
-		border-right: 2px solid #04592D;
+	border-left: 2px solid #04592D;
+	border-right: 2px solid #04592D;
 	border-bottom: 2px solid #04592D;
 
 }
-
-
 
 /* Testing Collapse */
 
@@ -633,7 +632,6 @@ table.table-sssom tbody table.nested-table tbody tr td {
 table.table-sssom tbody table.nested-table tbody tr th {
 	border-bottom: none;
 }
-
 .table.table-sssom-nested tr:nth-child(2n),
 td.nested-td-container table.nested-table,
 td.nested-td-container table.nested-table tbody tr:nth-child(4n+1) {
@@ -645,9 +643,7 @@ table.table-sssom tbody table.nested-table tbody tr th {
 }
 table.table-sssom tbody table.nested-table tbody tr th {
 	border-right: 2px solid #DCDCDC;
-
 }
-
 .popover-th {
 	cursor:pointer;
 }
@@ -667,8 +663,6 @@ i.fa.fa-question-circle.doc-help-tip {
 .popover {
 	border: 1px solid #04592D;
 }
-
-
 th.popover-container .popover .popover-header,
 th.popover-container .popover .popover-body {
 	font-size: 14px;
