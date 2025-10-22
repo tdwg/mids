@@ -19,21 +19,24 @@
 
                 // Populate level dropdown
                 const levelSelect = document.getElementById('levelFilter');
-                filters.levels.forEach(lvl => {
-                    const option = document.createElement('option');
-                    option.value = lvl;
-                    option.textContent = lvl;
-                    levelSelect.appendChild(option);
-                });
-
+                if(levelSelect !== null) {
+                    filters.levels.forEach(lvl => {
+                        const option = document.createElement('option');
+                        option.value = lvl;
+                        option.textContent = lvl;
+                        levelSelect.appendChild(option);
+                    });
+                }
                 // Populate position dropdown
                 const infoElementSelect = document.getElementById('infoElementFilter');
-                filters.infoElements.forEach(infoEle => {
-                    const option = document.createElement('option');
-                    option.value = infoEle;
-                    option.textContent = infoEle;
-                    infoElementSelect.appendChild(option);
-                });
+                if(infoElementSelect !== null) {
+                    filters.infoElements.forEach(infoEle => {
+                        const option = document.createElement('option');
+                        option.value = infoEle;
+                        option.textContent = infoEle;
+                        infoElementSelect.appendChild(option);
+                    });
+                }
             } catch (error) {
                 console.error('Error loading filters:', error);
             }
@@ -47,13 +50,11 @@
                 allData = await response.json();
                 filteredData = [...allData];
                 renderTable();
-                updateStats();
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('tableBody').innerHTML =
                     '<tr><td colspan="5" class="no-results">Error loading data. Please refresh the page.</td></tr>';
             }
-			console.log(allData)
         }
 
         // Setup event listeners for filters
@@ -80,38 +81,28 @@
 
                 return matchesLevel && matchesInfoElement && matchesTerm && matchesNamespace;
             });
-
             renderTable();
-            updateStats();
         }
 
         // Render the table with current filtered data
         function renderTable() {
             const tbody = document.getElementById('tableBody');
-
-            if (filteredData.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5" class="no-results">No results found. Try adjusting your filters.</td></tr>';
-                return;
+            if (tbody !== null)
+            {
+                if (filteredData.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="5" class="no-results">No results found. Try adjusting your filters.</td></tr>';
+                    return;
+                }
+                tbody.innerHTML = filteredData.map(item => `
+                    <tr>
+                        <td data-th="Level: ">${item.sssom_subject_category}</td>
+                        <td data-th="Information Element: ">${item.sssom_subject_id}</td>
+                        <td data-th="Class: ">${item.sssom_object_category}</td>
+                        <td data-th="Term: ">${item.sssom_object_id}</td>
+                    </tr>
+                `).join('');
             }
-
-            tbody.innerHTML = filteredData.map(item => `
-                <tr>
-                    <td data-th="Level: ">${item.sssom_subject_category}</td>
-                    <td data-th="Information Element: ">${item.sssom_subject_id}</td>
-                    <td data-th="Class: ">${item.sssom_object_category}</td>
-                    <td data-th="Term: ">${item.sssom_object_id}</td>
-                </tr>
-            `).join('');
         }
-
-
-
-        // Update statistics display
-        function updateStats() {
-            const stats = document.getElementById('stats');
-            stats.textContent = `${filteredData.length} of ${allData.length}`;
-        }
-
         // Reset all filters
         function resetFilters() {
             document.getElementById('levelFilter').value = '';

@@ -10,6 +10,14 @@ Dark Green: #04592D
 #04592D
 
 */
+.main-content-wrapper {
+	position: relative;
+}
+a.anchor {
+	display: block;
+    position: relative;
+    visibility: hidden;
+}
 .header.bg-no-image,
 .custom-bg-color {
 	background-color: #04592D !important;
@@ -840,6 +848,12 @@ dd span {
 .filters {
 	margin-bottom: 15px;
 }
+
+h3.heading-anchor-target {
+	scroll-padding-top: 2rem;
+}
+
+
 /* Responsives ------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
