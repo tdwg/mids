@@ -1,15 +1,3 @@
-## Introduction
-
-The need to rapidly digitise millions of specimens in Natural History Collections has seen a staged approach for data capture being widely adopted. Mass digitisation programmes have generally started with the creation of skeletal or stub records which can then be expanded as more funding or support is available. When combined with the previous practice which was often to create relatively full data records for each specimen, there is currently huge variation in the level of digitisation both within and between collections. From a range of international digitisation initiatives, it was also clear that when discussing digitisation, many people have different understandings of the term. This leads to confusion and uncertainty when something is described as having been digitised. Thus, the idea for a ‘minimum information standard’ was born to serve a range of aims that include:
-
-- Offering clarity to collection owners about the minimum information they should be publishing out of digitisation initiatives to make digital specimen information useful for multiple purposes of teaching and learning, research, etc.;
-- Assisting the global effort to digitise natural science collections, estimated to be 3 billion specimens worldwide, by providing a structured framework that clarifies the outcomes of digitisation and the level of digitisation achieved; to assist prioritisation of the remaining work;
-- Supporting and contributing towards assessments of fitness for purpose of data (suitability) for feeding specific types of data processing pipelines; and,
-- Assisting researchers to know what information to include in their journal articles and data deposits about specimens they have used in their research.
-
-This framework includes making the data publicly available because open access policies in countries around the world require that digital data should be findable and accessible, even at the most minimal level of available digitised information.
-
-![image](https://github.com/user-attachments/assets/1fd9605e-2dfe-417a-99c3-332ba46a88db)
 
 ## Motivation
 
