@@ -11,17 +11,6 @@ This framework includes making the data publicly available because open access p
 
 ![image](https://github.com/user-attachments/assets/1fd9605e-2dfe-417a-99c3-332ba46a88db)
 
-## Audience/Stakeholders
-
-A range of key stakeholders from bio- and geodiversity domains can be identified as beneficiaries of MIDS. These include:
-
-- Developers of collection management systems for automating MIDS calculation and management of missing data; of crowdsourcing platforms in relation to field inclusion and management of missing data; and of other software tools;
-- Digitisation and administration staff, for example to identify and manage missing data and to calculate costs of  and plan for further digitisation;
-- Management for developing and managing digitisation strategies, and receiving reports;
-- Public relations staff for public communication of the progress of digitisation; and,
-- Domain experts/researchers, for example for assessing and developing usability in research and teaching, and for data mining.
-
-
 ## Motivation
 
 In its most general sense, digitisation in natural sciences is the process of converting analog information about physical specimens to digital form, which includes electronic text, images and other representations. 
