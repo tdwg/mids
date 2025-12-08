@@ -10,9 +10,9 @@ MIDS defines what information about a specimen should be available but it does n
 
 Getting started links[](#getting-started)
 -----------------------------------
-*   [Normative Information Element & Levels List](https://tdwg.github.io/mids/information-elements/index.html)
+*   [Information Element & MIDS Levels List](https://tdwg.github.io/mids/information-elements/index.html)
 *   [Mappings](https://tdwg.github.io/mids/mappings/index.html)
-*   [Tools](https://tdwg.github.io/mids/resources/index.html)
+*   [Resources](https://tdwg.github.io/mids/resources/index.html)
 *   [About](https://tdwg.github.io/mids/about/index.html)
 *   Provide feedback through a [github issue](https://github.com/tdwg/mids/issues)
 
