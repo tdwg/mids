@@ -34,7 +34,7 @@ This document contains information elements that are part of the most recent ver
 
 ### 1.1 Status of the content of this document
 DRAFT
-In Section 5, the Element Name, Element URI, Definition, Required are normative. The status of the SKOS mappings are to be decided. Labels and the values of all other properties (such as Usage, Recommendations and Examples) are non-normative.
+In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequiredBy are normative. The status of the SKOS mappings are to be decided. Labels and the values of all other properties (such as Usage Note, Purpose and Examples) are non-normative (informative).
 
 ### 1.2 RFC 2119 key words
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
