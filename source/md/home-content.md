@@ -58,4 +58,4 @@ The MIDS score can be calculated for an individual specimen by assessing the inf
 
 To make the calculations easier, [tools](https://tdwg.github.io/mids/tools/index.html) are being developed to enable the MIDS score to be calculated for each specimen within large datasets. These tools work on existing datasets in the [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) or the [Distributed System of Scientific Collections](https://www.dissco.eu/) or users can create their own datasets in Darwin Core Archive format ([Guidance](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide)) or in [ABCD format](https://www.tdwg.org/standards/abcd/). These tools make calculating the MIDS score for large collections possible, as well as providing the results in a format to enable users to understand the data which are impacting the MIDS score.
 
-*Last Updated: 12 June 2025*
+*Last Updated: 8 December 2025*
