@@ -34,26 +34,6 @@ Outcomes of these aims include:
 
 This document is intended primarily for those who are responsible for digitizing and sharing data publicly (publishing data) about natural science specimens. It can also be useful to those who are developing applications, tools and workflows related to digitization, comparing and evaluating digitization projects, and for those reporting to collection management personnel, and funding agencies. Whilst it may be possible to use the specification for occurrence information that are not physical specimens, it has not been designed for this wider use.
 
-## MIDS levels
-
-The Minimum Information about a Digital Specimen (MIDS) framework offers a clear way to assess and standardise the degree of digitization of specimen data across collections. This ensures consistent data capture and improves its usability for scientific research. There are four progressive levels (0-3), each building on the previous one:
-
-### MIDS Level 0 (Bare):
-
-> A minimal record that links a specimen to an identifier (e.g., a register number or barcode). It confirms the specimen's existence but includes no detailed information, laying the groundwork for further digitization.
-
-### MIDS Level 1 (Basic):
-
-> Adds basic taxonomic details (e.g., species name) and physical information about the specimen. This enables basic searchability and provides a straightforward representation of the collection for both internal and external users.
-
-### MIDS Level 2 (Intermediate):
-
-Expands on Level 1 with more detailed data, including geographic and temporal information, collection event details, and multimedia content such as images. This level supports more thorough scientific research.
-
-### MIDS Level 3 (Extended):
-
-> The most detailed level, linking the specimen to external datasets through persistent identifiers (e.g., Publication DOIs). This significantly boosts research potential by connecting the specimen to specialised data across different platforms.
-
 ## How to use MIDS for digitization planning
 
 The MIDS standard sits at the heart of all aspects of the digitization process and can be used to build a digitization strategy and programme. A digitization strategy includes typically sections covering the vision, the reasons for digitizing, the intended users of the digitized specimens, the scope and prioritization, the strategic objectives, and metrics of success and impact (https://dissco.github.io/DigitisationPlanning/DigPlanning.html). MIDS is crucial for achieving success metrics. The mapping of data within MIDS is a key part of building the data structure within a digitization programme, including mapping to Darwin Core or ABCDEFG and publication on international aggregator portals such as GBIF, GeoCASE, MinDat, etc.
