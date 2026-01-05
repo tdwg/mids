@@ -1,0 +1,10 @@
+| Title | Citation/URL |
+| -- | -- |
+| Modern Science Ontology | https://bioportal.bioontology.org/ontologies/MODSCI |
+| Dictionary of Geology & Mineralogy | Dictionary of Geology and Mineralogy (2003) 2nd Edition. McGraw-Hill Publishers |
+| USGS Thesaurus | U.S. Geological Survey, [2026], USGS Thesaurus, accessed [January 5, 2026], at URL https://apps.usgs.gov/thesaurus/ |
+| The Biological Collections Ontology | [BCO] The Biological Collections Ontology. Version 2021-11-14 [http://purl.obolibrary.org/obo/bco.owl](http://purl.obolibrary.org/obo/bco.owl) |
+| Nickel (1995) | Nickel, EH (1995) The Definition of a Mineral. The Canadian Mineralogist, 33, 689-690. |
+| Neuendorf et al. (2005) | Neuendorf, K. K. E, Mehl, J. P. & Jackson, J. A. (eds) 2005. Glossary of geology. 5th Edition. Alexandria: American Geological Institute. Online Access. |
+| Brodaric & Richard (2021) | Brodaric B, Richard SM (2021) The GeoScience Ontology reference. Geological Survey of Canada Open File 8796. |
+| iSamples | Davies, N., Deck, J., Kansa, E. C., Kansa, S. W., Kunze, J., Meyer, C., Orrell, T., Ramdeen, S., Snyder, R., Vieglais, D., Walls, R. L., & Lehnert, K. (2021). Internet of Samples (iSamples): Toward an interdisciplinary cyberinfrastructure for material samples. _**GigaScience**_, _10_(5). https://doi.org/10.1093/gigascience/giab028 |

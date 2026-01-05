@@ -1,0 +1,10 @@
+term	definition	note	source
+Biological Collection	A museum collection comprised predominantly of biological materials		
+Biological Material	Material entity representative of one or more living organisms from a particular context, megascopic or microscopic		Based on the Darwin Core term, Material Sample (http://rs.tdwg.org/dwc/terms/MaterialSample)
+Biology	Biology is the science of life. It is concerned with the characteristics and behaviors of organisms		Modern Science Ontology [https://w3id.org/skgo/modsci#Biology]
+Fossil	Any remains, trace, or imprint of a plant or animal preserved in the Earth's crust since some past geologic or prehistoric time; loosely, any evidence of past life.		Neuendorf et al. (2005)
+Geological Material	An amount of matter primarily (dominantly) having parts created by geologic processes and can include minor parts that are not of geologic origin, such as organic material, and can be solid, fluid, or a mix		Brodaric & Richard (2021)
+Geology	Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin.		USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/geology]
+Geology Collection	A museum  collection comprised predominantly of geological materials.	Within the context of MIDS, Geological Collection and Paleontology Collection are separate concepts, where the former is predominantly comprised of rocks and minerals and the latter is comprised of fossils.	
+Paleontology	Study of life in past geologic time based on fossil plants and animals.		USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/paleontology]
+Paleontology Collection	A museum collection comprised predominantly of fossils		
