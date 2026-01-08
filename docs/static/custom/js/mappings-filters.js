@@ -13,8 +13,8 @@
         // Load filter options from Flask backend
         async function loadFilters() {
             try {
-                const response = await fetch('https://tdwg.github.io/mids/api/filters.json');
-//                const response = await fetch('/api/filters');
+//                const response = await fetch('https://tdwg.github.io/mids/api/filters.json');
+                const response = await fetch('/api/filters.json');
                 const filters = await response.json();
 
                 // Populate level dropdown
@@ -37,6 +37,15 @@
                         infoElementSelect.appendChild(option);
                     });
                 }
+                const disciplineSelect = document.getElementById('disciplineFilter');
+                if(disciplineSelect !== null) {
+                    filters.disciplines.forEach(infoEle => {
+                        const option = document.createElement('option');
+                        option.value = infoEle;
+                        option.textContent = infoEle;
+                        disciplineSelect.appendChild(option);
+                    });
+                }
             } catch (error) {
                 console.error('Error loading filters:', error);
             }
@@ -45,8 +54,8 @@
         // Load table data from Flask backend
         async function loadData() {
             try {
-                const response = await fetch('https://tdwg.github.io/mids/api/data.json');
-//                const response = await fetch('/api/data.json');
+//                const response = await fetch('https://tdwg.github.io/mids/api/data.json');
+                const response = await fetch('/api/data.json');
                 allData = await response.json();
                 filteredData = [...allData];
                 renderTable();
@@ -61,6 +70,7 @@
         function setupEventListeners() {
             document.getElementById('levelFilter').addEventListener('change', filterTable);
             document.getElementById('infoElementFilter').addEventListener('change', filterTable);
+            document.getElementById('disciplineFilter').addEventListener('change', filterTable);
             document.getElementById('termFilter').addEventListener('input', filterTable);
 			document.getElementById('namespaceFilter').addEventListener('change', filterTable);
         }
@@ -69,6 +79,7 @@
         function filterTable() {
             const levelFilter = document.getElementById('levelFilter').value.toLowerCase();
             const infoElementFilter = document.getElementById('infoElementFilter').value.toLowerCase();
+            const disciplineFilter = document.getElementById('disciplineFilter').value.toLowerCase();
             const termFilter = document.getElementById('termFilter').value.toLowerCase();
 			const namespaceFilter= document.getElementById('namespaceFilter').value.toLowerCase();
 
@@ -76,10 +87,11 @@
 				console.log(item)
                 const matchesLevel = !levelFilter || item.sssom_subject_category.toLowerCase() === levelFilter;
                 const matchesInfoElement = !infoElementFilter || item.sssom_subject_id.toLowerCase() === infoElementFilter;
+                const matchesDiscipline = !disciplineFilter || item.discipline.toLowerCase() === disciplineFilter;
                 const matchesTerm = !termFilter || item.sssom_object_id.toLowerCase().includes(termFilter);
 				const matchesNamespace = !namespaceFilter || item.object_namespace.toLowerCase().includes(namespaceFilter);
 
-                return matchesLevel && matchesInfoElement && matchesTerm && matchesNamespace;
+                return matchesLevel && matchesInfoElement && matchesDiscipline && matchesTerm && matchesNamespace;
             });
             renderTable();
         }
@@ -97,7 +109,8 @@
                     <tr>
                         <td data-th="Level: ">${item.sssom_subject_category}</td>
                         <td data-th="Information Element: ">${item.sssom_subject_id}</td>
-                        <td data-th="Class: ">${item.sssom_object_category}</td>
+                        <td data-th="Discipline: ">${item.discipline}</td>
+                        <td data-th="Class: ">${item.sssom_object_category}</td>                        
                         <td data-th="Term: ">${item.sssom_object_id}</td>
                     </tr>
                 `).join('');

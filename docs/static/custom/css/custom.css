@@ -853,7 +853,38 @@ h3.heading-anchor-target {
 	scroll-padding-top: 2rem;
 }
 
-
+/* Discipline Schemas ------------------------------------------------ */
+ul.discipline-schema-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+ul.discipline-schema-list li {
+	width: 100%;
+	line-height: 2;
+	}
+ul.discipline-schema-list li span.MIDS0 a {
+	color: #852E47;
+}
+ul.discipline-schema-list li span.MIDS1 a {
+	color: #4D2B8C;
+}
+ul.discipline-schema-list li span.MIDS2 a {
+	color: #4A5A30;
+}
+ul.discipline-schema-list li span.MIDS3 a {
+	color: #C2441C;
+}
+ul.discipline-schema-list li:nth-child(even) {
+	background-color: rgba(230,230,230,0.3);
+}
+ul.discipline-schema-list li span.level-label {
+	width: 30%;
+	display: inline-block;
+}
+ul.discipline-schema-list li span.element-label {
+	display: inline-block;
+}
 /* Responsives ------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
@@ -962,6 +993,8 @@ h3.heading-anchor-target {
 		content: 'Show Additional Details';
 	}
 }
+
+
 @media only screen and (max-width: 480px) {
 	main .container.content {
 		max-width: 100%;
