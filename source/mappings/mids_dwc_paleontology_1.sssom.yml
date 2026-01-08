@@ -1,5 +1,4 @@
 curie_map:
-  chrono: http://rs.tdwg.org/chrono/terms/
   dc: http://purl.org/dc/terms/
   dwc: http://rs.tdwg.org/dwc/terms/
   mids: https://www.tdwg.org/community/cd/mids/
@@ -8,13 +7,13 @@ curie_map:
   semapv: https://w3id.org/semapv/vocab/
   skos: http://www.w3.org/2004/02/skos/core#
   sssom: https://w3id.org/sssom/
-mapping_set_id: mids_dwc_geology_1
+mapping_set_id: mids_dwc_paleontology_1
 mapping_set_version: 1
-mapping_set_title: MIDS SSSOM mappings for Darwin Core in the Geology domain
+mapping_set_title: MIDS SSSOM mappings for Darwin Core in the Paleontology domain
 mapping_set_description: First release of these mappings according to the versioned specification of how SSSOM is implemented for MIDS calculations.
 license: https://creativecommons.org/publicdomain/zero/1.0/
 mapping_provider: https://github.com/tdwg/mids
 mapping_date: 2025-09-18
 object_preprocessing: semapv:RegexRemoval
 object_type: dwc
-subject_type: geology
+subject_type: paleontology
