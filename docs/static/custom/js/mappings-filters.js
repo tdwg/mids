@@ -13,8 +13,8 @@
         // Load filter options from Flask backend
         async function loadFilters() {
             try {
-//                const response = await fetch('https://tdwg.github.io/mids/api/filters.json');
-                const response = await fetch('/api/filters.json');
+                const response = await fetch('https://tdwg.github.io/mids/api/filters.json');
+//                const response = await fetch('/api/filters.json');
                 const filters = await response.json();
 
                 // Populate level dropdown
@@ -54,8 +54,8 @@
         // Load table data from Flask backend
         async function loadData() {
             try {
-//                const response = await fetch('https://tdwg.github.io/mids/api/data.json');
-                const response = await fetch('/api/data.json');
+                const response = await fetch('https://tdwg.github.io/mids/api/data.json');
+//                const response = await fetch('/api/data.json');
                 allData = await response.json();
                 filteredData = [...allData];
                 renderTable();
