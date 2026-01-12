@@ -1,21 +1,20 @@
 curie_map:
-  ac: http://rs.tdwg.org/ac/terms/
+  chrono: http://rs.tdwg.org/chrono/terms/
   dc: http://purl.org/dc/terms/
   dwc: http://rs.tdwg.org/dwc/terms/
-  gbif: http://rs.gbif.org/terms/1.0/
   mids: https://www.tdwg.org/community/cd/mids/
   orcid: https://orcid.org/
   owl: http://www.w3.org/2002/07/owl#
   semapv: https://w3id.org/semapv/vocab/
   skos: http://www.w3.org/2004/02/skos/core#
   sssom: https://w3id.org/sssom/
-mapping_set_id: mids_dwc_biology_1
+mapping_set_id: mids_dwc-a_geology_1
 mapping_set_version: 1
-mapping_set_title: MIDS SSSOM mappings for Darwin Core in the Biology domain
+mapping_set_title: MIDS SSSOM mappings for a Darwin Core Archive in the Geology discipline.
 mapping_set_description: First release of these mappings according to the versioned specification of how SSSOM is implemented for MIDS calculations.
 license: https://creativecommons.org/publicdomain/zero/1.0/
 mapping_provider: https://github.com/tdwg/mids
-mapping_date: 2025-09-18
+mapping_date: 2026-01-12
 object_preprocessing: semapv:RegexRemoval
-object_type: dwc
-subject_type: biology
+object_type: dwc-a
+subject_type: geology

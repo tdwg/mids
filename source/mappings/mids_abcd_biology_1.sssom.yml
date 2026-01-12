@@ -8,7 +8,7 @@ curie_map:
   sssom: https://w3id.org/sssom/
 mapping_set_id: mids_abcd_biology_1
 mapping_set_version: 1
-mapping_set_title: MIDS SSSOM mappings for ABCD in the Biology domain
+mapping_set_title: MIDS SSSOM mappings for ABCD in the Biology discipline.
 mapping_set_description: First release of these mappings according to the versioned specification of how SSSOM is implemented for MIDS calculations.
 license: https://creativecommons.org/publicdomain/zero/1.0/
 mapping_provider: https://github.com/tdwg/mids
