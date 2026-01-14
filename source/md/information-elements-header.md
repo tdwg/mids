@@ -27,9 +27,8 @@
 **Bibliographic citation**
 : MIDS Task Group. 2025. MIDS List of Information Elements. Biodiversity Information Standards (TDWG). DRAFT
 
-
+<span id="1-introduction"></span>
 ## 1 Introduction
-
 This document contains information elements that are part of the most recent version of the Minimum Information about a Digital Specimen specification.
 
 ### 1.1 Status of the content of this document
@@ -42,8 +41,9 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ### 1.3 Categories of information elements
 DRAFT
 
+<span id="2-borrowed-vocabulary"></span>
 ## 2 Borrowed Vocabulary
-MIDS does not borrow terms from other vocabularies, but instead maps to those terms. When terms are mapped, MIDS uses the IRIs, common abbreviations, and namespace prefixes in use in those vocabularies. The IRIs are normative, but abbreviations and namespace prefixes have no impact except as an aid to reading the documentation.
+MIDS does not borrow terms from other vocabularies but instead maps to those terms. When terms are mapped, MIDS uses the IRIs, common abbreviations, and namespace prefixes in use in those vocabularies. The IRIs are normative, but abbreviations and namespace prefixes have no impact except as an aid to reading the documentation.
 
 Table 1. Vocabularies from which terms have been borrowed (non-normative)
 
@@ -57,6 +57,7 @@ Note: URIs for terms in most of these namespaces do not dereference to anything.
 | [Resource Description Framework](https://www.w3.org/RDF/)      | RDF           | `rdf: = http://www.w3.org/1999/02/22-rdf-syntax-ns#`                           |
 | [Access to Biological Collection Data](https://abcd.tdwg.org/) | ABCD          | `abcd: = https://abcd.tdwg.org/terms/`                                         |
 
+<span id="3-namespace-prefixes-term-names"></span>
 ## 3 Namespaces, Prefixes and Term Names
 
 The namespace of MIDS information elements may be (http://rs.tdwg.org/mids/elements/xxxx) but this is yet to be confirmed. In the table of terms, each information element entry has a row with the information element name. This information element name is generally an “unqualified name” preceded by a widely accepted prefix designating an abbreviation for the namespace. It is RECOMMENDED that implementers who need a namespace prefix for the MIDS namespace use mids. In this web document, hovering over a term in the Index By Information Element Name list below will reveal a complete URL that can be used in other web documents to link to this document’s treatment of that element.

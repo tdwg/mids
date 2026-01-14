@@ -24,7 +24,7 @@ tools:
     last_updated: "2024-07-22"
     creators: "Josh Humphries"
     screenshots:
- - title: "Distributed System of Scientific Collections (DiSSCo)"
+  - title: "Distributed System of Scientific Collections (DiSSCo)"
     description: "The Distributed System of Scientific Collections is an emerging European Research Infrastructure aimed at accelerating the digitisation of Natural History Collections. For each specimen, DiSSCo ingests it calculates the MIDS level of the specimen and adds it to the data. The calculation is based on the SSSOM mapping provided by the MIDS Work Group but DiSSCo does (not yet) use the SSSOM directly."
     landing_page: "https://disscover.dissco.eu/"
     download_url: 
