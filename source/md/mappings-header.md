@@ -1,13 +1,15 @@
 # SSSOM mapping of MIDS elements
-We use the [SSSOM standard](https://w3id.org/sssom/spec) to effectively map the elements of each MIDS level to terms as used in common domain data standards, such as Darwin Core or ABCD, but this implementation could also support other data models such as those used by a local collection management system. These mappings should make the MIDS calculation process machine actionable and reproducible.
+We use the [SSSOM standard](https://w3id.org/sssom/spec) to effectively map the information elements to terms as used in common domain data standards, such as Darwin Core or ABCD, but this implementation could also support other data models such as those used by a local collection management system. These mappings should make the MIDS calculation process machine actionable and reproducible.
 
-In this readme, we will explain how exactly we are using the SSSOM standard and what this means for both the creation and interpretation of the mapping. The mappings are intended to connect MIDS elements to their corresponding terms in different data standards, in a simple manner. More complex models might not be compatible with SSSOM and require intricate RDF mappings to work. This is currently outside the scope of the MIDS standard. The mappings SHOULD be agnostic to the serialization of the standard as applied to a data source for which MIDS levels are to be calculated. Hence, mappings are for example between MIDS and Darwin Core, but not MIDS and a Darwin Core Archive.
+In this readme, we will explain how exactly we are using the SSSOM standard and what this means for both the creation and interpretation of the mapping. The mappings are intended to connect MIDS elements to their corresponding terms in different data standards, in a simple manner. More complex models might not be compatible with SSSOM and require intricate RDF mappings to work. This is currently outside the scope of the MIDS standard. The mappings SHOULD be agnostic to the serialization of the standard as applied to a data source for which MIDS levels are to be calculated. Hence, mappings can be made for example between MIDS elements and ABCD, but not MIDS and a Biocase Archive. Mappings should be made between MIDS elements and a Darwin Core Archive, because the Archive also applies structure to the Darwin Core bag of terms through Core and Extension classes.
 
 ## Mapping availability
 
 Currently, we host the latest drafts of mappings created by the MIDS task group on the [TDWG MIDS repository](https://github.com/tdwg/mids), under the `mappings` [directory](https://github.com/tdwg/mids/tree/main/source/mappings).
 
-Mapping files are currently separated by standard (e.g. dwc for Darwin Core) and by domain (e.g. biology). This info can also be found in the MappingSet metadata under `object_type` and `subject_type` respectively.
+Mapping files are separated by standard (e.g. dwc-a for the Darwin Core Archive) and by discipline (e.g. biology). This info can also be found in the MappingSet metadata under `object_type` and `subject_type` respectively. The MIDS task group has established slightly differing schemas for each discipline, as not all information elements are equally important (and hence required for a "minimal digitization status") within each discipline. These schemas define which elements are important for each discipline and at which level they become required. As Mapping Sets are defined per discipline and are based on different schemas, calculation of MIDS scores for specimen datasets covering multiple disciplines is not trivial and will require parallel calculation processes using different mapping sets, as well as a class variable unambiguously identifying for each specimen under which discipline it belongs.
+
+The SSSOM mapping format technically allows for deviations of these discipline schemas, but it is recommended to always follow the normative disicpline schemas as defined by the task group.
 
 ## Mapping file structure
 
@@ -32,7 +34,7 @@ A MappingSet SHOULD further include:
 * `mapping_provider`: A reference URL or persistent ID for the source or entity which makes this MappingSet available.
 * `mapping_date`: Date the Mappings or MappingSet were last modified.
 * `object_type`: The standard to map to. Recommended practice is to use the namespace from the curie_map. Alternatively a URI or other persistent ID.
-* `subject_type`: Domain the mappings apply to. A formal definition of domains will be included in the MIDS specification.
+* `subject_type`: Discipline the mappings apply to. A formal definition of the different disciplines is included in the MIDS specification.
 
 A MappingSet can optionally also include:
 
@@ -61,12 +63,12 @@ The mappings MUST include most of the following properties as columns, in the or
 * `sssom:mapping_date`: MUST. ISO date of when the mapping was asserted by the author.
 * `sssom:object_match_field`: OPTIONAL. A `|`-delimited list of object_ids which combine to form an `owl:intersectionOf` mapping.
 * `sssom:comment`: OPTIONAL. Clarifications.
-* `semapv:RegexRemoval`: OPTIONAL. As an example of how `object_preprocessing` at the MappingSet level can be used. This field should be populated with a `|`-delimited list of values that are not sufficient to fullfill the condition of a MIDS level. Recommendation is to always start with a leading `|`, to emphasize that empty strings (in addition to default `null` values) are not sufficient to fulfill a MIDS condition.
+* `semapv:RegexRemoval`: OPTIONAL. As an example of how `object_preprocessing` at the MappingSet level can be used. This field should be populated with a `|`-delimited list of values that are not sufficient to fullfill the condition of a MIDS level. Recommendation is to always start with a leading `|`, to emphasize that empty strings (in addition to default `null` values) are not sufficient to fulfill a MIDS condition. Values of `unknown:undigitized` are also not considered sufficient to fulfill a MIDS condition, following the vocabulary suggested in [Groom et aL. (2019)](https://doi.org/10.1093/database/baz129).
 
 ## Interpretation of the Mappings
 The ultimate outcome of a MIDS calculation is a level score for each processed specimen. A level is reached if all MIDS elements that are defined at that level or below it, have non-`null` values for any of the provided mappings. This includes a single `narrowMatch` or `exactMatch`, or a complete combination of `intersectionOf`, for each Element.
 
-The calculation process requires data formulated following the mapped standard to be checked for null values in each mapping. `object_preprocessing` may also apply to exclude other insufficient non-null values, such as `unknown:undigitized` as recommended in [Groom et aL. (2019)](https://doi.org/10.1093/database/baz129). The outcome of this calculation is a binary map of all mappings with true or false (1 or 0) depending on whether a value was found. This map is then thresholded into a single value of the MIDS level reached, which is the minimal level of MIDS for which all elements have at least one mapping that returns true.
+The calculation process requires data formulated following the mapped standard to be checked for null values in each mapping. `object_preprocessing` may also apply to exclude other known insufficient non-null values, such as `Unknown` or other placeholder values. The outcome of this calculation is a binary map of all mappings with true or false (1 or 0) depending on whether a value was found. This map is then thresholded into a single value of the MIDS level reached, which is the minimal level of MIDS for which all elements have at least one mapping that returns true.
 
 The binary map is currently no formal defined outcome of MIDS and implementers can calculate it in any way they want. It is useful to show these more detailed results to the data providers, as they make it more clear why a certain MIDS level was (not) met. Recommended practice is to at least produce and, ideally, store the following metadata for each specimen processed in the calculation:
 
