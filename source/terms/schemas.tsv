@@ -21,7 +21,6 @@ Biology	TypeStatus	MIDS2	Biology_TypeStatus_MIDS2
 Geology	ChronometricAge	MIDS3	Geology_ChronometricAge_MIDS3	
 Geology	CollectorID	MIDS3	Geology_CollectorID_MIDS3	
 Geology	GeographicalLocalityID	MIDS3	Geology_GeographicalLocalityID_MIDS3	
-Geology	GeologicalContext	MIDS2	Geology_GeologicalContext_MIDS2	
 Geology	IdentifiedByID	MIDS3	Geology_IdentifiedByID_MIDS3	
 Geology	IndentifiedAsID	MIDS3	Geology_IndentifiedAsID_MIDS3	
 Geology	InstitutionID	MIDS3	Geology_InstitutionID_MIDS3	
