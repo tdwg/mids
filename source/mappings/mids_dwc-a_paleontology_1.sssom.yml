@@ -1,5 +1,5 @@
 curie_map:
-  dc: http://purl.org/dc/terms/
+  dcterms: http://purl.org/dc/terms/
   dwc: http://rs.tdwg.org/dwc/terms/
   mids: https://www.tdwg.org/community/cd/mids/
   orcid: https://orcid.org/

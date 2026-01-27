@@ -1,6 +1,6 @@
 curie_map:
   ac: http://rs.tdwg.org/ac/terms/
-  dc: http://purl.org/dc/terms/
+  dcterms: http://purl.org/dc/terms/
   dwc: http://rs.tdwg.org/dwc/terms/
   dwc-dp: http://rs.tdwg.org/dwc/dwc-dp/
   gbif: http://rs.gbif.org/terms/1.0/
