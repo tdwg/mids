@@ -1,18 +1,18 @@
 curie_map:
-  abcd: http://rs.tdwg.org/abcd2/terms/
+  abcd2: http://rs.tdwg.org/abcd2/terms/
   mids: https://www.tdwg.org/community/cd/mids/
   orcid: https://orcid.org/
   owl: http://www.w3.org/2002/07/owl#
   semapv: https://w3id.org/semapv/vocab/
   skos: http://www.w3.org/2004/02/skos/core#
   sssom: https://w3id.org/sssom/
-mapping_set_id: mids_abcd_biology_1
+mapping_set_id: mids_abcd2_biology_1
 mapping_set_version: 1
-mapping_set_title: MIDS SSSOM mappings for ABCD in the Biology discipline.
+mapping_set_title: MIDS SSSOM mappings for ABCD 2.06 in the Biology discipline.
 mapping_set_description: First release of these mappings according to the versioned specification of how SSSOM is implemented for MIDS calculations.
 license: https://creativecommons.org/publicdomain/zero/1.0/
 mapping_provider: https://github.com/tdwg/mids
 mapping_date: 2025-09-18
 object_preprocessing: semapv:RegexRemoval
-object_type: abcd
+object_type: abcd2
 subject_type: biology

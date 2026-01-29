@@ -29,21 +29,19 @@
 
 <span id="1-introduction"></span>
 ## 1 Introduction
-This document contains information elements that are part of the most recent version of the Minimum Information about a Digital Specimen specification.
+This document contains all information elements that are part of the most recent version of the Minimum Information about a Digital Specimen (MIDS) specification. It also lists all recognized MIDS levels and schemas that bundle sets of information elements important for distinct specimen disciplines.
 
 ### 1.1 Status of the content of this document
-DRAFT
-In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequiredBy are normative. The status of the SKOS mappings are to be decided. Labels and the values of all other properties (such as Usage Note, Purpose and Examples) are non-normative (informative).
+In the list of Information Elements, the Element Name, Element URI, Label, Level, Definition, isRequiredBy are normative. Labels and the values of all other properties (such as Mappings, Usage Note, Purpose and Examples) are non-normative (informative). Definitions of MIDS levels, disciplines and discipline schemas are normative.
 
 ### 1.2 RFC 2119 key words
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-### 1.3 Categories of information elements
-DRAFT
+### 1.3 Definitions
 
 <span id="2-borrowed-vocabulary"></span>
 ## 2 Borrowed Vocabulary
-MIDS does not borrow terms from other vocabularies but instead maps to those terms. When terms are mapped, MIDS uses the IRIs, common abbreviations, and namespace prefixes in use in those vocabularies. The IRIs are normative, but abbreviations and namespace prefixes have no impact except as an aid to reading the documentation.
+MIDS does not borrow terms from other standards, but instead uses mappings from MIDS information elements to those terms. When terms are mapped, MIDS uses the IRIs, common abbreviations, and namespace prefixes in use by those standards.
 
 Table 1. Vocabularies from which terms have been borrowed (non-normative)
 
@@ -60,8 +58,7 @@ Note: URIs for terms in most of these namespaces do not dereference to anything.
 <span id="3-namespace-prefixes-term-names"></span>
 ## 3 Namespaces, Prefixes and Term Names
 
-The namespace of MIDS information elements may be (http://rs.tdwg.org/mids/elements/xxxx) but this is yet to be confirmed. In the table of terms, each information element entry has a row with the information element name. This information element name is generally an “unqualified name” preceded by a widely accepted prefix designating an abbreviation for the namespace. It is RECOMMENDED that implementers who need a namespace prefix for the MIDS namespace use mids. In this web document, hovering over a term in the Index By Information Element Name list below will reveal a complete URL that can be used in other web documents to link to this document’s treatment of that element.
+The namespace of MIDS information elements may be (http://rs.tdwg.org/mids/elements/xxxx) but this is yet to be confirmed. In the table of information elements, each entry has an information element name in Pascal Case to be used with this namespace. It is RECOMMENDED that implementers who need a namespace prefix for the MIDS namespace use `mids`. In this web document, hovering over a term in the Index By Information Element Name list below will reveal a complete URL that can be used in other web documents to link to this document’s treatment of that element.
 
 Please note that the names of the information elements are still in draft and have not yet been ratified. They may therefore be subject to change.
 
-***Pending***
