@@ -18,7 +18,6 @@ Biology	PhysicalSpecimenID	MIDS0	Biology_PhysicalSpecimenID_MIDS0
 Biology	QualitativeLocation	MIDS2	Biology_QualitativeLocation_MIDS2	
 Biology	QuantitativeLocation	MIDS2	Biology_QuantitativeLocation_MIDS2	
 Biology	TypeStatus	MIDS2	Biology_TypeStatus_MIDS2	
-Geology	ChronometricAge	MIDS3	Geology_ChronometricAge_MIDS3	
 Geology	CollectorID	MIDS3	Geology_CollectorID_MIDS3	
 Geology	GeographicalLocalityID	MIDS3	Geology_GeographicalLocalityID_MIDS3	
 Geology	IdentifiedByID	MIDS3	Geology_IdentifiedByID_MIDS3	
