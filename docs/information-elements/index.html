@@ -78,35 +78,31 @@
 			<div class="col-lg-3 mx-auto">	
 				<div class="toc">
     <h6>On this page</h6>
-    <ul>
-        <li><a href="#1-introduction">1 Introduction</a>
-            <ul>
-                <li><a href="#11-status-of-the-content-of-this-document">1.1 Status of the content of this document</a></li>
-                <li><a href="#12-rfc-2119-key-words">1.2 RFC 2119 key words</a></li>
-                <li><a href="#13-categories-of-terms">1.3 Categories of Terms</a></li>
-            </ul>
-        </li>
-        <li><a href="#2-borrowed-vocabulary">2 Borrowed Vocabulary</a></li>
-        <li><a href="#3-namespace-prefixes-term-names">3 Namespaces, Prefixes and Term Names</a></li>
-        <li><a href="#4-disciplines">4 Disciplines</a></li>
-        <li><a href="#5-mids-levels">5 MIDS Levels</a></li>
-        <li><a href="#6-discipline-schemas">6 Discipline Schemas</a>
-             <ul>
-                <li><a href="#61-biology-schema">6.1 Biology Schema</a></li>
-                <li><a href="#62-paleontology-schema">6.2 Paleontology Schema</a></li>
-                <li><a href="#63-geology-schema">6.3 Geology Schema</a></li>
-            </ul>
-        </li>
-        <li><a href="#7-information-element-index">7 Information Elements</a>
-             <ul>
-                <li><a href="#71-information-elements-schema">7.1 Information Elements Schema</a></li>
-            </ul>
-        </li>
-
-
-        <li></li>
-        <li><a href="#top"><em>Return to Top</em></a></li>
-    </ul>
+        <ul>
+            <li><a href="#1-introduction">1 Introduction</a></li>
+            <li><a href="#2-borrowed-vocabulary">2 Borrowed Vocabulary</a></li>
+            <li><a href="#3-namespace-prefixes-term-names">3 Namespaces, Prefixes and Term Names</a></li>
+            <li><a href="#4-mids-levels">4 MIDS Levels</a></li>
+            <li><a href="#5-disciplines">5 Disciplines</a>
+                <ul>
+                    <li><a href="#51-disciplines-terms">5.1 Discipline Terms</a></li>
+                    <li><a href="#52-discipline-schemas">5.2 Discipline Schemas</a>
+                         <ul>
+                            <li><a href="#521-biology-schema">5.2.1 Biology Schema</a></li>
+                            <li><a href="#522-paleontology-schema">5.2.2 Paleontology Schema</a></li>
+                            <li><a href="#523-geology-schema">5.2.3 Geology Schema</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#6-information-element-index">6 Information Elements</a>
+                 <ul>
+                    <li><a href="#61-information-elements-schema">6.1 Information Elements Schema</a></li>
+                </ul>
+            </li>
+            <li></li>
+            <li><a href="#top"><em>Return to Top</em></a></li>
+        </ul>
 </div>
   
   
@@ -144,26 +140,27 @@
 <p><strong>Bibliographic citation</strong>
 : MIDS Task Group. 2025. MIDS List of Information Elements. Biodiversity Information Standards (TDWG). DRAFT</p>
 
+<p><span id="1-introduction"></span></p>
+
 <h2>1 Introduction</h2>
 
-<p>This document contains information elements that are part of the most recent version of the Minimum Information about a Digital Specimen specification.</p>
+<p>This document contains all information elements that are part of the most recent version of the Minimum Information about a Digital Specimen (MIDS) specification. It also lists all recognized MIDS levels and schemas that bundle sets of information elements important for distinct specimen disciplines.</p>
 
 <h3>1.1 Status of the content of this document</h3>
 
-<p>DRAFT
-In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequiredBy are normative. The status of the SKOS mappings are to be decided. Labels and the values of all other properties (such as Usage Note, Purpose and Examples) are non-normative (informative).</p>
+<p>In the list of Information Elements, the Element Name, Element URI, Label, Level, Definition, isRequiredBy are normative. Labels and the values of all other properties (such as Mappings, Usage Note, Purpose and Examples) are non-normative (informative). Definitions of MIDS levels, disciplines and discipline schemas are normative.</p>
 
 <h3>1.2 RFC 2119 key words</h3>
 
 <p>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="https://tools.ietf.org/html/rfc2119">RFC 2119</a>.</p>
 
-<h3>1.3 Categories of information elements</h3>
+<h3>1.3 Definitions</h3>
 
-<p>DRAFT</p>
+<p><span id="2-borrowed-vocabulary"></span></p>
 
 <h2>2 Borrowed Vocabulary</h2>
 
-<p>MIDS does not borrow terms from other vocabularies, but instead maps to those terms. When terms are mapped, MIDS uses the IRIs, common abbreviations, and namespace prefixes in use in those vocabularies. The IRIs are normative, but abbreviations and namespace prefixes have no impact except as an aid to reading the documentation.</p>
+<p>MIDS does not borrow terms from other standards, but instead uses mappings from MIDS information elements to those terms. When terms are mapped, MIDS uses the IRIs, common abbreviations, and namespace prefixes in use by those standards.</p>
 
 <p>Table 1. Vocabularies from which terms have been borrowed (non-normative)</p>
 
@@ -206,54 +203,20 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
 </tbody>
 </table>
 
+<p><span id="3-namespace-prefixes-term-names"></span></p>
+
 <h2>3 Namespaces, Prefixes and Term Names</h2>
 
-<p>The namespace of MIDS information elements may be (http://rs.tdwg.org/mids/elements/xxxx) but this is yet to be confirmed. In the table of terms, each information element entry has a row with the information element name. This information element name is generally an “unqualified name” preceded by a widely accepted prefix designating an abbreviation for the namespace. It is RECOMMENDED that implementers who need a namespace prefix for the MIDS namespace use mids. In this web document, hovering over a term in the Index By Information Element Name list below will reveal a complete URL that can be used in other web documents to link to this document’s treatment of that element.</p>
+<p>The namespace of MIDS information elements may be (http://rs.tdwg.org/mids/elements/xxxx) but this is yet to be confirmed. In the table of information elements, each entry has an information element name in Pascal Case to be used with this namespace. It is RECOMMENDED that implementers who need a namespace prefix for the MIDS namespace use <code>mids</code>. In this web document, hovering over a term in the Index By Information Element Name list below will reveal a complete URL that can be used in other web documents to link to this document’s treatment of that element.</p>
 
 <p>Please note that the names of the information elements are still in draft and have not yet been ratified. They may therefore be subject to change.</p>
 
-<p><strong><em>Pending</em></strong></p>
-
 				</div>
-                <h2 id="4-disciplines">4 Disciplines</h2>
+                <h2 id="4-mids-levels">4 MIDS Levels</h2>
+<p><p>The MIDS framework provides a structured approach to assess the digitisation status of specimens, with four progressive levels, each building on the previous one. It was developed with input from the community and reflects real-world digitisation practices, taking into account available resources and time.</p>
 
-<h3 id="41-disciplines-terms">4.1 Discipline Terms</h3>
-<div class="disciplines-table-wrapper">
-    <div class="table-responsive print-avoid">
-        <table class="table table-compact table-terms">
-            <thead>
-                <tr>
-                    <th>Term</th>
-                    <th>Definition</th>
-                    <th>Note</th>
-                    <th>Source</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                    <tr id="Biology">
-                        <td>Biology</td>
-                        <td>Biology is the science of life. It is concerned with the characteristics and behaviors of organisms</td>
-                        <td>Modern Science Ontology [https://w3id.org/skgo/modsci#Biology]</td>
-                    </tr>
-                
-                    <tr id="Geology">
-                        <td>Geology</td>
-                        <td>Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin.</td>
-                        <td>USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/geology]</td>
-                    </tr>
-                
-                    <tr id="Paleontology">
-                        <td>Paleontology</td>
-                        <td>Study of life in past geologic time based on fossil plants and animals.</td>
-                        <td>USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/paleontology]</td>
-                    </tr>
-                
-            </tbody>
-        </table>
-    </div>
-</div>
-                <h2 id="5-mids-levels">5 MIDS Levels</h2>
+<p>MIDS Levels 0 and 1 are generic for all specimens or collection items. In MIDS Level 2 and 3 a distinction is made between biological, geological and palaeontological specimens for the information required.</p>
+</p>
 <div class="term-table-wrapper">
     <div class="table-responsive print-avoid">
         <table class="table table-compact table-terms">
@@ -302,17 +265,54 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
 
 
 
-                <h2 id="6-discipline-schemas">6 Discipline Schemas</h2>
-
+                <h2 id="5-disciplines">5 Disciplines</h2>
+<p><p>The MIDS task group currently recognises three disciplines for specimen data to enable different digitisation priorities to be accepted for different collections: Biology, Geology, Paleontology. Each discipline has a schema for the information elements, defining at which level each element is required. Each discipline also has mapping schemas, requiring datasets to be allocated to a schema for calculation to be undertaken.</p>
+</p>
+<h3 id="51-disciplines-terms">5.1 Discipline Terms</h3>
+<div class="disciplines-table-wrapper">
+    <div class="table-responsive print-avoid">
+        <table class="table table-compact table-terms">
+            <thead>
+                <tr>
+                    <th>Term</th>
+                    <th>Definition</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr id="Biology">
+                        <td>Biology</td>
+                        <td>Biology is the science of life. It is concerned with the characteristics and behaviors of organisms</td>
+                        <td>Modern Science Ontology [https://w3id.org/skgo/modsci#Biology]</td>
+                    </tr>
+                
+                    <tr id="Geology">
+                        <td>Geology</td>
+                        <td>Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin.</td>
+                        <td>USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/geology]</td>
+                    </tr>
+                
+                    <tr id="Paleontology">
+                        <td>Paleontology</td>
+                        <td>Study of life in past geologic time based on fossil plants and animals.</td>
+                        <td>USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/paleontology]</td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+                <h2 id="52-discipline-schemas">5.2 Discipline Schemas</h2>
 <div class="row">
     <div class="col-md-4">
-        <h3 id="61-biology-schema">6.1 Biology</h3>
+        <h3 id="521-biology-schema">5.2.1 Biology</h3>
     </div>
     <div class="col-md-4">
-        <h3 id="62-paleontology-schema">6.2 Paleontology</h3>
+        <h3 id="522-paleontology-schema">5.2.2 Paleontology</h3>
     </div>
     <div class="col-md-4">
-        <h3 id="63-geology-schema">6.3 Geology</h3>
+        <h3 id="523-geology-schema">5.2.3 Geology</h3>
     </div>
 </div>
 <!-- --------------------------------------------------------------------------------------------------- -->
@@ -1445,6 +1445,10 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
                 
             
                 
+                    <li id="Geology_GeologicalContext_MIDS2">
+                        <span class="level-label MIDS2"><a href="#MIDS2">MIDS2</a></span>
+                        <span class="element-label"><a href="#GeologicalContext">GeologicalContext</a></span>
+                    </li>
                 
             
                 
@@ -1658,9 +1662,9 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
                 
             
                 
-                    <li id="Biology_OrganizationID_MIDS3">
+                    <li id="Biology_InstitutionID_MIDS3">
                         <span class="level-label MIDS3"><a href="#MIDS3">MIDS3</a></span>
-                        <span class="element-label"><a href="#OrganizationID">OrganizationID</a></span>
+                        <span class="element-label"><a href="#InstitutionID">InstitutionID</a></span>
                     </li>
                 
             
@@ -1807,9 +1811,9 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
                 
             
                 
-                    <li id="Paleontology_OrganizationID_MIDS3">
+                    <li id="Paleontology_InstitutionID_MIDS3">
                         <span class="level-label MIDS3"><a href="#MIDS3">MIDS3</a></span>
-                        <span class="element-label"><a href="#OrganizationID">OrganizationID</a></span>
+                        <span class="element-label"><a href="#InstitutionID">InstitutionID</a></span>
                     </li>
                 
             
@@ -1955,9 +1959,9 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
                 
             
                 
-                    <li id="Geology_OrganizationID_MIDS3">
+                    <li id="Geology_InstitutionID_MIDS3">
                         <span class="level-label MIDS3"><a href="#MIDS3">MIDS3</a></span>
-                        <span class="element-label"><a href="#OrganizationID">OrganizationID</a></span>
+                        <span class="element-label"><a href="#InstitutionID">InstitutionID</a></span>
                     </li>
                 
             
@@ -1984,8 +1988,10 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
         </ul>
     </div>
 </div>
-				<h2 id="7-information-element-index">7 Information Elements</h2>
-<h3 id="71-information-elements-schema">7.1 Information Elements Schema</h3>
+				<h2 id="6-information-element-index">6 Information Elements</h2>
+<p><p>MIDS defines the information required at each level of digitisation and structures the information into individual elements. In order to measure the level of digitisation of collections where information may be captured in many different database fields and mapped to many different TDWG Standards terms, a construct is needed which groups related fields into a structured framework so that the presence of data can be calculated. This construct is the MIDS Information Element.</p>
+</p>
+<h3 id="61-information-elements-schema">6.1 Information Elements Schema</h3>
 
     
         <span id="ChronometricAge"></span>
@@ -2796,14 +2802,14 @@ In Section 5, the Element Name, Element URI, Label, Level, Definition, isRequire
     
 
     
-        <span id="OrganizationID"></span>
+        <span id="InstitutionID"></span>
         <div class="term-table-wrapper">
             <div class="table-responsive print-avoid">
                 <table class="table table-compact table-terms">
                     <thead>
                         <tr>
                             <th colspan="2">Element Name
-                                <span class="title">OrganizationID</span></th>
+                                <span class="title">InstitutionID</span></th>
                         </tr>
                     </thead>
                     <tbody>
