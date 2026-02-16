@@ -1,4 +1,4 @@
-term	definition	note	source
-Biology	Biology is the science of life. It is concerned with the characteristics and behaviors of organisms		Modern Science Ontology [https://w3id.org/skgo/modsci#Biology]
-Geology	Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin.		USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/geology]
-Paleontology	Study of life in past geologic time based on fossil plants and animals.		USGS Thesaurus [https://apps.usgs.gov/thesaurus/USGSThesaurus/paleontology]
+term	definition	source	source_url
+Biology	Biology is the science of life. It is concerned with the characteristics and behaviors of organisms	Modern Science Ontology	https://w3id.org/skgo/modsci#Biology
+Geology	Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin	USGS Thesaurus	https://apps.usgs.gov/thesaurus/USGSThesaurus/geology
+Paleontology	Study of life in past geologic time based on fossil plants and animals	USGS Thesaurus	https://apps.usgs.gov/thesaurus/USGSThesaurus/paleontology
