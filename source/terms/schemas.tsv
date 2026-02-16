@@ -5,7 +5,7 @@ Biology	CollectingAgentID	MIDS3	Biology_CollectorID_MIDS3
 Biology	DateCollected	MIDS2	Biology_DateCollected_MIDS2	
 Biology	GeographicalLocalityID	MIDS3	Biology_GeographicalLocalityID_MIDS3	
 Biology	IdentifiedByID	MIDS3	Biology_IdentifiedByID_MIDS3	
-Biology	IdentifiedAsID	MIDS3	Biology_IndentifiedAsID_MIDS3	
+Biology	IdentifiedAsID	MIDS3	Biology_IdentifiedAsID_MIDS3	
 Biology	OrganizationID	MIDS3	Biology_OrganizationID_MIDS3
 Biology	License	MIDS1	Biology_License_MIDS1	
 Biology	MediaID	MIDS3	Biology_MediaID_MIDS3	
@@ -20,7 +20,7 @@ Biology	QuantitativeLocation	MIDS2	Biology_QuantitativeLocation_MIDS2
 Geology	CollectingAgentID	MIDS3	Geology_CollectorID_MIDS3	
 Geology	GeographicalLocalityID	MIDS3	Geology_GeographicalLocalityID_MIDS3	
 Geology	IdentifiedByID	MIDS3	Geology_IdentifiedByID_MIDS3	
-Geology	IdentifiedAsID	MIDS3	Geology_IndentifiedAsID_MIDS3	
+Geology	IdentifiedAsID	MIDS3	Geology_IdentifiedAsID_MIDS3	
 Geology	OrganizationID	MIDS3	Geology_OrganizationID_MIDS3
 Geology	License	MIDS1	Geology_License_MIDS1	
 Geology	Mass	MIDS3	Geology_Mass_MIDS3	
@@ -37,7 +37,7 @@ Paleontology	Chronostratigraphy	MIDS1	Paleontology_Chronostratigraphy_MIDS1
 Paleontology	CollectorID	MIDS3	Paleontology_CollectorID_MIDS3	
 Paleontology	GeographicalLocalityID	MIDS3	Paleontology_GeographicalLocalityID_MIDS3	
 Paleontology	IdentifiedByID	MIDS3	Paleontology_IdentifiedByID_MIDS3	
-Paleontology	IdentifiedAsID	MIDS3	Paleontology_IndentifiedAsID_MIDS3	
+Paleontology	IdentifiedAsID	MIDS3	Paleontology_IdentifiedAsID_MIDS3	
 Paleontology	OrganizationID	MIDS3	Paleontology_OrganizationID_MIDS3
 Paleontology	License	MIDS1	Paleontology_License_MIDS1	
 Paleontology	MediaID	MIDS3	Paleontology_MediaID_MIDS3	
