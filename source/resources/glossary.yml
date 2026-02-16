@@ -32,7 +32,7 @@ glossary:
     definition: "A simple categorisation of the type and depth of digitisation achieved by different approaches to digitisation."
     id: "levels-of-digitization"
   - prefLabel: "Collection"
-    description: "Within the context of MIDS, a collection is an accumulated group of objects with a focal characteristic that is assembled and maintained by an individual or organization over time. A collection comprises multiple items that are conceptually or physically arranged together for a specific purpose and audience, according to a collection plan."
+    definition: "Within the context of MIDS, a collection is an accumulated group of objects with a focal characteristic that is assembled and maintained by an individual or organization over time. A collection comprises multiple items that are conceptually or physically arranged together for a specific purpose and audience, according to a collection plan."
     sources: "Lightweight Information Describing Objects (LIDO) http://terminology.lido-schema.org/lido01053"
     id: "collection"
   - prefLabel: "Natural Science Collection"
