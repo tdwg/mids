@@ -45,24 +45,19 @@ CollectingNumber	154/23
 CollectingNumber	254
 CollectingNumber	s.n.
 Media	https://www.unimus.no/felles/bilder/web_hent_bilde.php?id=14501286&type=jpeg
-TypeStatus	Holotype
-TypeStatus	Isotype
-TypeStatus	Syntype
-TypeStatus	Cotype
-TypeStatus	Epitype
-TypeStatus	Neotype
-TypeStatus	Lectotype
 OrganizationID	https://ror.org/01xtthb56
 OrganizationID	https://www.gbif.org/grscicoll/collection/772f9e37-4643-452b-82b4-a06550283096
 OrganizationID	https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381
-CollectorID	https://orcid.org/0000-0003-1568-xxxx
-CollectorID	https://www.wikidata.org/wiki/Q94522
+CollectingAgentID	https://orcid.org/0000-0003-1568-xxxx
+CollectingAgentID	https://www.wikidata.org/wiki/Q94522
 IdentifiedAsID	urn:lsid:ipni.org:names:184409-1
 IdentifiedAsID	mindat:1:1:1375:4
 IdentifiedAsID	https://geoapis.io/api/v1/resource/mineral-names?uuid=ba673bdf-7228-11f0-a057-52f8e1bb0628
 IdentifiedAsID	urn:lsid:marinespecies.org:taxname:347049
 IdentifiedAsID	urn:lsid:zoobank.org:act:021CD126-41BA-45BF-AB74-B04B7ED01422
-GeographicalLocalityID	
+GeographicalLocalityID	decimalLatitude:-41.0983423 + decimalLongitude:-121.1761111 + geodeticDatum:EPSG:4326 + coordinateUncertaintyInMeters:30 + coordinatePrecision:0.00001
+GeographicalLocalityID	POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)) + EPSG:4326
+GeographicalLocalityID	https://www.geonames.org/7839420
 IdentifiedByID	https://www.wikidata.org/wiki/Q94522
 IdentifiedByID	https://orcid.org/0000-0001-7698-3945
 IdentifiedByID	https://www.wikidata.org/wiki/Q276405
