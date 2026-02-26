@@ -20,14 +20,14 @@ Getting started links[](#getting-started)
 ## Aims
 
 - To provide a metric for the digitisation of collections
-- To assist in the prioritisation of data to be published to make digital specimen information useful for multiple purposes of research, teaching and learning
+- To assist in the prioritisation of data to be published to make digital specimen information useful for multiple purposes of research, teaching, and learning
 
 Outcomes of these aims include:
 
 - To improve the quality of published data by providing recommendations to collection managers about relevant data standards and ontologies
 - To support and contribute towards assessments of fitness for purpose of data (suitability) for feeding specific types of data processing pipelines
 - To assist researchers to know what information to include in their publications about specimens they have used in their research
-- To enable efficient querying, aggregation and self-contained data processing by computing systems (machine-actionability, de Smedt 2020) based on provision of rich contextual (meta)data in compliance with the FAIR principles (Wilkinson 2016)
+- To enable efficient querying, aggregation, and self-contained data processing by computing systems (machine-actionability, de Smedt 2020) based on provision of rich contextual (meta)data in compliance with the FAIR principles (Wilkinson 2016)
 
 
 ## Audience
