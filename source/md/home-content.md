@@ -20,14 +20,14 @@ Getting started links[](#getting-started)
 ## Aims
 
 - To provide a metric for the digitisation of collections
-- To assist in the prioritisation of data to be published to make digital specimen information useful for multiple purposes of research, teaching and learning
+- To assist in the prioritisation of data to be published to make digital specimen information useful for multiple purposes of research, teaching, and learning
 
 Outcomes of these aims include:
 
 - To improve the quality of published data by providing recommendations to collection managers about relevant data standards and ontologies
 - To support and contribute towards assessments of fitness for purpose of data (suitability) for feeding specific types of data processing pipelines
 - To assist researchers to know what information to include in their publications about specimens they have used in their research
-- To enable efficient querying, aggregation and self-contained data processing by computing systems (machine-actionability, de Smedt 2020) based on provision of rich contextual (meta)data in compliance with the FAIR principles (Wilkinson 2016)
+- To enable efficient querying, aggregation, and self-contained data processing by computing systems (machine-actionability, de Smedt 2020) based on provision of rich contextual (meta)data in compliance with the FAIR principles (Wilkinson 2016)
 
 
 ## Audience
@@ -56,6 +56,6 @@ It is important to keep in mind that MIDS defines the “Minimum” information 
 
 The MIDS score can be calculated for an individual specimen by assessing the information required for each MIDS level and the information present in the digitised specimen. The data can be mapped to [Darwin Core terms](https://www.tdwg.org/standards/dwc/) or the [Access to Biological Collection Data (ABCD) Schema](https://www.tdwg.org/standards/abcd/) and then to the [MIDS information elements](https://tdwg.github.io/mids/information-elements/index.html) using the [mapping examples](https://tdwg.github.io/mids/mappings/index.html) provided.
 
-To make the calculations easier, [tools](https://tdwg.github.io/mids/tools/index.html) are being developed to enable the MIDS score to be calculated for each specimen within large datasets. These tools work on existing datasets in the [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) or the [Distributed System of Scientific Collections](https://www.dissco.eu/) or users can create their own datasets in Darwin Core Archive format ([Guidance](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide)) or in [ABCD format](https://www.tdwg.org/standards/abcd/). These tools make calculating the MIDS score for large collections possible, as well as providing the results in a format to enable users to understand the data which are impacting the MIDS score.
+To make the calculations easier, [tools](https://tdwg.github.io/mids/resources/index.html) are being developed to enable the MIDS score to be calculated for each specimen within large datasets. These tools work on existing datasets in the [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) or the [Distributed System of Scientific Collections](https://www.dissco.eu/) or users can create their own datasets in Darwin Core Archive format ([Guidance](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide)) or in [ABCD format](https://www.tdwg.org/standards/abcd/). These tools make calculating the MIDS score for large collections possible, as well as providing the results in a format to enable users to understand the data which are impacting the MIDS score.
 
 
