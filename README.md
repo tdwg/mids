@@ -68,6 +68,7 @@ Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 | Claus Weiland  | Senckenberg Society for Nature Research  | @cp-weiland |
 | Karin Wiltschke | Natural History Museum Vienna | @Karin-Wiltschke |
+| Stefan Seifert | The Bavarian Natural History Collections (SNSB) | @snsb-seifert
 
 
 ## Repo structure
