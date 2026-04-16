@@ -3,7 +3,7 @@
 This is the repository for the MIDS Task Group, dealing with Minimum Information about a Digital Specimen.
 
 Draft Documentation: [https://tdwg.github.io/mids](https://tdwg.github.io/mids)
-This README last updated: 1 Jan 2025.
+This README last updated: 10 April 2026.
 
 ## About the group
 
@@ -20,7 +20,7 @@ Become involved and contribute by:
 
 - Contacting the Conveners and/or signing up to the [task group mailing list](http://lists.tdwg.org/mailman/listinfo/tdwg-mids).
   
-- Participating in the meetings. The timing of these is currently weekly on Thursdays at 14:00 UTC. Contact the Conveners for more information.
+- Participating in the meetings. Contact the Conveners for information about the next meeting.
 
 - Watching this GitHub repository. Submitting or commenting on an issue.
 
@@ -32,8 +32,8 @@ Become involved and contribute by:
 
 | Name | Affiliation | github name / Email |
 | --- | --- | --- |
-| Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston / ehaston AT rbge.org.uk|  
-| Cat Chapman | Florida Museum of Natural History |  / cchapman AT floridamuseum |  
+| Elspeth Haston | Royal Botanic Garden Edinburgh | @emhaston | ehaston AT rbge.org.uk|  
+| Cat Chapman | Florida Museum of Natural History | cchapman AT floridamuseum |  
 | Mathias Dillen | Meise Botanic Garden | @matdillen |
 
 ### Previous Conveners
@@ -68,13 +68,12 @@ Alex Hardisty, formerly Director of Informatics Projects, Cardiff University
 | Rachel Walcott | National Museums Scotland | r.walcott AT nms.ac.uk |
 | Claus Weiland  | Senckenberg Society for Nature Research  | @cp-weiland |
 | Karin Wiltschke | Natural History Museum Vienna | @Karin-Wiltschke |
+| Stefan Seifert | The Bavarian Natural History Collections (SNSB) | @snsb-seifert
 
 
 ## Repo structure
 
 The [main branch](https://github.com/tdwg/mids) contains the current documentation, including the most recently released draft version of the standard, the information elements, and the mapping.
-
-The [working-draft branch](https://github.com/tdwg/mids/tree/working-draft) contains the different versions of the standard during its development, including the [current draft](https://github.com/tdwg/mids/tree/working-draft/current-draft), which is being actively updated. Older drafts are moved to the [old-drafts](https://github.com/tdwg/mids/tree/working-draft/old-drafts) folder as they are superseded. The [use-cases](https://github.com/tdwg/mids/tree/working-draft/use-cases) folder contains the use cases on which the current working draft is based.
 
 ## TG Way of working
 
@@ -97,13 +96,13 @@ A [MIDS website](https://tdwg.github.io/mids/index.html) has been created for th
 
 MIDS is being developed within the following structure:
 
-**MIDS Levels** - Four levels have been defined and can be found on the [Information Elements webpage](https://tdwg.github.io/mids/information-elements/index.html)
+**MIDS Levels** - Four levels have been defined and can be found on the [MIDS Information Elements webpage](https://tdwg.github.io/mids/information-elements/index.html)
 
-**MIDS Information Elements** - The information elements have been defined and can be found on the [Information Elements webpage](https://tdwg.github.io/mids/information-elements/index.html)
+**MIDS Information Elements** - The information elements have been defined and can be found on the [MIDS Information Elements webpage](https://tdwg.github.io/mids/information-elements/index.html)
 
-**MIDS SSSOM Mapping** - The elements of each MIDS level have been mapped to terms as used in common domain data standards, such as Darwin Core or ABCD and can be found on the [Mappings webpage](https://tdwg.github.io/mids/mappings/index.html)
+**MIDS Mappings** - The elements of each MIDS level have been mapped to terms as used in common domain data standards, such as Darwin Core or ABCD and can be found on the [MIDS Mappings webpage](https://tdwg.github.io/mids/mappings/index.html)
 
-**MIDS Tools** - Several tools have been developed and can be tested by users. They can be found on the [MIDS Tools webpage](https://tdwg.github.io/mids/mappings/index.html)
+**MIDS Resources** - Several tools have been developed and can be tested by users. They can be found on the [MIDS Resources webpage](https://tdwg.github.io/mids/mappings/index.html)
 
 ### Most recent draft of MIDS
 
