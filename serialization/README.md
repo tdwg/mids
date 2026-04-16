@@ -3,12 +3,12 @@
 
 This directory contains exploratory RDF serializations of the MIDS specification, produced with the assistance of large language models. The contents are not intended for production use or to reflect any consensus among contributors — they are meant to explore how MIDS might be expressed as RDF.
 
+---
 
 ## mids_ontology.ttl
 Generated with the aid of Claude on 20260416
 
 ### Structure
-
 * Ontology header — provenance, contributors, license (CC BY 4.0), and version (DRAFT) drawn from the source pages
 * 4 classes — mids:InformationElement, mids:MIDSLevel, mids:Discipline, mids:DisciplineSchema
 * Core properties — mids:requiresElement, mids:buildsOn, mids:hasMappingDwC/ABCD, mids:purpose, mids:usageNote, mids:isGenericLevel, etc.
