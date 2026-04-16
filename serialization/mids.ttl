@@ -1,0 +1,756 @@
+##############################################################
+# Minimum Information about a Digital Specimen (MIDS)
+# RDF Serialization – Turtle
+#
+# Source documentation:
+#   https://tdwg.github.io/mids/
+#   https://tdwg.github.io/mids/information-elements/index.html
+#   https://tdwg.github.io/mids/about/index.html
+#
+# Status: DRAFT – reflects the MIDS draft specification as of
+#   2026-03-22 (last modified date on source pages).
+#   Information element URIs are pending ratification by TDWG.
+#   The namespace http://rs.tdwg.org/mids/ is provisional.
+#
+# Notes:
+#   - Levels 0 and 1 are generic (all disciplines).
+#   - Levels 2 and 3 are discipline-specific.
+#   - The Paleontology MIDS3 schema lists "CollectorID" in the
+#     discipline schema table; this is mapped here to the
+#     canonical mids-ie:CollectingAgentID element (see §6 note).
+#   - DwC and ABCD mappings are partially expressed where
+#     clearly indicated in the source; full mapping tables
+#     are at https://tdwg.github.io/mids/mappings/index.html
+##############################################################
+
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix vann:     <http://purl.org/vocab/vann/> .
+@prefix dwc:      <http://rs.tdwg.org/dwc/terms/> .
+@prefix abcd:     <https://abcd.tdwg.org/terms/> .
+@prefix mids:     <http://rs.tdwg.org/mids/> .
+@prefix mids-ie:  <http://rs.tdwg.org/mids/elements/> .
+@prefix mids-lv:  <http://rs.tdwg.org/mids/levels/> .
+@prefix mids-d:   <http://rs.tdwg.org/mids/disciplines/> .
+@prefix mids-s:   <http://rs.tdwg.org/mids/schemas/> .
+
+
+##############################################################
+# Ontology Header
+##############################################################
+
+<http://rs.tdwg.org/mids/>
+    a owl:Ontology ;
+    dcterms:title "Minimum Information about a Digital Specimen (MIDS)"@en ;
+    dcterms:description
+        "MIDS provides a means of measuring and monitoring the level of digitization of natural science specimens within a collection. It provides guidance for prioritizing data capture and recommendations for data standards and mapping structures."@en ;
+    dcterms:created "2025-01-01"^^xsd:date ;
+    dcterms:modified "2026-03-22"^^xsd:date ;
+    dcterms:publisher <https://www.tdwg.org/> ;
+    dcterms:creator <https://www.tdwg.org/community/cd/mids/> ;
+    dcterms:source <https://tdwg.github.io/mids/> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:contributor
+        "Elspeth Haston (https://orcid.org/0000-0001-9144-2848), Royal Botanic Garden Edinburgh, UK" ,
+        "Cat Chapman (https://orcid.org/0000-0002-0681-2515), Northern Arizona University & iDigBio, USA" ,
+        "Alex Hardisty, Cardiff University" ,
+        "Wouter Addink, Naturalis, NL" ,
+        "Mathias Dillen (https://orcid.org/0000-0002-3973-1252), Meise Botanic Garden, BE" ,
+        "Quentin Groom, Meise Botanic Garden, BE" ,
+        "Falko Glöckler, Museum für Naturkunde Berlin, DE" ,
+        "Deborah Paul, iDigBio, USA" ,
+        "Mareike Petersen, Museum für Naturkunde Berlin, DE" ,
+        "Hannu Saarenmaa, Bioshare Digitization, FI" ,
+        "Anton Güntsch, Botanic Garden and Botanical Museum Berlin, DE" ,
+        "Ben Norton" ,
+        "Anke Penzlin (https://orcid.org/0000-0003-2183-893X), Senckenberg, DE" ,
+        "Claus Weiland (https://orcid.org/0000-0003-0351-6523), Senckenberg, DE" ,
+        "Eirik Rindal (https://orcid.org/0000-0003-1568-6386), Natural History Museum, University of Oslo" ,
+        "Dagmar Triebel (https://orcid.org/0000-0003-1980-3148), Bavarian Natural History Collections" ,
+        "Rachel Walcott (https://orcid.org/0000-0002-0488-6393), National Museums Scotland" ,
+        "Donat Agosti (https://orcid.org/0000-0001-9286-1200), Plazi" ,
+        "Felipe Simoes (https://orcid.org/0000-0002-1218-2839), Plazi" ,
+        "Josh Humphries (https://orcid.org/0000-0001-5493-9804), Natural History Museum, London" ;
+    owl:versionInfo "DRAFT" ;
+    vann:preferredNamespacePrefix "mids" ;
+    vann:preferredNamespaceUri "http://rs.tdwg.org/mids/" ;
+    rdfs:comment
+        "RDF serialization of the MIDS draft specification. Element namespace URIs are provisional and subject to change upon ratification."@en .
+
+
+##############################################################
+# Classes
+##############################################################
+
+mids:InformationElement
+    a owl:Class ;
+    rdfs:label "MIDS Information Element"@en ;
+    skos:definition
+        "A structured construct that groups related data fields to measure the presence of digitization information in natural science specimen records."@en ;
+    rdfs:comment
+        "Information elements are the normative building blocks of MIDS. Each element has a definition, purpose, usage note, and is required by one or more discipline schemas at specific MIDS levels."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:MIDSLevel
+    a owl:Class ;
+    rdfs:label "MIDS Level"@en ;
+    skos:definition
+        "A progressive level of digitization representing the type and depth of digitization achieved for a natural science specimen. Levels 0–1 are generic; levels 2–3 are discipline-specific."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:Discipline
+    a owl:Class ;
+    rdfs:label "Discipline"@en ;
+    skos:definition
+        "A scientific discipline for which distinct digitization priorities and information element requirements are recognized within MIDS. Currently: Biology, Geology, Paleontology."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:DisciplineSchema
+    a owl:Class ;
+    rdfs:label "Discipline Schema"@en ;
+    skos:definition
+        "A schema specifying which information elements are required for a given discipline at a given MIDS level. Each discipline has four schemas (one per level), together defining the complete digitization profile for that discipline."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+
+##############################################################
+# Object Properties
+##############################################################
+
+mids:hasDiscipline
+    a owl:ObjectProperty ;
+    rdfs:label "has discipline"@en ;
+    rdfs:domain mids:DisciplineSchema ;
+    rdfs:range mids:Discipline ;
+    skos:definition "Links a discipline schema to the discipline it applies to."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:hasLevel
+    a owl:ObjectProperty ;
+    rdfs:label "has MIDS level"@en ;
+    rdfs:domain mids:DisciplineSchema ;
+    rdfs:range mids:MIDSLevel ;
+    skos:definition "Links a discipline schema to the MIDS level at which its elements are required."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:requiresElement
+    a owl:ObjectProperty ;
+    rdfs:label "requires element"@en ;
+    rdfs:domain mids:DisciplineSchema ;
+    rdfs:range mids:InformationElement ;
+    skos:definition
+        "Links a discipline schema to the information elements whose presence is required to satisfy that discipline at that MIDS level."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:buildsOn
+    a owl:ObjectProperty ;
+    rdfs:label "builds on"@en ;
+    rdfs:domain mids:MIDSLevel ;
+    rdfs:range mids:MIDSLevel ;
+    skos:definition
+        "Indicates that a MIDS level subsumes all information elements of the referenced preceding level."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:hasMappingDwC
+    a owl:ObjectProperty ;
+    rdfs:label "has Darwin Core mapping"@en ;
+    rdfs:domain mids:InformationElement ;
+    skos:definition
+        "Links a MIDS information element to a corresponding Darwin Core term. Non-normative; full mapping tables are published separately."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:hasMappingABCD
+    a owl:ObjectProperty ;
+    rdfs:label "has ABCD mapping"@en ;
+    rdfs:domain mids:InformationElement ;
+    skos:definition
+        "Links a MIDS information element to a corresponding ABCD schema term. Non-normative; full mapping tables are published separately."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+
+##############################################################
+# Datatype Properties
+##############################################################
+
+mids:purpose
+    a owl:DatatypeProperty ;
+    rdfs:label "purpose"@en ;
+    rdfs:domain mids:InformationElement ;
+    rdfs:range xsd:string ;
+    skos:definition
+        "The intended purpose or use case of the MIDS information element, explaining why the element is required."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:usageNote
+    a owl:DatatypeProperty ;
+    rdfs:subPropertyOf skos:scopeNote ;
+    rdfs:label "usage note"@en ;
+    rdfs:domain mids:InformationElement ;
+    rdfs:range xsd:string ;
+    skos:definition
+        "Recommendations or normative guidance for populating the MIDS information element."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:levelIndex
+    a owl:DatatypeProperty ;
+    rdfs:label "level index"@en ;
+    rdfs:domain mids:MIDSLevel ;
+    rdfs:range xsd:nonNegativeInteger ;
+    skos:definition "The numeric index of the MIDS level (0–3)."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:isGenericLevel
+    a owl:DatatypeProperty ;
+    rdfs:label "is generic level"@en ;
+    rdfs:domain mids:MIDSLevel ;
+    rdfs:range xsd:boolean ;
+    skos:definition
+        "True if the level applies identically to all disciplines (levels 0 and 1); false if the level has discipline-specific element sets (levels 2 and 3)."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids:levelPurpose
+    a owl:DatatypeProperty ;
+    rdfs:label "level purpose"@en ;
+    rdfs:domain mids:MIDSLevel ;
+    rdfs:range xsd:string ;
+    skos:definition "The purpose or intended use case of a given MIDS level."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+
+##############################################################
+# MIDS Levels
+##############################################################
+
+mids-lv:MIDS0
+    a owl:NamedIndividual, mids:MIDSLevel ;
+    rdfs:label "MIDS Level 0"@en ;
+    skos:prefLabel "Bare"@en ;
+    mids:levelIndex 0 ;
+    mids:isGenericLevel true ;
+    skos:definition
+        "A bare or skeletal record making the association between an identifier of a physical specimen and its digital representation, allowing for unambiguous attachment of all other information."@en ;
+    mids:levelPurpose
+        "Allows for unambiguous attachment of all other information and enables a user to discover the location of the physical specimen to access additional information or to request access."@en .
+
+mids-lv:MIDS1
+    a owl:NamedIndividual, mids:MIDSLevel ;
+    rdfs:label "MIDS Level 1"@en ;
+    skos:prefLabel "Basic"@en ;
+    mids:levelIndex 1 ;
+    mids:isGenericLevel true ;
+    mids:buildsOn mids-lv:MIDS0 ;
+    skos:definition
+        "A basic record of specimen information enabling basic discoverability as well as how the user is permitted to use the data."@en ;
+    mids:levelPurpose
+        "Creates a digital representation of the physical collections. Provides information about the number of specimens present for a taxon as well as the kind of object, enabling curators and users to find specimens within collections."@en .
+
+mids-lv:MIDS2
+    a owl:NamedIndividual, mids:MIDSLevel ;
+    rdfs:label "MIDS Level 2"@en ;
+    skos:prefLabel "Intermediate"@en ;
+    mids:levelIndex 2 ;
+    mids:isGenericLevel false ;
+    mids:buildsOn mids-lv:MIDS1 ;
+    skos:definition
+        "An intermediary level of information including data agreed over time as essential for most scientific purposes."@en ;
+    mids:levelPurpose
+        "Key information fields agreed over time as essential for most scientific purposes."@en .
+
+mids-lv:MIDS3
+    a owl:NamedIndividual, mids:MIDSLevel ;
+    rdfs:label "MIDS Level 3"@en ;
+    skos:prefLabel "Extended"@en ;
+    mids:levelIndex 3 ;
+    mids:isGenericLevel false ;
+    mids:buildsOn mids-lv:MIDS2 ;
+    skos:definition
+        "An extended level of information about a specimen including identifiers enabling connections to other data present or known about the specimen."@en ;
+    mids:levelPurpose
+        "Enables linked open data."@en .
+
+
+##############################################################
+# Disciplines
+##############################################################
+
+mids-d:Biology
+    a owl:NamedIndividual, mids:Discipline ;
+    rdfs:label "Biology"@en ;
+    skos:prefLabel "Biology"@en ;
+    skos:definition
+        "Biology is the science of life. It is concerned with the characteristics and behaviors of organisms."@en ;
+    dcterms:source "Modern Science Ontology"@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-d:Geology
+    a owl:NamedIndividual, mids:Discipline ;
+    rdfs:label "Geology"@en ;
+    skos:prefLabel "Geology"@en ;
+    skos:definition
+        "Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin."@en ;
+    dcterms:source "USGS Thesaurus"@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-d:Paleontology
+    a owl:NamedIndividual, mids:Discipline ;
+    rdfs:label "Paleontology"@en ;
+    skos:prefLabel "Paleontology"@en ;
+    skos:definition
+        "Study of life in past geologic time based on fossil plants and animals."@en ;
+    dcterms:source "USGS Thesaurus"@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+
+##############################################################
+# Information Elements
+# (URIs are provisional – pending ratification)
+##############################################################
+
+mids-ie:Chronostratigraphy
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Chronostratigraphy"@en ;
+    skos:prefLabel "Chronostratigraphy"@en ;
+    skos:definition
+        "Refers to the relative age of a specimen defined by bodies of rocks, layered or unlayered, that are defined between specified stratigraphic horizons which represent specified intervals of geologic time."@en ;
+    mids:usageNote
+        "Where applicable or possible, adheres to the units in the International Chronostratigraphic Chart (https://stratigraphy.org/chart/)."@en ;
+    mids:purpose
+        "Designate specimens with a geologic age defined relative to other organisms, rocks, or features or events rather than in terms of years."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:CollectingAgent
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Collecting Agent"@en ;
+    skos:prefLabel "Collecting Agent"@en ;
+    skos:definition
+        "A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence."@en ;
+    mids:usageNote
+        "It is recommended to include a verbatim version of the name as it appears on the label. The primary collector or observer, especially one who applies a collecting identifier (recordNumber), should be listed first. It is also strongly recommended to include people identifiers such as ORCID or Wikidata (see mids-ie:CollectingAgentID)."@en ;
+    mids:purpose
+        "For many biological collections the collector in combination with CollectingNumber has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location."@en ;
+    skos:example "Carl Linnaeus"@en ;
+    mids:hasMappingDwC dwc:recordedBy ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:CollectingAgentID
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Collecting Agent ID"@en ;
+    skos:prefLabel "Collecting Agent ID"@en ;
+    skos:definition
+        "A list (concatenated and separated) of the identifier(s) for the person, people, groups, or expeditions responsible for collecting the specimen."@en ;
+    mids:usageNote
+        "It is strongly recommended to use resolvable ORCiD identifiers for people, or Wikidata identifiers for people or expeditions. It is also recommended to list the primary collectorID first."@en ;
+    mids:purpose
+        "To uniquely identify the collector of a specimen in a machine-readable format."@en ;
+    skos:example "https://orcid.org/0000-0003-1568-xxxx"@en ;
+    skos:example "https://www.wikidata.org/wiki/Q94522"@en ;
+    mids:hasMappingDwC dwc:recordedByID ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:CollectingNumber
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Collecting Number"@en ;
+    skos:prefLabel "Collecting Number"@en ;
+    skos:definition
+        "An identifier given to the specimen at the time it was recorded. Often serves as a link between field notes and a specimen record."@en ;
+    mids:usageNote
+        "It is recommended to use s.n. (sine numero – without number) or equivalent if not present."@en ;
+    mids:purpose
+        "For many biological collections the collector in combination with CollectingNumber has been used as an identifier for the specimen in literature. It also helps in the identification and validation of the collecting location."@en ;
+    skos:example "BPL-1001"@en ;
+    skos:example "154/23"@en ;
+    skos:example "s.n."@en ;
+    mids:hasMappingDwC dwc:recordNumber ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:DateCollected
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Date Collected"@en ;
+    skos:prefLabel "Date Collected"@en ;
+    skos:definition
+        "The date/time at which a gathering event occurred. For specimen gathering, this is the date/time when the event was recorded."@en ;
+    mids:usageNote
+        "It is strongly recommended to use ISO 8601 standard with extended format for human readability. s.d. (sine diem – without date) or equivalent if not present or not known."@en ;
+    mids:purpose
+        "To provide accurate information about when the specimen was collected."@en ;
+    skos:example "2023-12-08"@en ;
+    skos:example "2023-12"@en ;
+    skos:example "s.d."@en ;
+    mids:hasMappingDwC dwc:eventDate ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:GeographicalLocalityID
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Geographical Locality ID"@en ;
+    skos:prefLabel "Geographical Locality ID"@en ;
+    skos:definition
+        "An identifier for the geographical locality where the specimen was collected."@en ;
+    mids:purpose
+        "To provide an identifier for the geographical locality ensuring no ambiguity, particularly for locality names that are not unique. Also has the potential to link the locality name to a shape file."@en ;
+    skos:example "https://www.geonames.org/7839420"@en ;
+    skos:example "POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)) + EPSG:4326"@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:IdentifiedAsID
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Identified As ID"@en ;
+    skos:prefLabel "Identified As ID"@en ;
+    skos:definition
+        "An identifier for the nomenclatural (not taxonomic) details of a scientific name."@en ;
+    mids:usageNote
+        "It is strongly recommended to use identifiers from the recognised nomenclators for the appropriate taxonomic group (e.g. IPNI, MycoBank, AlgaeBase, Mindat, etc)."@en ;
+    mids:purpose
+        "To uniquely identify the taxon name of a specimen in a machine-readable format."@en ;
+    skos:example "urn:lsid:ipni.org:names:184409-1"@en ;
+    skos:example "urn:lsid:marinespecies.org:taxname:347049"@en ;
+    skos:example "urn:lsid:zoobank.org:act:021CD126-41BA-45BF-AB74-B04B7ED01422"@en ;
+    mids:hasMappingDwC dwc:scientificNameID ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:IdentifiedByID
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Identified By ID"@en ;
+    skos:prefLabel "Identified By ID"@en ;
+    skos:definition
+        "A list (concatenated and separated) of the identifier(s) for the person, people, groups, or organizations responsible for assigning the scientific name to the subject."@en ;
+    mids:usageNote
+        "It is strongly recommended to use resolvable ORCiD identifiers for people, or Wikidata identifiers for people or expeditions."@en ;
+    mids:purpose
+        "To provide provenance for the identification of the specimen."@en ;
+    skos:example "https://orcid.org/0000-0001-7698-3945"@en ;
+    skos:example "https://www.wikidata.org/wiki/Q276405"@en ;
+    mids:hasMappingDwC dwc:identifiedByID ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:License
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "License"@en ;
+    skos:prefLabel "License"@en ;
+    skos:definition
+        "License under which the specimen data are published."@en ;
+    mids:usageNote
+        "Use Creative Commons license framework. Use as unrestricted a license as possible."@en ;
+    mids:purpose
+        "To enable all users to determine how they can use the specimen data."@en ;
+    skos:example "CC0 1.0 Universal"@en ;
+    skos:example "https://creativecommons.org/publicdomain/zero/1.0/"@en ;
+    skos:example "CC BY"@en ;
+    mids:hasMappingDwC dcterms:license ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:Mass
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Mass"@en ;
+    skos:prefLabel "Mass"@en ;
+    skos:definition
+        "The quantity of matter in a specimen, particularly for minerals, phases and meteorites."@en ;
+    mids:purpose
+        "To record the physical mass of geological specimens such as minerals, phases and meteorites."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:Media
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Media"@en ;
+    skos:prefLabel "Media"@en ;
+    skos:definition
+        "A list (concatenated and separated) of media associated with the specimen."@en ;
+    mids:usageNote
+        "It is strongly recommended to follow Audiovisual Core standards; provide an identifier for an IIIF manifest and/or image."@en ;
+    mids:purpose
+        "To allow a user to locate media files of the specimen."@en ;
+    skos:example "https://www.unimus.no/felles/bilder/web_hent_bilde.php?id=14501286&type=jpeg"@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:MediaID
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Media ID"@en ;
+    skos:prefLabel "Media ID"@en ;
+    skos:definition
+        "A list (concatenated and separated) of identifiers of media associated with the specimen."@en ;
+    mids:usageNote
+        "It is strongly recommended to follow Audiovisual Core standards; provide identifier(s) for IIIF manifest and/or image."@en ;
+    mids:purpose
+        "To allow a user (human or machine) to locate media files of the specimen."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:Modified
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Modified"@en ;
+    skos:prefLabel "Modified"@en ;
+    skos:definition
+        "UTC date/time of first creation or subsequent modification of the record, if any."@en ;
+    mids:usageNote
+        "Use ISO 8601 UTC date/time in extended format (for human readability)."@en ;
+    mids:purpose
+        "To enable users (humans/machines) to determine if there have been any changes to the record since it was last viewed."@en ;
+    skos:example "2021-01-20T10:54:18"@en ;
+    skos:example "2021-01-20"@en ;
+    mids:hasMappingDwC dcterms:modified ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:Name
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Name"@en ;
+    skos:prefLabel "Name"@en ;
+    skos:definition
+        "A name given to the object. Any string of characters and/or numbers by which the object is referenced within a collection. For example, the name the specimen is stored under, its scientific or taxonomic name if known, or how it is labelled. This name is not necessarily according to an accepted scientific classification or taxonomic determination, but it often can be."@en ;
+    mids:usageNote
+        "It is recommended to follow standard nomenclators, e.g. IPNI, MycoBank, AlgaeBase, Mindat, etc."@en ;
+    mids:purpose
+        "Information to aid the discoverability of specimens by users and the ability to retrieve them within a collection."@en ;
+    skos:example "Colias croceus (Geoffroy, 1785)"@en ;
+    skos:example "Ophthalmosaurus"@en ;
+    skos:example "Scottish rock"@en ;
+    skos:example "Diptera"@en ;
+    mids:hasMappingDwC dwc:scientificName ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:ObjectType
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Object Type"@en ;
+    skos:prefLabel "Object Type"@en ;
+    skos:definition
+        "General term to describe the kind of specimen."@en ;
+    mids:usageNote
+        "It is recommended to use the ontology being developed for the DwC term Preparations."@en ;
+    mids:purpose
+        "To enable curators to determine equipment/method/cost of imaging the specimen; to enable researchers to determine equipment/method required for viewing or analysing the specimen; to enable curators/researchers to know in which collection/location within the institution the specimen is held."@en ;
+    skos:example "Microscope slide"@en ;
+    skos:example "pinned insect"@en ;
+    skos:example "herbarium sheet"@en ;
+    skos:example "ethanol preserved"@en ;
+    skos:example "DNA extract"@en ;
+    mids:hasMappingDwC dwc:preparations ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:Organization
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Organization"@en ;
+    skos:prefLabel "Organization"@en ;
+    skos:definition
+        "A term to indicate in which institution the specimen is held. This may include an institution code and an institution identifier."@en ;
+    mids:usageNote
+        "It is strongly recommended to include a human-readable term and a globally unique, persistent, resolvable identifier from GrSciColl, GRID, ROR, etc."@en ;
+    mids:purpose
+        "To allow a user to discover the location of the physical specimen to access additional information or to request access to the physical specimen."@en ;
+    skos:example "https://www.gbif.org/grscicoll/institution/0237598a-853a-492c-af74-a723fe251799"@en ;
+    skos:example "http://www.wikidata.org/entity/Q604444"@en ;
+    mids:hasMappingDwC dwc:institutionCode ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:OrganizationID
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Organization ID"@en ;
+    skos:prefLabel "Organization ID"@en ;
+    skos:definition
+        "An identifier for the institution having custody of the object(s)."@en ;
+    mids:usageNote
+        "It is strongly recommended to use a globally unique, persistent, resolvable identifier such as GrSciColl or ROR."@en ;
+    mids:purpose
+        "To allow a user (human or machine) to locate the physical location of the specimen."@en ;
+    skos:example "https://ror.org/01xtthb56"@en ;
+    skos:example "https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381"@en ;
+    mids:hasMappingDwC dwc:institutionID ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:PhysicalSpecimenID
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Physical Specimen ID"@en ;
+    skos:prefLabel "Physical Specimen ID"@en ;
+    skos:definition
+        "A unique identity for the specimen within the curating institution. Whatever the institution uses to uniquely identify the item. For example: DOI, stable identifier, catalogue number, barcode, etc."@en ;
+    mids:usageNote
+        "It is strongly recommended to use a globally unique, persistent, preferably resolvable identifier, e.g. CETAF Stable Identifiers or DOIs. It is strongly recommended to map these to the DwC term materialSampleID."@en ;
+    mids:purpose
+        "To allow the curator/researcher to identify the physical specimen to which the data refer, to allow citation of the specimen, and to enable the attachment of additional information to the specimen record."@en ;
+    skos:example "http://herbarium.bgbm.org/object/B100277113"@en ;
+    skos:example "O-F-2201154"@en ;
+    skos:example "30eff5c2-97b4-4eeb-bb46-8c12a1cf0f37"@en ;
+    mids:hasMappingDwC dwc:materialSampleID ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:QualitativeLocation
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Qualitative Location"@en ;
+    skos:prefLabel "Qualitative Location"@en ;
+    skos:definition
+        "A term to describe where the specimen was collected. In combination with QuantitativeLocation; should capture textual geographic information."@en ;
+    mids:usageNote
+        "The most precise locality should be captured given information available with the specimen. It is recommended to include additional higher-level geography, mapped to the appropriate terms, to reduce ambiguity of place names."@en ;
+    mids:purpose
+        "A human-readable location. Can also be used to help identify the QuantitativeLocation."@en ;
+    skos:example "Flinders Ranges, Arkaroola Wilderness Sanctuary, on rough track north of Arkaroola Village by Radium Creek, 120 metres past the turn-off for the Ridgetop Track."@en ;
+    mids:hasMappingDwC dwc:locality ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:QuantitativeLocation
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Quantitative Location"@en ;
+    skos:prefLabel "Quantitative Location"@en ;
+    skos:definition
+        "A term to describe where the specimen was collected. A quantitative measure including coordinate or shape data, an identifier, or data that can be easily converted into a quantitative measure. In combination with QualitativeLocation."@en ;
+    mids:usageNote
+        "It is strongly recommended to follow the Georeferencing Quick Reference Guide (Zermoglio et al. 2020, https://doi.org/10.35035/e09p-h128). It is recommended to use an identifier for the most precise spatial region or named place. If no identifier is used, data should correspond to a recognised geographic standard (e.g. OGC, WFS, ISO 3166, Geonames, GADM)."@en ;
+    mids:purpose
+        "To enable a person or machine to identify and/or map the geographical location in which the collection was made."@en ;
+    skos:example "-30.23713, 139.33683, WGS84"@en ;
+    skos:example "https://www.geonames.org/7839420/flinders-ranges.html"@en ;
+    mids:hasMappingDwC dwc:decimalLatitude ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+mids-ie:StratigraphicContext
+    a owl:NamedIndividual, mids:InformationElement ;
+    rdfs:label "Stratigraphic Context"@en ;
+    skos:prefLabel "Stratigraphic Context"@en ;
+    skos:definition
+        "Refers to the stratigraphic information associated with an earth sciences specimen including biostratigraphic, lithostratigraphic, and tectonostratigraphic units."@en ;
+    mids:usageNote
+        "Where applicable or possible, adherence to the conventions in the International Stratigraphic Guide and the usage of authoritative stratigraphic lexicons as sources of geologic unit names are highly recommended."@en ;
+    mids:purpose
+        "Designate specimens enriched with information associated with their source material for which they share a compositional lineage specific to geological collections."@en ;
+    rdfs:isDefinedBy <http://rs.tdwg.org/mids/> .
+
+
+##############################################################
+# Discipline Schemas
+# Each schema specifies the ADDITIONAL elements required at
+# that level (beyond what lower levels require).
+# To determine the full element set for a specimen at MIDS-N,
+# collect requiresElement from all schemas for that discipline
+# at levels 0 through N inclusive.
+##############################################################
+
+# ---- Biology ----
+
+mids-s:Biology-MIDS0
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Biology – MIDS Level 0"@en ;
+    mids:hasDiscipline mids-d:Biology ;
+    mids:hasLevel mids-lv:MIDS0 ;
+    mids:requiresElement mids-ie:Organization ;
+    mids:requiresElement mids-ie:PhysicalSpecimenID .
+
+mids-s:Biology-MIDS1
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Biology – MIDS Level 1"@en ;
+    mids:hasDiscipline mids-d:Biology ;
+    mids:hasLevel mids-lv:MIDS1 ;
+    mids:requiresElement mids-ie:License ;
+    mids:requiresElement mids-ie:Modified ;
+    mids:requiresElement mids-ie:Name ;
+    mids:requiresElement mids-ie:ObjectType .
+
+mids-s:Biology-MIDS2
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Biology – MIDS Level 2"@en ;
+    mids:hasDiscipline mids-d:Biology ;
+    mids:hasLevel mids-lv:MIDS2 ;
+    mids:requiresElement mids-ie:CollectingAgent ;
+    mids:requiresElement mids-ie:CollectingNumber ;
+    mids:requiresElement mids-ie:DateCollected ;
+    mids:requiresElement mids-ie:Media ;
+    mids:requiresElement mids-ie:QualitativeLocation ;
+    mids:requiresElement mids-ie:QuantitativeLocation .
+
+mids-s:Biology-MIDS3
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Biology – MIDS Level 3"@en ;
+    mids:hasDiscipline mids-d:Biology ;
+    mids:hasLevel mids-lv:MIDS3 ;
+    mids:requiresElement mids-ie:CollectingAgentID ;
+    mids:requiresElement mids-ie:GeographicalLocalityID ;
+    mids:requiresElement mids-ie:IdentifiedAsID ;
+    mids:requiresElement mids-ie:IdentifiedByID ;
+    mids:requiresElement mids-ie:MediaID ;
+    mids:requiresElement mids-ie:OrganizationID .
+
+# ---- Paleontology ----
+
+mids-s:Paleontology-MIDS0
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Paleontology – MIDS Level 0"@en ;
+    mids:hasDiscipline mids-d:Paleontology ;
+    mids:hasLevel mids-lv:MIDS0 ;
+    mids:requiresElement mids-ie:Organization ;
+    mids:requiresElement mids-ie:PhysicalSpecimenID .
+
+mids-s:Paleontology-MIDS1
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Paleontology – MIDS Level 1"@en ;
+    mids:hasDiscipline mids-d:Paleontology ;
+    mids:hasLevel mids-lv:MIDS1 ;
+    mids:requiresElement mids-ie:Chronostratigraphy ;  # Paleontology-unique at level 1
+    mids:requiresElement mids-ie:License ;
+    mids:requiresElement mids-ie:Modified ;
+    mids:requiresElement mids-ie:Name ;
+    mids:requiresElement mids-ie:ObjectType .
+
+mids-s:Paleontology-MIDS2
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Paleontology – MIDS Level 2"@en ;
+    mids:hasDiscipline mids-d:Paleontology ;
+    mids:hasLevel mids-lv:MIDS2 ;
+    mids:requiresElement mids-ie:QualitativeLocation ;
+    mids:requiresElement mids-ie:QuantitativeLocation ;
+    mids:requiresElement mids-ie:StratigraphicContext .
+
+mids-s:Paleontology-MIDS3
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Paleontology – MIDS Level 3"@en ;
+    mids:hasDiscipline mids-d:Paleontology ;
+    mids:hasLevel mids-lv:MIDS3 ;
+    # Note: source schema table lists "CollectorID" here; mapped to the canonical element CollectingAgentID
+    mids:requiresElement mids-ie:CollectingAgentID ;
+    mids:requiresElement mids-ie:GeographicalLocalityID ;
+    mids:requiresElement mids-ie:IdentifiedAsID ;
+    mids:requiresElement mids-ie:IdentifiedByID ;
+    mids:requiresElement mids-ie:MediaID ;
+    mids:requiresElement mids-ie:OrganizationID .
+
+# ---- Geology ----
+
+mids-s:Geology-MIDS0
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Geology – MIDS Level 0"@en ;
+    mids:hasDiscipline mids-d:Geology ;
+    mids:hasLevel mids-lv:MIDS0 ;
+    mids:requiresElement mids-ie:Organization ;
+    mids:requiresElement mids-ie:PhysicalSpecimenID .
+
+mids-s:Geology-MIDS1
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Geology – MIDS Level 1"@en ;
+    mids:hasDiscipline mids-d:Geology ;
+    mids:hasLevel mids-lv:MIDS1 ;
+    mids:requiresElement mids-ie:License ;
+    mids:requiresElement mids-ie:Modified ;
+    mids:requiresElement mids-ie:Name ;
+    mids:requiresElement mids-ie:ObjectType .
+
+mids-s:Geology-MIDS2
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Geology – MIDS Level 2"@en ;
+    mids:hasDiscipline mids-d:Geology ;
+    mids:hasLevel mids-lv:MIDS2 ;
+    mids:requiresElement mids-ie:QualitativeLocation ;
+    mids:requiresElement mids-ie:QuantitativeLocation ;
+    mids:requiresElement mids-ie:StratigraphicContext .
+
+mids-s:Geology-MIDS3
+    a owl:NamedIndividual, mids:DisciplineSchema ;
+    rdfs:label "Geology – MIDS Level 3"@en ;
+    mids:hasDiscipline mids-d:Geology ;
+    mids:hasLevel mids-lv:MIDS3 ;
+    mids:requiresElement mids-ie:GeographicalLocalityID ;
+    mids:requiresElement mids-ie:IdentifiedAsID ;
+    mids:requiresElement mids-ie:IdentifiedByID ;
+    mids:requiresElement mids-ie:Mass ;              # Geology-unique at level 3
+    mids:requiresElement mids-ie:MediaID ;
+    mids:requiresElement mids-ie:OrganizationID .
+
+# End of mids.ttl
