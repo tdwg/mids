@@ -1,4 +1,4 @@
-MIDS Serialization
+# MIDS Serialization Exploration
 20260416
 
 This directory contains exploratory RDF serializations of the MIDS specification, produced with the assistance of large language models. The contents are not intended for production use or to reflect any consensus among contributors — they are meant to explore how MIDS might be expressed as RDF.
