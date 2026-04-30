@@ -1,0 +1,21 @@
+header,predicate,type,value,attribute,subject_id
+term_isDefinedBy,rdfs:isDefinedBy,iri,,,$root
+term_isDefinedBy,dcterms:isPartOf,iri,,,$root
+term_created,dcterms:created,datatype,,xsd:date,$root
+term_modified,dcterms:modified,datatype,,xsd:date,$root
+term_deprecated,owl:deprecated,datatype,,xsd:boolean,$root
+replaces_term,dcterms:replaces,iri,,,$root
+replaces1_term,dcterms:replaces,iri,,,$root
+replaces2_term,dcterms:replaces,iri,,,$root
+label,rdfs:label,language,,en,$root
+label,skos:prefLabel,language,,en,$root
+definition,rdfs:comment,language,,en,$root
+definition,skos:definition,language,,en,$root
+definition_derived_from ,sawsdlrdf:modelReference,iri,,,$root
+usage,skos:scopeNote,language,,en,$root
+notes,dcterms:description,language,,en,$root
+examples,skos:example,language,,en,$root
+rdf_type,rdf:type,iri,,,$root
+tdwgutility_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
+tdwgutility_required,tdwgutility:required,plain,,,$root
+tdwgutility_repeatable,tdwgutility:repeatable,plain,,,$root
