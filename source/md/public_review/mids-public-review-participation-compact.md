@@ -4,6 +4,10 @@ The draft **Minimum Information about a Digital Specimen (MIDS)** standard is op
 
 **Review manager:** Sharon Grant — [sgrant@fieldmuseum.org](mailto:sgrant@fieldmuseum.org)
 
+**Normative (under review):** each information element's Element Name, Element URI, Label, Level, Definition, and isRequiredBy; the definitions of the MIDS levels, the disciplines, and the discipline schemas.
+
+**Non-normative (informative):** each element's Mappings, Usage Note, Purpose, and Examples; the table of borrowed vocabularies.
+
 1. **Read the draft** at [mids.tdwg.org](https://mids.tdwg.org/), especially the [Information Elements](https://mids.tdwg.org/information-elements/index.html) page (levels, elements, and Discipline Schemas).
 2. **Choose a way to comment:** GitHub (step 3) or the feedback workbook (step 4). No GitHub account is needed for the workbook.
 3. **GitHub:** sign in, search the [MIDS issues](https://github.com/tdwg/mids/issues), then comment on an existing issue or open a new one describing your proposed change and rationale.
