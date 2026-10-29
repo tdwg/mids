@@ -1,12 +1,26 @@
 # How to Participate in the MIDS Public Review
 
-The draft **Minimum Information about a Digital Specimen (MIDS)** standard is open for TDWG public review from **[START DATE] to [END DATE]**. In accordance with the TDWG process, the review is open for at least 30 days.
+The draft **Minimum Information about a Digital Specimen (MIDS)** standard is open for TDWG public review from **October 5th, 2026 to December 4th, 2026**. The review is open for 60 days, exceeding the minimum of 30 days required by the TDWG process.
 
 MIDS defines four cumulative levels of digitization (MIDS0 Bare, MIDS1 Basic, MIDS2 Intermediate, MIDS3 Extended) and the information elements required at each level for Biology, Paleontology, and Geology collections. The MIDS Task Group welcomes feedback from anyone who digitizes, manages, publishes, or uses natural science specimen data, in any discipline. Comments from people outside the Task Group are especially valuable, and confirming that an entry is correct is useful feedback too.
 
 All comments will be public and archived following the review.
 
 **Review manager:** Sharon Grant, Field Museum of Natural History — [sgrant@fieldmuseum.org](mailto:sgrant@fieldmuseum.org)
+
+## What is under review
+
+The review covers four resources, all published on the [Information Elements](https://mids.tdwg.org/information-elements/index.html) page. Each resource has its own sheet in the [MIDS Feedback Workbook](https://docs.google.com/spreadsheets/d/16nMgILgR6a4pkIRDR17n6WNvqCrnQbmprRSHbAxZGP8/edit?usp=sharing).
+
+| Resource | What it contains |
+|---|---|
+| **Disciplines** | The three collection disciplines MIDS covers (Biology, Paleontology, Geology), with definitions and sources. |
+| **Levels** | The four cumulative MIDS levels (MIDS0 Bare, MIDS1 Basic, MIDS2 Intermediate, MIDS3 Extended), with definitions, notes, and purposes. Each level includes all information elements of the levels below it. |
+| **Information Elements** | All 21 MIDS information elements, with definitions, purposes, usage notes, examples, and the disciplines that require them (isRequiredBy). |
+| **Discipline Schema** | Which information element is required at which MIDS level for each discipline: one entry per discipline / level / information element combination. |
+
+> *Important Note!*  
+> Only these four resources are subject to review. Examples of information elements are non-normative. All other documentation, including the [mappings](https://mids.tdwg.org/mappings/index.html) and the [resources page](https://mids.tdwg.org/resources/index.html), is non-normative and, therefore, not under formal review. The purpose of the non-normative documentation is to improve understanding and clarify the normative documentation.
 
 ## Two ways to comment
 
@@ -52,9 +66,9 @@ You can comment through GitHub or through the MIDS feedback workbook. Both count
 
 5. **Ask questions or comment anonymously.** Email the review manager at [sgrant@fieldmuseum.org](mailto:sgrant@fieldmuseum.org) with any questions about the review. If you have trouble using GitHub, you can also email comments directly. If you wish to remain anonymous, say so explicitly in your email; your name and any identifying information will be removed before your comments are added to the public record.
 
-6. **Submit by [END DATE].** The Task Group will aim to resolve all comments received by the close of the review before requesting ratification by the TDWG Executive Committee. Comments received later may be deferred and addressed through normal maintenance after ratification.
+6. **Submit by December 4th, 2026.** The Task Group will aim to resolve all comments received by the close of the review before requesting ratification by the TDWG Executive Committee. Comments received later may be deferred and addressed through normal maintenance after ratification.
 
-7. **Share the announcement.** Please forward [ANNOUNCEMENT LINK] to colleagues and networks who could or should comment on MIDS.
+<!-- 7. **Share the announcement.** Please forward [ANNOUNCEMENT LINK] to colleagues and networks who could or should comment on MIDS. -->
 
 ## After the review
 

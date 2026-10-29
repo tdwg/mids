@@ -115,6 +115,18 @@ a:focus {
 li.navbar-item a.nav-link {
 	padding-bottom: 0.25rem;
 }
+.navbar-dark .navbar-nav a.nav-link.nav-link-github {
+	color: #FFFFFF;
+}
+.navbar-dark .navbar-nav a.nav-link.nav-link-github i.fa-github {
+	font-size: 1.4rem;
+	vertical-align: middle;
+	transition: opacity 0.15s ease;
+}
+.navbar-dark .navbar-nav a.nav-link.nav-link-github:hover i.fa-github,
+.navbar-dark .navbar-nav a.nav-link.nav-link-github:focus i.fa-github {
+	opacity: 0.8;
+}
 .navbar-dark .navbar-nav a.nav-link.nav-link-active {
 	color: #FFFFFF;
 	text-decoration: none;
@@ -885,6 +897,365 @@ ul.discipline-schema-list li span.level-label {
 ul.discipline-schema-list li span.element-label {
 	display: inline-block;
 }
+/* Home Page ------------------------------------------------------------------------------------- */
+/* Shared prose (home + public review): readable measure, comfortable leading, clear heading hierarchy */
+.content .doc-prose {
+	max-width: 46rem;
+	font-size: 1.0625rem;
+	line-height: 1.7;
+	color: #1F2937;
+}
+.content .doc-prose p,
+.content .doc-prose ul,
+.content .doc-prose ol {
+	margin-bottom: 1.1rem;
+}
+.content .doc-prose h2 {
+	font-size: 1.625rem;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+	color: #04592D;
+	margin: 2.75rem 0 0.85rem 0;
+}
+.content .doc-prose h2:first-child {
+	margin-top: 0;
+}
+main.docs-home .home-main {
+	margin: 0 auto;
+}
+.content .doc-prose h3 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 1.75rem 0 0.6rem 0;
+}
+.content .doc-prose ul,
+.content .doc-prose ol {
+	padding-left: 1.25rem;
+}
+.content .doc-prose ol li {
+	margin: 0.6rem 0;
+	padding-left: 0.25rem;
+}
+.content .doc-prose ol li:first-child {
+	margin-top: 0.4rem;
+}
+.content .doc-prose li > ol,
+.content .doc-prose li > ul {
+	margin: 0.4rem 0 0.6rem 0;
+}
+.content .doc-prose li > ol > li,
+.content .doc-prose li > ul > li {
+	margin: 0.3rem 0;
+}
+.content .doc-prose table {
+	margin-bottom: 1.25rem;
+	font-size: 0.95rem;
+}
+.content .doc-prose table thead th {
+	padding: 0.5rem 0.75rem;
+	font-weight: 700;
+	border-bottom: 2px solid #CFE2D6;
+}
+.content .doc-prose table tbody td {
+	padding: 0.5rem 0.75rem;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	border-top: 1px solid rgb(222, 226, 230);
+}
+.content .doc-prose table tbody td:first-child {
+	white-space: nowrap;
+}
+.content .doc-prose ul li {
+	margin: 0.3rem 0;
+	padding-left: 0.25rem;
+}
+.content .doc-prose ul li::marker {
+	color: #04592D;
+}
+.content .doc-prose hr {
+	margin: 2.5rem 0 0 0;
+	border: 0;
+	border-top: 1px solid rgb(222, 226, 230);
+	opacity: 1;
+}
+.content .doc-prose hr + h2 {
+	margin-top: 2rem;
+}
+.content .doc-prose p.last-modified {
+	margin-top: 3rem;
+	padding-top: 1rem;
+	border-top: 1px solid rgb(222, 226, 230);
+	font-size: 0.875rem;
+	color: rgb(107, 114, 128);
+}
+
+/* Public review: compact, visually distinct call-out panel above the main content */
+main.docs-home .review-panel {
+	max-width: 46rem;
+	margin: 0 auto 3.5rem auto;
+	padding: 1.25rem 1.5rem 0.5rem 1.5rem;
+	background-color: #FBFDFC;
+	border: 1px solid #E3EEE7;
+	border-left: 5px solid #04592D;
+	border-radius: 6px;
+	font-size: 0.9375rem;
+	line-height: 1.55;
+	color: #1F2937;
+}
+main.docs-home .review-panel-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem 0.75rem;
+	margin-bottom: 0.6rem;
+}
+main.docs-home .review-panel-header h2 {
+	order: -1;
+	margin: 0;
+	font-size: 1.375rem;
+	font-weight: 700;
+	color: #04592D;
+}
+main.docs-home .review-status {
+	display: inline-block;
+	padding: 0.15rem 0.55rem;
+	border-radius: 999px;
+	background-color: #04592D;
+	color: #FFFFFF;
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+main.docs-home .review-panel p {
+	margin-bottom: 0.6rem;
+}
+main.docs-home .review-panel-intro {
+	margin-bottom: 0.75rem;
+}
+main.docs-home .review-section {
+	border-top: 1px solid #E3EEE7;
+}
+main.docs-home .review-section summary {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.7rem 0;
+	font-family: Roboto, sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: #04592D;
+	cursor: pointer;
+	list-style: none;
+}
+main.docs-home .review-section summary::-webkit-details-marker {
+	display: none;
+}
+main.docs-home .review-section summary::before {
+	content: "";
+	flex: none;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	transform: rotate(-45deg);
+	transition: transform 0.15s ease;
+}
+main.docs-home .review-section[open] summary::before {
+	transform: rotate(45deg);
+}
+main.docs-home .review-section summary:hover {
+	text-decoration: underline;
+}
+main.docs-home .review-section summary:focus-visible {
+	outline: 2px solid #04592D;
+	outline-offset: 2px;
+}
+main.docs-home .review-section-body {
+	padding: 0 0 0.75rem 0.95rem;
+}
+main.docs-home .review-panel h4 {
+	margin: 0.9rem 0 0.35rem 0;
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #374151;
+}
+main.docs-home .review-panel ol,
+main.docs-home .review-panel ul {
+	margin: 0 0 0.6rem 0;
+	padding-left: 1.25rem;
+}
+main.docs-home .review-panel ol li,
+main.docs-home .review-panel ul li {
+	margin: 0.25rem 0;
+	padding-left: 0.2rem;
+}
+main.docs-home .review-panel table {
+	margin-bottom: 0.75rem;
+	background-color: #FFFFFF;
+	font-size: 0.875rem;
+}
+main.docs-home .review-panel table thead th {
+	padding: 0.35rem 0.6rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	border-bottom: 2px solid #E3EEE7;
+}
+main.docs-home .review-panel table tbody td {
+	padding: 0.35rem 0.6rem;
+	font-size: 0.875rem;
+	line-height: 1.45;
+	border-top: 1px solid rgb(222, 226, 230);
+}
+main.docs-home .review-panel table tbody td:first-child {
+	white-space: nowrap;
+}
+main.docs-home .review-panel blockquote {
+	margin: 0 0 0.75rem 0;
+	padding: 0.5rem 0.75rem;
+	background-color: #FFFDF6;
+	border-left: 3px solid #C98A00;
+	border-radius: 3px;
+	color: #1F2937;
+	font-size: 0.875rem;
+}
+main.docs-home .review-panel blockquote p {
+	margin: 0;
+}
+main.docs-home .review-panel p.review-panel-more {
+	margin: 0;
+	padding: 0.65rem 0 0.75rem 0;
+	border-top: 1px solid #E3EEE7;
+	font-weight: 600;
+}
+main.docs-home .review-panel p.review-panel-more a {
+	color: #04592D;
+	text-decoration: none;
+}
+main.docs-home .review-panel p.review-panel-more a:hover,
+main.docs-home .review-panel p.review-panel-more a:focus {
+	text-decoration: underline;
+}
+
+/* Home layout: content column with the review image beside it, filling the page column */
+main.docs-home .home-layout .review-panel,
+main.docs-home .home-layout .home-main {
+	max-width: none;
+}
+@media (min-width: 768px) {
+	main.docs-home .home-layout.has-figure {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 16rem;
+		grid-template-areas:
+			"panel figure"
+			"main  figure";
+		column-gap: 2rem;
+		align-items: start;
+	}
+	main.docs-home .home-layout.has-figure .review-panel {
+		grid-area: panel;
+	}
+	main.docs-home .home-layout.has-figure .home-main {
+		grid-area: main;
+	}
+	main.docs-home .home-layout.has-figure .home-figure {
+		grid-area: figure;
+		position: sticky;
+		top: 1.5rem;
+	}
+}
+@media (max-width: 767.98px) {
+	main.docs-home .home-figure {
+		max-width: 16rem;
+		margin: 0 auto 2.5rem auto;
+	}
+}
+
+/* Figures (image + attribution caption from the markdown) */
+.content figure.doc-figure {
+	margin: 0 0 1.5rem 0;
+}
+.content figure.doc-figure img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+	border: 1px solid rgb(222, 226, 230);
+}
+.content figure.doc-figure figcaption {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	line-height: 1.45;
+	color: rgb(75, 85, 99);
+}
+.content figure.doc-figure figcaption a {
+	color: rgb(75, 85, 99);
+	text-decoration: underline;
+}
+.content .doc-prose figure.doc-figure {
+	margin: 1.75rem 0;
+}
+
+/* Public Review Page ---------------------------------------------------------------------------- */
+main.docs-public-review .doc-prose {
+	max-width: none;
+}
+/* "What is under review" call-out: the most important part of the page after the process */
+main.docs-public-review .review-highlight {
+	margin: 2rem 0 2.5rem 0;
+	padding: 1.25rem 1.5rem 0.5rem 1.5rem;
+	background-color: #FBFDFC;
+	border: 1px solid #E3EEE7;
+	border-left: 5px solid #04592D;
+	border-radius: 6px;
+}
+.content .doc-prose .review-highlight h2 {
+	margin-top: 0;
+}
+main.docs-public-review .review-highlight table {
+	background-color: #FFFFFF;
+}
+main.docs-public-review .review-highlight table tbody td:first-child {
+	color: #04592D;
+}
+main.docs-public-review .review-highlight blockquote {
+	margin: 0 0 1rem 0;
+	padding: 0.6rem 0.9rem;
+	background-color: #FFFDF6;
+	border-left: 3px solid #C98A00;
+	border-radius: 3px;
+	color: #1F2937;
+	font-size: 0.95rem;
+}
+main.docs-public-review .review-highlight blockquote p {
+	margin: 0;
+}
+main.docs-public-review .toc ul li {
+	margin: 0.3rem 0;
+}
+.content .doc-prose ul.process-link-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+.content .doc-prose ul.process-link-list li {
+	margin: 0 0 0.75rem 0;
+	padding: 0.6rem 0.9rem;
+	border-left: 3px solid #04592D;
+	background-color: #F2F7F4;
+	border-radius: 0 4px 4px 0;
+}
+.content .doc-prose ul.process-link-list li a {
+	font-weight: 600;
+}
+.content .doc-prose ul.process-link-list li span {
+	display: block;
+	font-size: 0.9rem;
+	color: rgb(75, 85, 99);
+}
+
 /* Responsives ------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
@@ -996,6 +1367,15 @@ ul.discipline-schema-list li span.element-label {
 
 
 @media only screen and (max-width: 480px) {
+	main.docs-home .review-panel {
+		padding: 1rem 1rem 0.25rem 1rem;
+	}
+	main.docs-home .review-section-body {
+		padding-left: 0;
+	}
+	main.docs-home .review-panel table tbody td:first-child {
+		white-space: normal;
+	}
 	main .container.content {
 		max-width: 100%;
 		width: 100%;
