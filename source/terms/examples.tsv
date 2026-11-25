@@ -60,4 +60,4 @@ GeographicalLocalityID	POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)) + EPSG:4326
 GeographicalLocalityID	https://www.geonames.org/7839420
 IdentifiedByID	https://www.wikidata.org/wiki/Q94522
 IdentifiedByID	https://orcid.org/0000-0001-7698-3945
-IdentifiedByID	https://www.wikidata.org/wiki/Q276405
+IdentifiedByID	https://ror.org/01t178j62
